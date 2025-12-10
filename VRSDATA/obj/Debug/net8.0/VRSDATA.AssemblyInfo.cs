@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VRSDATA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2290cb79479480d89a9ad33b4472b3b3ef50e76d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84a41d7f42c981ab18719987d661b8e61757746e")]
 [assembly: System.Reflection.AssemblyProductAttribute("VRSDATA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VRSDATA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
