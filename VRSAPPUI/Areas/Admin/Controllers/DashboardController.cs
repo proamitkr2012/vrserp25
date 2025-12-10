@@ -5,10 +5,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Serilog;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -685,6 +687,33 @@ namespace VRSAPPUI.Areas.Admin.Controllers
 
             }
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> StudentStatusUpdate([FromForm] string EntryIDs, string IsLiveStatus, DateTime? Resultdate)
+        {
+            try
+            {
+
+                FormResponse data = new FormResponse();
+                if (!string.IsNullOrEmpty(Resultdate.ToString()))
+                {
+                    var datet = Convert.ToDateTime(Resultdate, CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat);
+                    Resultdate = datet;
+                }
+
+                data = await UOF.IAdminMaster.StudentStatusUpdate(EntryIDs, IsLiveStatus, Resultdate, CurrentUser.UserId);
+
+                if (data.ResponseCode == 1 && data.ResponseMessage == "Yes")
+                {
+                    return Json(new { res = "ok" });
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+            return Json("0");
         }
     }
 }

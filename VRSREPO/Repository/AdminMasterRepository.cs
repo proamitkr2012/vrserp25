@@ -1503,7 +1503,7 @@ namespace VRSREPO
                     CourseId = CourseId
                 };
 
-                var multi = await con.QueryMultipleAsync("GET_StudentManageData_AM", paramList, commandTimeout: 0,
+                var multi = await con.QueryMultipleAsync("GET_StudentManageData_AM", paramList, 
               commandType: CommandType.StoredProcedure);
 
                 var lst1 = await multi.ReadAsync<CourseMasterDTO_AM>();
@@ -1573,6 +1573,37 @@ namespace VRSREPO
             return list;
 
         }
+
+        public async Task<FormResponse> StudentStatusUpdate(string EntryIDs, string IsActive, DateTime? Resultdate, long AdminID)
+        {
+            FormResponse list = new();
+            await using var con = new SqlConnection(_connectionStringResultDemo);
+            con.Open();
+            try
+            {
+                var paramList = new
+                {
+
+                    EntryIDs = EntryIDs,
+                    IsActive = IsActive,
+                    Resultdate = Resultdate,
+                    AdminID = AdminID
+                };
+                var d = await con.QueryAsync<FormResponse>("StudentStatusUpdate_AM", paramList,
+                    commandType: CommandType.StoredProcedure);
+                list = d.ToList()[0];
+            }
+            catch (Exception ex)
+            {
+                // ignored
+            }
+            finally
+            {
+                con.Close();
+            }
+            return list;
+        }
+
     }
 
 }

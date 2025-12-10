@@ -181,13 +181,14 @@
                             </div>
                             @Html.Hidden("Page")
                         <!-- /.card-header -->
-                        <div class="card-body table-responsive p-0">
-                            <table class="table table-head-fixed text-nowrap" id="studenttable">
+                        <div class="card-body table-responsive m-2">
+                            <table class="table table-head-fixed " id="studenttable">
                                 <thead>
-                                    <tr>
-                                        <th class="text-center" width="70px">
-                                            <input type="checkbox" class="checkboxsize" id="selectAll" />
+                                        <tr style="font-size:13px;">
+                                        <th class="text-center" width="150px">
+                                                <input type="checkbox" class="checkboxsize" id="selectAll" />
                                             ALL / SrNo.
+                                                
                                         </th>
                                        
                                         <th>
@@ -215,7 +216,7 @@
                                             foreach (var item in stud)
                                             {
                                                 var colors = item.IsActive == false ? "background-color:#ffdde3" : "";
-                                                <tr style="font-size:13px;@colors">
+                                                <tr style="font-size:11px;@colors">
 
                                                     <td>
                                                         @* @item.ENTRYID *@
@@ -231,7 +232,7 @@
                                                         @i
                                                     </td> *@
                                                     <td>@item.ROLL_NO / @item.ENROLLMENT_NO</td>
-                                                    <td>@item.EXAM_TYPE</td>
+                                                    <td>@item.CourseType</td>
 
                                                     <td>@item.NAME</td>
                                                     <td>@item.FNAME <br />@item.MNAME</td>
@@ -394,17 +395,23 @@
             <div class="modal-body">
                 <div class="row">
                     <input id="selectedd" name="selectedd" hidden />
-                    <div class="col-md-6 form-group">
-                        <span class="" style="width:120px">HeldIn</span>
-                        <input type="text" value="" id="HeldIn" name="HeldIn" class="form-control" placeholder="MAY-2024">
-                        <span id="A_HeldInSpan" class="text-danger w-100 float-end"></span>
-                    </div>
-                    <div class="col-md-6 form-group">
+                    
+                   @*  <div class="col-md-6 form-group">
                         <span class="" style="width:120px">Result Date</span>
                         <input type="text" name="ResultDate" id="ResultDate"
                                class="form-control date-picker"
                                placeholder="Select Date" value="" />
                         <span id="ResultDateSpan" class="text-danger w-100 float-end"></span>
+                    </div> *@
+
+                    <div class="col-md-6 form-group">
+                        <span class="" style="width:120px">Result Date</span>
+                        <div class="input-group date" id="ResultDate" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#ResultDate" placeholder="Select Date" value="" id="ResultDated" name="ResultDated" />
+                            <div class="input-group-append" data-target="#ResultDate" data-toggle="datetimepicker" >
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 form-group">
                         <span class="" style="width:120px">Status</span>
@@ -493,12 +500,12 @@
     }
 
     function SaveStatus() {
-        //lert($('#selectedd').val())
+        //alert($('#ResultDate').val())
         var formData = new FormData();
         formData.append("EntryIDs", $('#selectedd').val());
         formData.append("IsLiveStatus", $('#IsLiveStatusPop').val());
-        formData.append("HeldIn", $('#HeldIn').val());
-        formData.append("ResultDate", $('#ResultDate').val());
+        // formData.append("HeldIn", $('#HeldIn').val());
+        formData.append("ResultDate", $('#ResultDated').val());
 
         $.ajax({
             type: "POST",
