@@ -1,0 +1,141 @@
+﻿<style>
+    .selectedmenu {
+        background-color: rgba(255,255,255,.1);
+        color: #fff;
+    }
+</style>
+
+
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+    <a href="index3.html" class="brand-link">
+        <img src="~/logo_header.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Admin</span>
+    </a>
+
+    <div class="sidebar">
+
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image align-content-center">
+                <i class="fas fa-user fa-fw"></i>
+            </div>
+            <div class="info">
+                <a href="#" class="d-block">@CurrentUser.Name</a>
+            </div>
+        </div>
+
+        @* <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                        <i class="fas fa-search fa-fw"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+ *@
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+
+                <li class="nav-header">Menu</li>
+                <li class="nav-item">
+                    <a href="/admin/dashboard" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("dashboard") ? "selectedmenu" : "")">
+                        <i class="nav-icon fa fa-home text-warning"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/dashboard/course_master" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("course_master") ? "selectedmenu" : "")">
+                        <i class="nav-icon far fa-circle text-danger"></i>
+                        <p>Course Master</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/dashboard/paper_master" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("paper_master") ? "selectedmenu" : "")">
+                        <i class="nav-icon far fa-circle text-danger"></i>
+                        <p>Paper Master</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/dashboard/ordinance_master" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("ordinance_master") ? "selectedmenu" : "")">
+                        <i class="nav-icon far fa-circle text-danger"></i>
+                        <p>Ordinance Master</p>
+                    </a>
+                </li>
+
+                <li class="nav-item @(ViewData["ActiveGroup"] != null && ViewData["ActiveGroup"].Equals("ordinance") ? "menu-is-opening menu-open" : "")">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon far fa-edit"></i>
+                        <p>
+                            MANAGE ORDINANCE
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview" style="@(ViewData["ActiveGroup"] != null && ViewData["ActiveGroup"].Equals("ordinance") ? "display: block" : "display: none")">
+
+                        <li class="nav-item">
+                            <a href="/admin/dashboard/ordinance_details" class="nav-link  @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("ordinance_details") ? "selectedmenu" : "")">
+                                <i class="nav-icon far fa-circle text-warning"></i>
+                                <p>Ordinance Details</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/dashboard/ordinance_mapping" class="nav-link  @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("ordinance_mapping") ? "selectedmenu" : "")">
+                                <i class="nav-icon far fa-circle text-warning"></i>
+                                <p>Ordinance Mapping</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/dashboard/ordinance_apply" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("ordinance_apply") ? "selectedmenu" : "")">
+                                <i class="nav-icon far fa-circle text-success"></i>
+                                <p class="text">Ordinance Apply</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/dashboard/ordinance_student_apply" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("ordinance_student_apply") ? "selectedmenu" : "")">
+                                <i class="nav-icon far fa-circle text-danger"></i>
+                                <p class="text">Ordinance Student Apply</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                @if (CurrentUser.Roles.Contains("Admin") || CurrentUser.Roles.Contains("SuperAdmin"))
+                {
+
+
+                    <li class="nav-item @(ViewData["ActiveGroup"] != null && ViewData["ActiveGroup"].Equals("CourseMenu") ? "menu-is-opening menu-open" : "")">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-edit"></i>
+                            <p>
+                                SERVICES
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview" style="@(ViewData["ActiveGroup"] != null && ViewData["ActiveGroup"].Equals("CourseMenu") ? "display: block" : "display: none")">
+
+                            <li class="nav-item">
+                                <a href="/admin/dashboard/coursemasterrule" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("CourseMenu") ? "selectedmenu" : "")">
+                                    <i class="nav-icon far fa-circle text-yellow"></i>
+                                    <p class="text">COURSE RULE</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/admin/dashboard/studentlist" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("studentlist") ? "selectedmenu" : "")">
+                                    <i class="nav-icon far fa-circle text-yellow"></i>
+                                    <p class="text">STUDENT RULE</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                }
+            </ul>
+        </nav>
+
+    </div>
+
+</aside>

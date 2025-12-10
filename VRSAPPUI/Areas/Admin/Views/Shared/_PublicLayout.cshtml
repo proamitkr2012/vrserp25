@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr Bhimrao Ambedkar University</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+
+    <link rel="stylesheet" href="~/pageui/plugins/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/pageui/dist/css/adminlte.min2167.css?v=3.2.0">
+    @* <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> *@
+    <link rel="stylesheet" href="~/pageui/plugins/sweetalert2/sweetalert2.min.css">
+
+     <style>
+        .input-validation-error {
+            /* background: #fa00001c; */
+            border: 2px solid #ff0000 !important;
+        }
+
+        
+
+        .myFont {
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body class="hold-transition login-page">
+    
+    <div role="main" id="wrap">
+        @RenderBody()
+    </div>
+
+   
+
+    <script src="~/pageui/plugins/jquery/jquery.min.js"></script>
+
+    <script src="~/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/pageui/dist/js/adminlte.min2167.js?v=3.2.0"></script>
+    <script src="~/pageui/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    @*  <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+            $('.select2').select2({ dropdownCssClass: "myFont" });
+
+        });
+        
+    </script> *@
+
+</body>
+</html>

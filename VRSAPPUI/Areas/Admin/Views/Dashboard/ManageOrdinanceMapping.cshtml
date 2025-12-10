@@ -1,0 +1,272 @@
+﻿@using System.Security.Claims
+@model VRSMODEL.DTO.MANAGE_ORDINANCE_MAPPING_AM_DTO
+@{
+    ViewData["Title"] = "ORDINANCE";
+    ViewData["ActiveMenu"] = "ordinance_mapping"; ViewData["ActiveGroup"] = "ordinance";
+}
+<style>
+
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border-radius: 6px;
+        margin-top: 6px;
+        padding: 10px;
+        z-index: 10;
+        max-height: 450px;
+        overflow-y: auto;
+        display: none;
+    }
+
+        .dropdown-menu label {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+    .dropdown-item:hover {
+        background: #3498db !important;
+        width: 100%;
+    }
+
+    .dropdown-item {
+        transition: transform 0.15s ease, background 0.2s;
+    }
+
+        .dropdown-item:hover {
+            background: #3498db;
+            transform:  scale(1.03);
+        }
+</style>
+<div class="content-wrapper">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    @*  <h1 class="m-0">Manage Course Master </h1> *@
+                </div>
+                @* <div class="col-sm-6">
+                    <span class=" float-sm-right">
+                        <a href="/admin/dashboard/course_master" class="btn  btn-outline-warning">Back To List</a>
+                    </span>
+                </div> *@
+            </div>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Ordinance Mapping</h3>
+                            <span class=" float-sm-right">
+                                <a href="/admin/dashboard/ordinance_mapping" class="btn  btn-outline-warning">Back To List</a>
+                            </span>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="inputORDINANCE_NAME" class="col-sm-3 col-form-label">ORDINANCE NAME</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control select2" style="width: 100%;" id="ORDINANCE_ID">
+                                                <option value="">--Select Ordinance-- </option>
+                                                @if (Model.ORDINANCE_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.ORDINANCE_LIST)
+                                                    {
+                                                        <option value="@item.ORDINANCE_ID">@item.ORDINANCE_NAME </option>
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+
+                                        <label for="inputPAPER_NAME" class="col-sm-3 col-form-label">COURSE</label>
+                                        <div class="col-sm-9">
+                                            @*  <select class="form-control select2" style="width: 100%;" id="COURSE_ID">
+                                                <option value="">--Select Course type-- </option>
+                                                @if (Model.COURSE_FILTER_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.COURSE_FILTER_LIST)
+                                                    {
+                                                        <option value="@item.COURSE_ID">@item.COURSE_NAME </option>
+                                                    }
+                                                }
+                                            </select> *@
+
+                                            <div class="dropdown form-control ">
+                                                <div class="dropdown-btn" id="dropBtn">Select Course</div>
+
+                                                <div class="dropdown-menu" id="dropMenu">
+                                                    <input type="text" id="searchBox" onkeyup="filterOptions()" placeholder="Search..." style="width:95%; margin:8px; padding:6px; border:1px solid #aaa; border-radius:6px;">
+
+                                                    <label><input type="checkbox" id="selectAll"> Select All</label>
+                                                    @if (Model.COURSE_FILTER_LIST.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.COURSE_FILTER_LIST.OrderBy(x => x.COURSE_NAME))
+                                                        {
+
+                                                            <label class="dropdown-item"><input type="checkbox" class="chk" value="@item.COURSE_ID"> @item.COURSE_NAME</label>
+                                                        }
+                                                    }
+
+
+
+
+                                                </div>
+                                                <p id="output" hidden></p>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <div class="form-group row ">
+                                        <label for="selectRESULT_TYPE" class="col-sm-3 col-form-label">RESULT TYPE</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control " style="width: 100%;" id="RESULT_TYPE_ID">
+                                                <option value="">--Select Result type-- </option>
+                                                @if (Model.RESULT_TYPE_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.RESULT_TYPE_LIST)
+                                                    {
+                                                        <option value="@item.RESULT_TYPE_ID">@item.RESULT_TYPE </option>
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                       
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="inputPROC_NAME" class="col-sm-2 col-form-label">PROC_NAME</label>
+                                        <div class="col-sm-10">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="PROC_NAME" placeholder="PROC_NAME" style="text-transform:uppercase">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a id="btnc" onclick="SubmitFormM()" class="btn btn-info">Save</a>
+                            <a class="btn btn-info" id="btnwaitc" style="display:none">
+                                <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Sending...
+                            </a>
+                            <a href="~/admin/dashboard/manageordinancemapping" class="btn btn-default float-right">Cancel</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+@* <script src="~/pageui/plugins/jquery/jquery.min.js"></script> *@
+<script src="~/js/AdminJs/OrdinanceMapping.js" asp-append-version="true"></script>
+
+
+<script>
+    const dropBtn = document.getElementById("dropBtn");
+    const dropMenu = document.getElementById("dropMenu");
+    const selectAll = document.getElementById("selectAll");
+    const checks = document.querySelectorAll(".chk");
+    const output = document.getElementById("output");
+
+    dropBtn.addEventListener("click", () => {
+      dropMenu.style.display = dropMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".dropdown")) dropMenu.style.display = "none";
+    });
+
+    selectAll.addEventListener("change", () => {
+      checks.forEach(cb => cb.checked = selectAll.checked);
+      showSelected();
+    });
+
+    checks.forEach(cb => {
+      cb.addEventListener("change", () => {
+        const all = [...checks].every(c => c.checked);
+        const some = [...checks].some(c => c.checked);
+        selectAll.checked = all;
+        selectAll.indeterminate = !all && some;
+        showSelected();
+      });
+    });
+
+    function showSelected(){
+      const selected = [...checks]
+        .filter(cb => cb.checked)
+        // .map(cb => cb.value);
+       .map(cb => cb.parentElement.textContent.trim());
+
+       const selectedvalue = [...checks]
+        .filter(cb => cb.checked)
+         .map(cb => cb.value);
+       //.map(cb => cb.parentElement.textContent.trim());
+
+
+         // Output text
+    output.textContent =  selectedvalue.join(", ");
+
+      // Button display rule
+      if (selected.length === 0) {
+        dropBtn.textContent = "Select Course";
+      }
+      else if (selected.length <= 1) {
+        dropBtn.textContent = selected.join(", ");
+      }
+      else {
+        dropBtn.textContent = selected.length + " Selected";
+      }
+        }
+
+        function filterOptions() {
+      const searchValue = document.getElementById('searchBox').value.toLowerCase();
+      document.querySelectorAll('.dropdown-item').forEach(item => {
+        const text = item.innerText.toLowerCase();
+        item.style.display = text.includes(searchValue) ? 'flex' : 'none';
+      });
+    }
+    
+
+
+</script>

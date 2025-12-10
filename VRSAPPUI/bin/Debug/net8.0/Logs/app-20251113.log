@@ -1,0 +1,583 @@
+2025-11-13 12:32:38.834 +05:30 [INF] Now listening on: https://localhost:7071
+2025-11-13 12:32:38.872 +05:30 [INF] Now listening on: http://localhost:5290
+2025-11-13 12:32:38.963 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-13 12:32:38.963 +05:30 [INF] Hosting environment: Development
+2025-11-13 12:32:38.963 +05:30 [INF] Content root path: D:\VRSAGRAERP\VRSAPPUI
+2025-11-13 12:32:41.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2025-11-13 12:32:41.716 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2025-11-13 12:32:41.749 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2025-11-13 12:32:43.055 +05:30 [INF] Executing ViewResult, running view Index.
+2025-11-13 12:32:43.171 +05:30 [INF] Executed ViewResult - view Index executed in 123.2645ms.
+2025-11-13 12:32:43.173 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 1421.4169ms
+2025-11-13 12:32:43.173 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2025-11-13 12:32:43.175 +05:30 [INF] HTTP GET / responded 200 in 1460.3654 ms
+2025-11-13 12:32:43.191 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 1770.609ms
+2025-11-13 12:32:43.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:32:43.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 13.1493ms
+2025-11-13 12:32:43.422 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:32:43.517 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.75ms
+2025-11-13 12:36:54.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ADMIN/LOGIN - null null
+2025-11-13 12:36:54.416 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2025-11-13 12:36:54.424 +05:30 [INF] Route matched with {area = "Admin", action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.AccountController (VRSAPPUI).
+2025-11-13 12:36:54.455 +05:30 [INF] Executing ViewResult, running view Login.
+2025-11-13 12:36:54.676 +05:30 [INF] Executed ViewResult - view Login executed in 222.1322ms.
+2025-11-13 12:36:54.679 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:36:54.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 9.5677ms
+2025-11-13 12:36:54.693 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI) in 268.004ms
+2025-11-13 12:36:54.695 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2025-11-13 12:36:54.696 +05:30 [INF] HTTP GET /ADMIN/LOGIN responded 200 in 279.9438 ms
+2025-11-13 12:36:54.700 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ADMIN/LOGIN - 200 null text/html; charset=utf-8 307.3617ms
+2025-11-13 12:36:54.736 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:36:54.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.2748ms
+2025-11-13 12:36:55.549 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/login - application/json; charset=UTF-8 37
+2025-11-13 12:36:55.555 +05:30 [INF] CORS policy execution successful.
+2025-11-13 12:36:55.561 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2025-11-13 12:36:55.566 +05:30 [INF] Route matched with {area = "Admin", action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VRSMODEL.DTO.LoginDTO, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.AccountController (VRSAPPUI).
+2025-11-13 12:36:57.065 +05:30 [WRN] No store type was specified for the decimal property 'Sequence' on entity type 'NewMasters'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-11-13 12:36:58.540 +05:30 [INF] Executed DbCommand (140ms) [Parameters=[@__admin_AdminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[RoleName]
+FROM [Roles] AS [r]
+INNER JOIN [AdminMasterRoles] AS [a] ON [r].[RoleId] = [a].[RoleId]
+WHERE [a].[AdminId] = @__admin_AdminId_0
+2025-11-13 12:36:58.673 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-11-13 12:36:58.678 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
+2025-11-13 12:36:58.680 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI) in 3114.2176ms
+2025-11-13 12:36:58.680 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2025-11-13 12:36:58.680 +05:30 [INF] HTTP POST /admin/login responded 200 in 3119.6961 ms
+2025-11-13 12:36:58.685 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/login - 200 null application/json; charset=utf-8 3135.9226ms
+2025-11-13 12:36:58.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard - null null
+2025-11-13 12:36:58.698 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2025-11-13 12:36:58.702 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:36:58.735 +05:30 [INF] Executing ViewResult, running view Index.
+2025-11-13 12:36:58.772 +05:30 [INF] Executed ViewResult - view Index executed in 37.092ms.
+2025-11-13 12:36:58.773 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI) in 70.5215ms
+2025-11-13 12:36:58.773 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2025-11-13 12:36:58.773 +05:30 [INF] HTTP GET /admin/dashboard responded 200 in 75.4756 ms
+2025-11-13 12:36:58.773 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard - 200 null text/html; charset=utf-8 82.9033ms
+2025-11-13 12:36:58.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:36:58.840 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7856ms
+2025-11-13 12:36:58.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:36:58.901 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.5827ms
+2025-11-13 12:37:00.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:37:00.895 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:37:00.898 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:37:01.291 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:37:01.407 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 117.3724ms.
+2025-11-13 12:37:01.408 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 509.5814ms
+2025-11-13 12:37:01.408 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:37:01.408 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 512.9318 ms
+2025-11-13 12:37:01.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 521.1808ms
+2025-11-13 12:37:01.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/js/AdminJs/OrdinanceApply.js?v=7H_2-btgi0Bee-ih7M3JsYTpnhMyAf9Z5_NHhQl-DFM - null null
+2025-11-13 12:37:01.426 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:37:01.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:37:01.430 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 4.1713ms
+2025-11-13 12:37:01.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.6119ms
+2025-11-13 12:37:01.466 +05:30 [INF] Sending file. Request path: '/js/AdminJs/OrdinanceApply.js'. Physical path: 'D:\VRSAGRAERP\VRSAPPUI\wwwroot\js\AdminJs\OrdinanceApply.js'
+2025-11-13 12:37:01.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/js/AdminJs/OrdinanceApply.js?v=7H_2-btgi0Bee-ih7M3JsYTpnhMyAf9Z5_NHhQl-DFM - 200 8210 text/javascript 43.9671ms
+2025-11-13 12:40:33.114 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:40:33.126 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:40:33.129 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:40:33.480 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:40:33.556 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 77.8097ms.
+2025-11-13 12:40:33.556 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 427.0493ms
+2025-11-13 12:40:33.556 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:40:33.556 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 430.1041 ms
+2025-11-13 12:40:33.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 443.209ms
+2025-11-13 12:40:33.577 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:40:33.577 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:40:33.578 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.4966ms
+2025-11-13 12:40:33.593 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.9249ms
+2025-11-13 12:41:02.118 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:41:02.122 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:41:02.125 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:41:02.547 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:41:02.604 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 59.2297ms.
+2025-11-13 12:41:02.604 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 479.4834ms
+2025-11-13 12:41:02.604 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:41:02.604 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 482.4080 ms
+2025-11-13 12:41:02.605 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 486.656ms
+2025-11-13 12:41:02.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:41:02.616 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:41:02.617 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.3851ms
+2025-11-13 12:41:02.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.6149ms
+2025-11-13 12:41:06.757 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:41:06.760 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:41:06.763 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:41:07.266 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:41:07.348 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 82.8519ms.
+2025-11-13 12:41:07.348 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 584.35ms
+2025-11-13 12:41:07.348 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:41:07.348 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 587.8554 ms
+2025-11-13 12:41:07.348 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 591.5505ms
+2025-11-13 12:41:07.354 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:41:07.354 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:41:07.355 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7267ms
+2025-11-13 12:41:07.369 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.9103ms
+2025-11-13 12:41:56.835 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:41:56.838 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:41:56.842 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:41:57.177 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:41:57.293 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 118.2157ms.
+2025-11-13 12:41:57.293 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 450.3555ms
+2025-11-13 12:41:57.293 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:41:57.293 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 454.4447 ms
+2025-11-13 12:41:57.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 459.1296ms
+2025-11-13 12:41:57.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:41:57.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:41:57.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.4962ms
+2025-11-13 12:41:57.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.5037ms
+2025-11-13 12:42:06.355 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:42:06.358 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:06.360 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:42:06.689 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:42:06.749 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 62.1745ms.
+2025-11-13 12:42:06.749 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 388.4034ms
+2025-11-13 12:42:06.749 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:06.749 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 391.2798 ms
+2025-11-13 12:42:06.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 394.4843ms
+2025-11-13 12:42:06.768 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:42:06.769 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:42:06.770 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7369ms
+2025-11-13 12:42:06.783 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.5227ms
+2025-11-13 12:42:32.978 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:42:32.981 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:32.984 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:42:33.640 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:42:33.711 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 73.468ms.
+2025-11-13 12:42:33.711 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 727.038ms
+2025-11-13 12:42:33.711 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:33.711 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 730.3119 ms
+2025-11-13 12:42:33.712 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 734.4821ms
+2025-11-13 12:42:33.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:42:33.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:42:33.740 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.1995ms
+2025-11-13 12:42:33.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.6086ms
+2025-11-13 12:42:38.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:42:38.058 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:38.060 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:42:38.537 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:42:38.607 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 71.3079ms.
+2025-11-13 12:42:38.607 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 546.8396ms
+2025-11-13 12:42:38.607 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:38.607 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 549.6021 ms
+2025-11-13 12:42:38.608 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 556.4474ms
+2025-11-13 12:42:38.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:42:38.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:42:38.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.4862ms
+2025-11-13 12:42:38.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.8181ms
+2025-11-13 12:42:42.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:42:42.055 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:42.058 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:42:42.517 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:42:42.577 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 62.2004ms.
+2025-11-13 12:42:42.577 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 519.0502ms
+2025-11-13 12:42:42.577 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:42:42.577 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 522.4382 ms
+2025-11-13 12:42:42.577 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 527.1389ms
+2025-11-13 12:42:42.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:42:42.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:42:42.586 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.8854ms
+2025-11-13 12:42:42.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.775ms
+2025-11-13 12:43:00.181 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:43:00.184 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:00.187 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:43:00.615 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:43:00.682 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 68.5877ms.
+2025-11-13 12:43:00.682 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 495.4904ms
+2025-11-13 12:43:00.682 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:00.682 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 498.3146 ms
+2025-11-13 12:43:00.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 502.2447ms
+2025-11-13 12:43:00.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:43:00.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:43:00.701 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.5602ms
+2025-11-13 12:43:00.714 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.9148ms
+2025-11-13 12:43:08.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:43:08.916 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:08.919 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:43:09.339 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:43:09.393 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 56.7928ms.
+2025-11-13 12:43:09.393 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 474.4204ms
+2025-11-13 12:43:09.393 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:09.393 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 477.8074 ms
+2025-11-13 12:43:09.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 481.6963ms
+2025-11-13 12:43:09.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:43:09.410 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:43:09.411 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.4537ms
+2025-11-13 12:43:09.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.1533ms
+2025-11-13 12:43:13.175 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:43:13.178 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:13.181 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:43:13.519 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:43:13.580 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 62.6602ms.
+2025-11-13 12:43:13.580 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 398.9503ms
+2025-11-13 12:43:13.580 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:13.580 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 402.5847 ms
+2025-11-13 12:43:13.580 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 406.1861ms
+2025-11-13 12:43:13.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:43:13.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:43:13.611 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.474ms
+2025-11-13 12:43:13.626 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.9472ms
+2025-11-13 12:43:20.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:43:20.024 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:20.028 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:43:20.358 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:43:20.417 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 60.642ms.
+2025-11-13 12:43:20.417 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 389.1256ms
+2025-11-13 12:43:20.418 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:43:20.418 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 393.1066 ms
+2025-11-13 12:43:20.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 397.3321ms
+2025-11-13 12:43:20.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:43:20.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:43:20.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.1803ms
+2025-11-13 12:43:20.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.2737ms
+2025-11-13 12:44:27.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:44:27.347 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:44:27.354 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:44:27.998 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:44:28.072 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 75.195ms.
+2025-11-13 12:44:28.072 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 718.3638ms
+2025-11-13 12:44:28.072 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:44:28.072 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 725.1394 ms
+2025-11-13 12:44:28.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 735.4541ms
+2025-11-13 12:44:28.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:44:28.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:44:28.081 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.8097ms
+2025-11-13 12:44:28.096 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.2133ms
+2025-11-13 12:44:50.003 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:44:50.012 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:44:50.017 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:44:50.424 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:44:50.498 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 76.783ms.
+2025-11-13 12:44:50.498 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 481.1492ms
+2025-11-13 12:44:50.498 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:44:50.499 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 487.0261 ms
+2025-11-13 12:44:50.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 496.2601ms
+2025-11-13 12:44:50.505 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:44:50.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:44:50.507 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.002ms
+2025-11-13 12:44:50.522 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.8391ms
+2025-11-13 12:45:45.652 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:45:45.656 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:45:45.659 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:45:46.170 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:45:46.478 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 309.8197ms.
+2025-11-13 12:45:46.478 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 819.0365ms
+2025-11-13 12:45:46.478 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:45:46.478 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 822.5155 ms
+2025-11-13 12:45:46.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 827.0036ms
+2025-11-13 12:45:46.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:45:46.485 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:45:46.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.6545ms
+2025-11-13 12:45:46.544 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.4668ms
+2025-11-13 12:45:54.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:45:54.012 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:45:54.016 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:45:54.420 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:45:54.495 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 77.0761ms.
+2025-11-13 12:45:54.495 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 479.2281ms
+2025-11-13 12:45:54.496 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:45:54.496 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 484.0809 ms
+2025-11-13 12:45:54.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 487.7886ms
+2025-11-13 12:45:54.508 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:45:54.509 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:45:54.509 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.3276ms
+2025-11-13 12:45:54.524 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.2812ms
+2025-11-13 12:46:26.356 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:46:26.359 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:26.363 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:46:26.765 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:46:26.836 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 72.4939ms.
+2025-11-13 12:46:26.836 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 472.8354ms
+2025-11-13 12:46:26.836 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:26.836 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 477.3293 ms
+2025-11-13 12:46:26.837 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 481.4742ms
+2025-11-13 12:46:26.861 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:46:26.861 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:46:26.863 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.833ms
+2025-11-13 12:46:26.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.0008ms
+2025-11-13 12:46:32.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:46:32.101 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:32.106 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:46:32.469 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:46:32.514 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 46.4132ms.
+2025-11-13 12:46:32.514 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 408.0961ms
+2025-11-13 12:46:32.514 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:32.514 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 413.0614 ms
+2025-11-13 12:46:32.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 416.8938ms
+2025-11-13 12:46:32.539 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:46:32.542 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:46:32.544 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.3657ms
+2025-11-13 12:46:32.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.7163ms
+2025-11-13 12:46:42.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:46:42.083 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:42.088 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:46:42.763 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:46:42.837 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 76.5116ms.
+2025-11-13 12:46:42.837 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 749.7309ms
+2025-11-13 12:46:42.837 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:42.837 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 754.3903 ms
+2025-11-13 12:46:42.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 759.3168ms
+2025-11-13 12:46:42.853 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:46:42.853 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:46:42.855 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0133ms
+2025-11-13 12:46:42.871 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.3588ms
+2025-11-13 12:46:52.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:46:52.969 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:52.973 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:46:53.379 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:46:53.441 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 63.5421ms.
+2025-11-13 12:46:53.441 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 468.1425ms
+2025-11-13 12:46:53.441 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:46:53.441 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 471.9410 ms
+2025-11-13 12:46:53.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 481.0876ms
+2025-11-13 12:46:53.471 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:46:53.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:46:53.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.8177ms
+2025-11-13 12:46:53.489 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9618ms
+2025-11-13 12:51:14.919 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:51:14.927 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:14.930 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:51:15.483 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:51:15.574 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 92.5122ms.
+2025-11-13 12:51:15.574 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 644.1928ms
+2025-11-13 12:51:15.574 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:15.574 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 647.4857 ms
+2025-11-13 12:51:15.575 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 656.0597ms
+2025-11-13 12:51:15.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:51:15.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:51:15.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.9095ms
+2025-11-13 12:51:15.635 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.214ms
+2025-11-13 12:51:18.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:51:18.763 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:18.767 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:51:19.249 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:51:19.329 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 83.2951ms.
+2025-11-13 12:51:19.329 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 562.2448ms
+2025-11-13 12:51:19.329 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:19.329 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 566.1762 ms
+2025-11-13 12:51:19.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 569.8686ms
+2025-11-13 12:51:19.348 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:51:19.350 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.2012ms
+2025-11-13 12:51:19.350 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:51:19.371 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.1239ms
+2025-11-13 12:51:33.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:51:33.337 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:33.345 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:51:33.707 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:51:33.793 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 87.2274ms.
+2025-11-13 12:51:33.793 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 447.38ms
+2025-11-13 12:51:33.793 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:33.793 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 455.7789 ms
+2025-11-13 12:51:33.793 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 482.3283ms
+2025-11-13 12:51:33.808 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:51:33.809 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:51:33.810 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.4986ms
+2025-11-13 12:51:33.828 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8533ms
+2025-11-13 12:51:57.531 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:51:57.574 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:57.587 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:51:58.487 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:51:58.557 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 71.3345ms.
+2025-11-13 12:51:58.557 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 969.97ms
+2025-11-13 12:51:58.557 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:51:58.557 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 982.7818 ms
+2025-11-13 12:51:58.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 1026.2026ms
+2025-11-13 12:51:58.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:51:58.570 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:51:58.571 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.8539ms
+2025-11-13 12:51:58.587 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.4271ms
+2025-11-13 12:52:02.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:52:02.385 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:02.389 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:52:02.823 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:52:02.928 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 107.4806ms.
+2025-11-13 12:52:02.928 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 538.6945ms
+2025-11-13 12:52:02.928 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:02.928 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 542.5526 ms
+2025-11-13 12:52:02.928 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 547.8285ms
+2025-11-13 12:52:02.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:52:02.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:52:02.982 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.1632ms
+2025-11-13 12:52:03.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.1387ms
+2025-11-13 12:52:34.571 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:52:34.575 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:34.582 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:52:34.995 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:52:35.186 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 211.2164ms.
+2025-11-13 12:52:35.186 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 604.7182ms
+2025-11-13 12:52:35.186 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:35.186 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 611.5441 ms
+2025-11-13 12:52:35.187 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 616.0434ms
+2025-11-13 12:52:35.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:52:35.217 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:52:35.218 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7829ms
+2025-11-13 12:52:35.236 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.2227ms
+2025-11-13 12:52:44.064 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:52:44.068 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:44.073 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:52:44.410 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:52:44.493 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 84.2858ms.
+2025-11-13 12:52:44.493 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 419.6291ms
+2025-11-13 12:52:44.493 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:44.494 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 425.2961 ms
+2025-11-13 12:52:44.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 430.8247ms
+2025-11-13 12:52:44.521 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:52:44.521 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:52:44.523 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.395ms
+2025-11-13 12:52:44.539 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9417ms
+2025-11-13 12:52:55.115 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:52:55.120 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:55.124 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:52:55.487 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:52:55.561 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 76.9364ms.
+2025-11-13 12:52:55.562 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 437.5052ms
+2025-11-13 12:52:55.562 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:52:55.562 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 442.4877 ms
+2025-11-13 12:52:55.562 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 447.4642ms
+2025-11-13 12:52:55.589 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:52:55.591 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:52:55.591 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7584ms
+2025-11-13 12:52:55.607 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.5502ms
+2025-11-13 12:53:04.180 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:53:04.184 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:04.189 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:53:04.641 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:53:04.721 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 81.1611ms.
+2025-11-13 12:53:04.722 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 532.5867ms
+2025-11-13 12:53:04.722 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:04.722 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 537.8513 ms
+2025-11-13 12:53:04.722 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 542.2368ms
+2025-11-13 12:53:04.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:53:04.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:53:04.747 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7901ms
+2025-11-13 12:53:04.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.9598ms
+2025-11-13 12:53:13.031 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:53:13.034 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:13.039 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:53:13.662 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:53:13.733 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 72.4484ms.
+2025-11-13 12:53:13.733 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 694.0135ms
+2025-11-13 12:53:13.733 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:13.733 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 698.8603 ms
+2025-11-13 12:53:13.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 702.5954ms
+2025-11-13 12:53:13.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:53:13.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:53:13.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.9431ms
+2025-11-13 12:53:13.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.2362ms
+2025-11-13 12:53:30.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:53:30.969 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:30.973 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:53:31.346 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:53:31.417 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 73.6487ms.
+2025-11-13 12:53:31.417 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 444.4025ms
+2025-11-13 12:53:31.418 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:31.418 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 448.2514 ms
+2025-11-13 12:53:31.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 454.6441ms
+2025-11-13 12:53:31.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:53:31.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:53:31.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.6047ms
+2025-11-13 12:53:31.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.8783ms
+2025-11-13 12:53:42.893 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:53:42.896 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:42.900 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:53:43.282 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:53:43.367 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 87.5008ms.
+2025-11-13 12:53:43.367 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 466.9162ms
+2025-11-13 12:53:43.367 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:43.368 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 470.9296 ms
+2025-11-13 12:53:43.368 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 475.149ms
+2025-11-13 12:53:43.399 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:53:43.399 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:53:43.400 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.2688ms
+2025-11-13 12:53:43.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.2521ms
+2025-11-13 12:53:55.602 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:53:55.604 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:55.607 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:53:55.970 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:53:56.226 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 257.0375ms.
+2025-11-13 12:53:56.226 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 618.9503ms
+2025-11-13 12:53:56.226 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:53:56.226 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 621.9147 ms
+2025-11-13 12:53:56.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 625.1455ms
+2025-11-13 12:53:56.233 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:53:56.233 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:53:56.234 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.6924ms
+2025-11-13 12:53:56.255 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.5874ms
+2025-11-13 12:54:10.318 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:54:10.321 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:54:10.324 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:54:10.659 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:54:10.740 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 83.9486ms.
+2025-11-13 12:54:10.741 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 416.3606ms
+2025-11-13 12:54:10.741 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:54:10.741 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 419.5634 ms
+2025-11-13 12:54:10.741 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 423.2198ms
+2025-11-13 12:54:10.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:54:10.766 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:54:10.767 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.6282ms
+2025-11-13 12:54:10.783 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.7667ms
+2025-11-13 12:54:29.028 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:54:29.032 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:54:29.036 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:54:29.375 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:54:29.468 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 95.4391ms.
+2025-11-13 12:54:29.468 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 431.8235ms
+2025-11-13 12:54:29.468 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:54:29.468 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 436.1796 ms
+2025-11-13 12:54:29.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 440.1898ms
+2025-11-13 12:54:29.525 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:54:29.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:54:29.605 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 79.903ms
+2025-11-13 12:54:29.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 133.6249ms
+2025-11-13 12:55:07.254 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:55:07.256 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:55:07.259 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:55:07.634 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:55:07.712 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 80.9121ms.
+2025-11-13 12:55:07.712 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 453.3615ms
+2025-11-13 12:55:07.712 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:55:07.713 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 456.1126 ms
+2025-11-13 12:55:07.713 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 459.5842ms
+2025-11-13 12:55:07.735 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:55:07.735 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:55:07.737 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.972ms
+2025-11-13 12:55:07.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.4189ms
+2025-11-13 12:55:24.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:55:24.888 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:55:24.891 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:55:25.236 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:55:25.319 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 85.2987ms.
+2025-11-13 12:55:25.319 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 427.5736ms
+2025-11-13 12:55:25.319 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:55:25.319 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 431.5813 ms
+2025-11-13 12:55:25.320 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 435.513ms
+2025-11-13 12:55:25.333 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:55:25.333 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:55:25.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.5401ms
+2025-11-13 12:55:25.347 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.6536ms
+2025-11-13 12:55:43.421 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:55:43.429 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:55:43.433 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:55:43.788 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:55:43.856 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 70.4141ms.
+2025-11-13 12:55:43.857 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 423.389ms
+2025-11-13 12:55:43.857 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:55:43.857 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 428.0321 ms
+2025-11-13 12:55:43.857 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 436.2409ms
+2025-11-13 12:55:43.882 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:55:43.883 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:55:43.886 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 4.1623ms
+2025-11-13 12:55:43.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.1673ms
+2025-11-13 12:56:07.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - null null
+2025-11-13 12:56:07.466 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:56:07.469 +05:30 [INF] Route matched with {area = "Admin", action = "Ordinance_Apply", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ordinance_Apply() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2025-11-13 12:56:07.870 +05:30 [INF] Executing ViewResult, running view Ordinance_Apply.
+2025-11-13 12:56:07.949 +05:30 [INF] Executed ViewResult - view Ordinance_Apply executed in 80.8984ms.
+2025-11-13 12:56:07.949 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI) in 479.9027ms
+2025-11-13 12:56:07.949 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Ordinance_Apply (VRSAPPUI)'
+2025-11-13 12:56:07.949 +05:30 [INF] HTTP GET /admin/dashboard/ordinance_apply responded 200 in 483.1815 ms
+2025-11-13 12:56:07.950 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/ordinance_apply - 200 null text/html; charset=utf-8 486.7653ms
+2025-11-13 12:56:07.957 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2025-11-13 12:56:07.958 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-13 12:56:07.960 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0612ms
+2025-11-13 12:56:07.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.4016ms

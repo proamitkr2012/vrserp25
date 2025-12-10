@@ -1,0 +1,16 @@
+D:\VRSAGRAERP\VRSMODEL\bin\Release\net8.0\VRSMODEL.deps.json
+D:\VRSAGRAERP\VRSMODEL\bin\Release\net8.0\VRSMODEL.dll
+D:\VRSAGRAERP\VRSMODEL\bin\Release\net8.0\VRSMODEL.pdb
+D:\VRSAGRAERP\VRSMODEL\bin\Release\net8.0\VRSDATA.dll
+D:\VRSAGRAERP\VRSMODEL\bin\Release\net8.0\VRSDATA.pdb
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.csproj.AssemblyReference.cache
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.GeneratedMSBuildEditorConfig.editorconfig
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.AssemblyInfoInputs.cache
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.AssemblyInfo.cs
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.csproj.CoreCompileInputs.cache
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.sourcelink.json
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.csproj.Up2Date
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.dll
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\refint\VRSMODEL.dll
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\VRSMODEL.pdb
+D:\VRSAGRAERP\VRSMODEL\obj\Release\net8.0\ref\VRSMODEL.dll

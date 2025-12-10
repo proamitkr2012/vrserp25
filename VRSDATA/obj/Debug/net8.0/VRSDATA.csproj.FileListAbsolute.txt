@@ -1,0 +1,13 @@
+D:\VRSAGRAERP\VRSDATA\bin\Debug\net8.0\VRSDATA.deps.json
+D:\VRSAGRAERP\VRSDATA\bin\Debug\net8.0\VRSDATA.dll
+D:\VRSAGRAERP\VRSDATA\bin\Debug\net8.0\VRSDATA.pdb
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.csproj.AssemblyReference.cache
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.AssemblyInfoInputs.cache
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.AssemblyInfo.cs
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.csproj.CoreCompileInputs.cache
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.sourcelink.json
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.dll
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\refint\VRSDATA.dll
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\VRSDATA.pdb
+D:\VRSAGRAERP\VRSDATA\obj\Debug\net8.0\ref\VRSDATA.dll

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+
+    <link rel="stylesheet" href="~/pageui/plugins/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/daterangepicker/daterangepicker.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/pageui/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+    <link rel="stylesheet" href="~/pageui/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <link rel="stylesheet" href="~/pageui/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <link rel="stylesheet" href="~/pageui/plugins/toastr/toastr.min.css">
+
+    <link rel="stylesheet" href="~/pageui/dist/css/adminlte.min2167.css?v=3.2.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .input-validation-error {
+            /* background: #fa00001c !important; */
+            border-color: #dc3545 !important;
+            
+        }
+
+    </style>
+</head>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+    <div class="wrapper">
+
+
+
+
+        <aside class="control-sidebar control-sidebar-dark">
+
+        </aside>
+
+        @await Html.PartialAsync("_headerAdmin")
+        @await Html.PartialAsync("_menuAdmin")
+
+        @RenderBody()
+
+
+        @await Html.PartialAsync("_footerAdmin")
+
+    </div>
+
+
+
+    <script src="~/pageui/plugins/jquery/jquery.min.js"></script>
+
+    <script src="~/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/pageui/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+
+
+    <script src="~/pageui/plugins/select2/js/select2.full.min.js"></script>
+
+    <script src="~/pageui/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+
+    <script src="~/pageui/plugins/moment/moment.min.js"></script>
+    <script src="~/pageui/plugins/inputmask/jquery.inputmask.min.js"></script>
+
+    <script src="~/pageui/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <script src="~/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+    <script src="~/pageui/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="~/pageui/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+
+    <script src="~/pageui/dist/js/adminlte2167.js?v=3.2.0"></script>
+
+
+    <script src="~/pageui/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="~/pageui/plugins/raphael/raphael.min.js"></script>
+    <script src="~/pageui/plugins/jquery-mapael/jquery.mapael.min.js"></script>
+    <script src="~/pageui/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+
+    <script src="~/pageui/plugins/chart.js/Chart.min.js"></script>
+
+    <script src="~/pageui/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+    <script src="~/pageui/plugins/toastr/toastr.min.js"></script>
+   
+    @* <script src="~/pageui/dist/js/demo.js"></script> *@
+
+    @* <script src="~/pageui/dist/js/pages/dashboard2.js"></script> *@
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+         $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+          theme: 'bootstrap4'
+        })
+            $('.date-picker').datetimepicker({
+            format: 'L'
+        });
+    </script>
+</body>
+
+</html>

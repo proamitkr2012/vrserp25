@@ -1,0 +1,263 @@
+﻿@using System.Security.Claims
+@model VRSMODEL.DTO.ORDINANCE_MASTER_AM_DTO_DASH
+@{
+    ViewData["Title"] = "ORDINANCE_MASTER";
+    ViewData["ActiveMenu"] = "ordinance_master";
+
+    var data = Model.DataList;
+}
+<div class="content-wrapper">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                @*  <div class="col-sm-6">
+                    <h1 class="m-0">Course Master </h1>
+                </div> *@
+                @* <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard </li>
+                    </ol>
+                </div> *@
+            </div>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <form id="formIndex" title="" method="post">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Ordinance Master <a class="btn btn-xs btn-outline-success mx-3" href="~/admin/dashboard/manageordinancemaster">  <i class="fas fa-plus"></i> Add New</a></h3>
+                            <div class="card-tools">
+                                <div class="input-group input-group-sm" style="width: 250px;">
+                                    <input type="text" id="Search" name="Search" class="form-control float-right" placeholder="Search" value="@ViewBag.Search">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default" id="SearchBtn">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        @Html.Hidden("Page")
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-head-fixed text-nowrap" id="papertable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">ORDINANCE_NAME</th>
+                                        <th scope="col">RESULT_TYPE</th>
+                                        @* <th scope="col">COURSE</th> *@
+                                        <th scope="col">PAPER_Count</th>
+                                        @* <th scope="col">PAPER_TYPE_CAT</th> *@
+                                        @* <th scope="col">CREDIT</th>
+                                        <th scope="col">IS_QUALIFIYING</th>
+                                        <th scope="col">THEORY_MAX</th>
+                                        <th scope="col">THEORY_MIN</th>
+                                        <th scope="col">INTERNAL_MAX</th>
+                                        <th scope="col">INTERNAL_MIN</th>
+                                        <th scope="col">SESSIONAL_MAX</th>
+                                        <th scope="col">SESSIONAL_MIN</th>
+                                        <th scope="col">TOTAL_MAX</th>
+                                        <th scope="col">TOTAL_MIN</th>
+                                        <th scope="col">SUBJECT_PAPER_CODE</th> *@
+                                        <th scope="col">ISRW</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (data != null)
+                                    {
+                                        if (data.Count() > 0)
+                                        {
+
+                                            foreach (var item in data)
+                                            {
+
+                                                <tr style="font-size:13px;" data-pcode="@item.ORDINANCE_ID">
+                                                    <td>
+                                                        @item.SrNo
+
+                                                    </td>
+                                                    <td >
+                                                        @item.ORDINANCE_NAME
+
+                                                    </td>
+                                                    <td>
+                                                        @item.RESULT_TYPE_NAME
+
+                                                    </td>
+                                                    @* <td>
+                                                        @item.COURSE_NAME
+
+                                                    </td> *@
+                                                    <td>
+                                                        @item.PAPER_COUNT
+
+                                                    </td>
+                                                    <td>
+                                                        @item.IS_RW
+
+                                                    </td>
+                                                   @*  <td>
+                                                        @item.SUBJECT_COUNT
+
+                                                    </td>
+                                                    <td>
+                                                        @item.PAPER_COUNT
+
+                                                    </td>
+                                                    <td>
+                                                        @item.COMPULSORY_PAPER_COUNT
+
+                                                    </td>
+                                                    <td>
+                                                        @item.OPTIONAL_PAPER_COUNT
+
+                                                    </td>
+                                                   
+                                                    <td>
+                                                        @item.GRACE
+
+                                                    </td>
+                                                    <td>
+                                                        @item.RESULT_PASS_PERCENT
+
+                                                    </td>
+                                                    <td>
+                                                        @item.THEORY_MAX
+
+                                                    </td>
+                                                    <td>
+                                                        @item.THEORY_MIN
+
+                                                    </td>
+                                                    <td>
+                                                        @item.PRACTICAL_MAX
+
+                                                    </td>
+                                                    <td>
+                                                        @item.PRACTICAL_MIN
+
+                                                    </td>
+                                                    <td>
+                                                        @item.GRAND_MAX / @item.GRAND_MIN
+
+                                                    </td>
+                                                    <td>
+                                                        @item.FINAL_YEAR_SEM
+
+                                                    </td> *@
+                                                   @*  <td>
+                                                        @item.PROC_NAME
+
+                                                    </td> *@
+                                                </tr>
+
+                                            }
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer clearfix">
+
+                            @{
+                                var totalPages = (int)Math.Ceiling(Decimal.Divide(Model.PagingList.RecordCount, Model.PagingList.PageSize));
+                                var firstPage = 1;
+                                var lastPage = totalPages;
+                                var currentpage = Model.PagingList.PageCurrent;
+
+                                int maxPagesToShow = 5;
+                                int halfRange = maxPagesToShow / 2;
+
+                                if (totalPages <= maxPagesToShow)
+                                {
+                                    firstPage = 1;
+                                    lastPage = totalPages;
+                                }
+                                else
+                                {
+                                    if (currentpage <= halfRange)
+                                    {
+                                        firstPage = 1;
+                                        lastPage = maxPagesToShow;
+                                    }
+                                    else if (currentpage + halfRange >= totalPages)
+                                    {
+                                        firstPage = totalPages - (maxPagesToShow - 1);
+                                        lastPage = totalPages;
+                                    }
+                                    else
+                                    {
+                                        firstPage = currentpage - halfRange;
+                                        lastPage = currentpage + halfRange;
+                                    }
+                                }
+
+                            }
+                            <ul class="pagination pagination-sm m-0 float-right">
+                                @if (Model.PagingList.PageCurrent > 1)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" onclick="pagechange(1)">First</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" onclick="pagechange(@currentpage - 1)">« Prev</a>
+                                    </li>
+                                }
+
+                                <!-- Page Number Buttons (only 5 visible) -->
+                                @for (int i = firstPage; i <= lastPage; i++)
+                                {
+                                    <li class="page-item @(i == Model.PagingList.PageCurrent ? "active" : "")">
+                                        <a class="page-link" onclick="pagechange(@i)" >@i</a>
+                                    </li>
+                                }
+
+                                <!-- Next Button -->
+                                @if (Model.PagingList.PageCurrent < totalPages)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" onclick="pagechange(@currentpage + 1)">Next »</a>
+                                    </li>
+                                }
+                                @if (Model.PagingList.PageCurrent < totalPages)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" onclick="pagechange(@totalPages)">Last</a>
+                                    </li>
+                                }
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </section>
+
+</div>
+@section scripts {
+<script>
+    function pagechange(p) {
+        
+        $("#Page").val(p);
+        $("#formIndex").submit();
+    }
+
+        $('#papertable').on('click', 'tr', function () {
+        
+        var PAPER_CODE_PK = $(this).data('pcode');
+                    var paperediturl = '/admin/dashboard/editpapermaster?pcode=' + PAPER_CODE_PK;
+                window.open(paperediturl, '_self'); // Opens in a new tab
+        });
+
+</script>
+}

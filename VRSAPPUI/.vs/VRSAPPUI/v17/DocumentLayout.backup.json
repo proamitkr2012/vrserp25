@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VRSAGRAERP\\VRSAPPUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrsagraerp\\vrsappui\\areas\\admin\\views\\dashboard\\ordinance_apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\dashboard\\ordinance_apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A078405C-090E-445D-989C-8EC4677543C0}|..\\VRSREPO\\VRSREPO.csproj|d:\\vrsagraerp\\vrsrepo\\repository\\adminmasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrsagraerp\\vrsappui\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB296F64-8E33-456F-BA6D-DCDFFE3AD9AF}|..\\VRSMODEL\\VRSMODEL.csproj|d:\\vrsagraerp\\vrsmodel\\dto\\ordinance_apply_am_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrsagraerp\\vrsappui\\areas\\admin\\views\\shared\\_headeradmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\shared\\_headeradmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrsagraerp\\vrsappui\\areas\\admin\\views\\dashboard\\ordinance_details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\dashboard\\ordinance_details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrsagraerp\\vrsappui\\areas\\admin\\views\\shared\\_menuadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\shared\\_menuadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrsagraerp\\vrsappui\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminMasterRepository.cs",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSREPO\\Repository\\AdminMasterRepository.cs",
+              "RelativeDocumentMoniker": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSREPO\\Repository\\AdminMasterRepository.cs",
+              "RelativeToolTip": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs",
+              "ViewState": "AgIAABMDAAAAAAAAAAAswCMDAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T10:31:56.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAuwEgBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T11:43:59.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ORDINANCE_APPLY_AM_DTO.cs",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSMODEL\\DTO\\ORDINANCE_APPLY_AM_DTO.cs",
+              "RelativeDocumentMoniker": "..\\VRSMODEL\\DTO\\ORDINANCE_APPLY_AM_DTO.cs",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSMODEL\\DTO\\ORDINANCE_APPLY_AM_DTO.cs",
+              "RelativeToolTip": "..\\VRSMODEL\\DTO\\ORDINANCE_APPLY_AM_DTO.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswBcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T11:42:11.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_headerAdmin.cshtml",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Shared\\_headerAdmin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_headerAdmin.cshtml",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Shared\\_headerAdmin.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_headerAdmin.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T11:11:11.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T11:09:30.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ordinance_Apply.cshtml",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\Ordinance_Apply.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Ordinance_Apply.cshtml",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\Ordinance_Apply.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Ordinance_Apply.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAWwGQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T11:05:40.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ORDINANCE_DETAILS.cshtml",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\ORDINANCE_DETAILS.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\ORDINANCE_DETAILS.cshtml",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\ORDINANCE_DETAILS.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\ORDINANCE_DETAILS.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T11:04:37.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_menuAdmin.cshtml",
+              "DocumentMoniker": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "ToolTip": "D:\\VRSAGRAERP\\VRSAPPUI\\Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T10:33:46.454Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

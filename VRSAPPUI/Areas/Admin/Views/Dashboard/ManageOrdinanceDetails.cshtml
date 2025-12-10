@@ -1,0 +1,256 @@
+﻿@using System.Security.Claims
+@model VRSMODEL.DTO.MANAGE_ORDINANCE_DETAILS_AM_DTO
+@{
+    ViewData["Title"] = "ORDINANCE";
+    ViewData["ActiveMenu"] = "ordinance_details";
+    ViewData["ActiveGroup"] = "ordinance";
+}
+<div class="content-wrapper">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    @*  <h1 class="m-0">Manage Course Master </h1> *@
+                </div>
+                @* <div class="col-sm-6">
+                    <span class=" float-sm-right">
+                        <a href="/admin/dashboard/course_master" class="btn  btn-outline-warning">Back To List</a>
+                    </span>
+                </div> *@
+            </div>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Manage Ordinance Details</h3>
+                            <span class=" float-sm-right">
+                                <a href="/admin/dashboard/ordinance_details" class="btn  btn-outline-warning">Back To List</a>
+                            </span>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="inputORDINANCE_ID" class="col-sm-3 col-form-label">ORDINANCE NAME</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control select2" style="width: 100%;" id="ORDINANCE_ID">
+                                                <option value="">--Select Ordinance-- </option>
+                                                    @if (Model.ORDINANCE_LIST.Count() > 0)
+                                                    {
+                                                    foreach (var item in Model.ORDINANCE_LIST)
+                                                        {
+                                                            <option value="@item.ORDINANCE_ID">@item.ORDINANCE_NAME </option>
+                                                        }
+                                                    }
+                                                </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="labPAPER_CREDIT" class="col-sm-3 col-form-label">PAPER CREDIT</label>
+                                        <div class="col-sm-9">
+
+                                            <input type="number" min="0" class="form-control" placeholder="" id="PAPER_CREDIT" value="0">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card-body">
+
+                                    <div class="form-group row">
+
+                                        <label for="selectpaper_type" class="col-sm-3 col-form-label">PAPER TYPE</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" style="width: 100%;" id="selectpaper_type" onchange="Getchangeinpapertype()">
+                                                <option value="">--Select Paper Type-- </option>
+                                                @if (Model.PAPER_MASTER_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.PAPER_MASTER_LIST)
+                                                    {
+                                                        <option value="@item.PTYPE">@item.PAPER_TYPE_NAME </option>
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row ">
+                                        <label for="PAPER_TYPE_CAT" class="col-sm-3 col-form-label">PAPER CATEGORY</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" id="PAPER_TYPE_CAT" name="PAPER_TYPE_CAT">
+                                                <option value="">--Select--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-2 ">
+                            <div class="col-md-12 card card-primary p-3">
+                                <div class="row">
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>THEORY_MAX</label>
+                                            <input type="number" min="0" class="form-control" placeholder="" id="THEORY_MAX" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>THEORY_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="THEORY_MIN" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>THEORY_PASS_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="THEORY_PASS_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>INTERNAL_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="INTERNAL_MAX" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>INTERNAL_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="INTERNAL_MIN" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>INTERNAL_PASS_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="INTERNAL_PASS_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>SESSIONAL_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="SESSIONAL_MAX" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>SESSIONAL_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="SESSIONAL_MIN" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>SESSIONAL_PASS_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="SESSIONAL_PASS_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>PAPER_TOTAL_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="PAPER_TOTAL_MAX" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>PAPER_TOTAL_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="PAPER_TOTAL_MIN" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>PAPER_TOTAL_PASS_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="PAPER_TOTAL_PASS_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-2">
+                                        <div class="py-2"> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                            <input type="checkbox" id="THEORY_CHECK">
+                                            <label for="THEORY_CHECK">
+                                                THEORY_CHECK
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="py-2"> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                            <input type="checkbox" id="INTERNAL_CHECK">
+                                            <label for="INTERNAL_CHECK">
+                                                INTERNAL_CHECK
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="py-2"> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                            <input type="checkbox" id="SESSIONAL_CHECK">
+                                            <label for="SESSIONAL_CHECK">
+                                                SESSIONAL_CHECK
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="py-2"> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                            <input type="checkbox" id="PAPER_TOTAL_CHECK">
+                                            <label for="PAPER_TOTAL_CHECK">
+                                                PAPER_TOTAL_CHECK
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="card-footer">
+                            <a id="btnc" onclick="SubmitFormD()" class="btn btn-info">Save</a>
+                            <a class="btn btn-info" id="btnwaitc" style="display:none">
+                                <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Sending...
+                            </a>
+                            <a href="~/admin/dashboard/manageordinancedetails" class="btn btn-default float-right">Cancel</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+@* <script src="~/pageui/plugins/jquery/jquery.min.js"></script> *@
+<script src="~/js/AdminJs/OrdinanceDetails.js" asp-append-version="true"></script>

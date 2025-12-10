@@ -1,0 +1,240 @@
+﻿@using System.Security.Claims
+@model VRSMODEL.DTO.MANAGE_PAPER_MASTER_AM_DTO
+@{
+    ViewData["Title"] = "Paper";
+    ViewData["ActiveMenu"] = "paper_master";
+    var da = Model.PAPER_MASTER_AM;
+
+}
+<div class="content-wrapper">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    @*  <h1 class="m-0">Manage Course Master </h1> *@
+                </div>
+                @* <div class="col-sm-6">
+                    <span class=" float-sm-right">
+                        <a href="/admin/dashboard/course_master" class="btn  btn-outline-warning">Back To List</a>
+                    </span>
+                </div> *@
+            </div>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Manage Paper Master</h3>
+                            <span class=" float-sm-right">
+                                <a href="/admin/dashboard/paper_master" class="btn  btn-outline-warning">Back To List</a>
+                            </span>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="inputPAPER_CODE_PK" class="col-sm-3 col-form-label">PAPER CODE</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="PAPER_CODE_PK" placeholder="PAPER_CODE" style="text-transform:uppercase" value="@da.PAPER_CODE_PK">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputSUBJECT_NAME" class="col-sm-3 col-form-label">SUBJECT NAME</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="SUBJECT_NAME" placeholder="SUBJECT_NAME" value="@da.SUBJECT_NAME">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPAPER_NAME" class="col-sm-3 col-form-label">PAPER NAME</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="PAPER_NAME" placeholder="PAPER_NAME" value="@da.PAPER_NAME">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="selectPAPER_TYPE" class="col-sm-4 col-form-label">PAPER TYPE</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="selectpaper_type" onchange="Getchangeinpapertype()">
+                                                <option value="">--Select--</option>
+                                                @if (Model.PAPER_TYPE_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.PAPER_TYPE_LIST)
+                                                    {
+                                                        if (item.PTYPE == da.PAPER_TYPE)
+                                                        {
+                                                            <option value="@item.PTYPE" selected>@item.PAPER_TYPE_NAME </option>
+                                                        }
+                                                        else
+                                                        {
+                                                            <option value="@item.PTYPE">@item.PAPER_TYPE_NAME </option>
+                                                        }
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="selectyear" class="col-sm-4 col-form-label">PAPER TYPE SRNO</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="PAPER_TYPE_CAT" name="PAPER_TYPE_CAT">
+                                                <option value="">--Select--</option>
+                                                @if (Model.PAPERcatlist != null)
+                                                {
+                                                    foreach (var item in Model.PAPERcatlist)
+                                                    {
+                                                        if (item.PTYPE == da.PAPER_TYPE)
+                                                        {
+                                                            <option value="@item.PTYPE" selected>@item.PAPER_TYPE_NAME (@item.PTYPE)</option>
+                                                        }
+                                                        else
+                                                        {
+                                                            <option value="@item.PTYPE">@item.PAPER_TYPE_NAME (@item.PTYPE)</option>
+                                                        }
+                                                    }
+
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="selectSUBJECT_PAPER_CODE" class="col-sm-4 col-form-label">SUBJECT PAPER CODE</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="SUBJECT_PAPER_CODE" placeholder="SUBJECT_PAPER_CODE" value="@da.SUBJECT_PAPER_CODE">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-2 ">
+                            <div class="col-md-12 card card-primary p-3">
+                                <div class="row">
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>THEORY_MAX</label>
+                                            <input type="number" min="0" class="form-control" placeholder="" id="THEORY_MAX" value="@da.THEORY_MAX">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>THEORY_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="THEORY_MIN" value="@da.THEORY_MIN" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>INTERNAL_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="INTERNAL_MAX" value="@da.INTERNAL_MAX" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>INTERNAL_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="INTERNAL_MIN" value="@da.INTERNAL_MIN" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>SESSIONAL_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="SESSIONAL_MAX" value="@da.SESSIONAL_MAX" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>SESSIONAL_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="SESSIONAL_MIN" value="@da.SESSIONAL_MIN" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>TOTAL_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="TOTAL_MAX" value="@da.TOTAL_MAX" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>TOTAL_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="TOTAL_MIN" value="@da.TOTAL_MIN" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>CREDIT</label>
+                                            <input type="number" class="form-control" placeholder="" id="CREDIT" value="@da.CREDIT">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>PAPER_SERIAL_NO</label>
+                                            <input type="number" class="form-control" placeholder="" id="PAPER_SERIAL_NO" value="@da.PAPER_SERIAL_NO">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                            @if (da.IS_QUALIFIYING == 1)
+                                            {
+                                                <input type="checkbox" id="IS_QUALIFIYING" checked>
+
+                                            }
+                                            else
+                                            {
+                                                <input type="checkbox" id="IS_QUALIFIYING">
+                                            }
+
+                                            <label for="IS_QUALIFIYING">
+                                                IS_QUALIFIYING
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>  <div class="card-footer">
+                            <a id="btnc" onclick="SubmitFormE()" class="btn btn-info">Update</a>
+                            <a class="btn btn-info" id="btnwaitc" style="display:none">
+                                <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> wait...
+                            </a>
+                            <a href="~/admin/dashboard/editpapermaster?pcode=@da.PAPER_CODE_PK" class="btn btn-default float-right">Cancel</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+@* <script src="~/pageui/plugins/jquery/jquery.min.js"></script> *@
+<script src="~/js/AdminJs/PaperMaster.js" asp-append-version="true"></script>

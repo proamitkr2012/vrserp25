@@ -1,0 +1,334 @@
+﻿@using System.Security.Claims
+@model VRSMODEL.DTO.MANAGE_ORDINANCE_MASTER_AM_DTO
+@{
+    ViewData["Title"] = "ORDINANCE";
+    ViewData["ActiveMenu"] = "ordinance_master";
+    ViewData["ActiveGroup"] = "ordinance";
+}
+<div class="content-wrapper">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    @*  <h1 class="m-0">Manage Course Master </h1> *@
+                </div>
+                @* <div class="col-sm-6">
+                    <span class=" float-sm-right">
+                        <a href="/admin/dashboard/course_master" class="btn  btn-outline-warning">Back To List</a>
+                    </span>
+                </div> *@
+            </div>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Manage Ordinance Master</h3>
+                            <span class=" float-sm-right">
+                                <a href="/admin/dashboard/ordinance_master" class="btn  btn-outline-warning">Back To List</a>
+                            </span>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="inputORDINANCE_NAME" class="col-sm-3 col-form-label">ORDINANCE NAME</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="ORDINANCE_NAME" placeholder="ORDINANCE_NAME" style="text-transform:uppercase">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @* <div class="form-group row">
+
+                                        <label for="selectRESULT_TYPE" class="col-sm-3 col-form-label">RESULT TYPE</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control " style="width: 100%;" id="RESULT_TYPE_ID">
+                                                <option value="">--Select Result type-- </option>
+                                                @if (Model.RESULT_TYPE_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.RESULT_TYPE_LIST)
+                                                    {
+                                                        <option value="@item.RESULT_TYPE_ID">@item.RESULT_TYPE </option>
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+
+                                    </div> *@
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <div class="form-group row ">
+                                        <label for="selectRESULT_TYPE" class="col-sm-3 col-form-label">RESULT TYPE</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control " style="width: 100%;" id="RESULT_TYPE_ID">
+                                                <option value="">--Select Result type-- </option>
+                                                @if (Model.RESULT_TYPE_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.RESULT_TYPE_LIST)
+                                                    {
+                                                        <option value="@item.RESULT_TYPE_ID">@item.RESULT_TYPE </option>
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                   @*  <div class="form-group row py-1">
+                                        <label for="inputPAPER_NAME" class="col-sm-3 col-form-label">COURSE</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control select2" style="width: 100%;" id="COURSE_ID">
+                                                <option value="">--Select Course type-- </option>
+                                                @if (Model.COURSE_FILTER_LIST.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.COURSE_FILTER_LIST)
+                                                    {
+                                                        <option value="@item.COURSE_ID">@item.COURSE_NAME </option>
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+                                    </div> *@
+
+                                </div>
+                            </div>
+                        </div>
+                     @*    <div class="col-md-12">
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <label for="inputPROC_NAME" class="col-sm-1 col-form-label">PROC NAME</label>
+                                    <div class="col-sm-11">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="PROC_NAME" placeholder="PROC_NAME" style="text-transform:uppercase">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> *@
+                        <div class="m-2 ">
+                            <div class="col-md-12 card card-primary p-3">
+                                <div class="row">
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>SUBJECT COUNT</label>
+                                            <input type="number" min="0" class="form-control" placeholder="" id="SUBJECT_COUNT" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>PAPER_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="PAPER_COUNT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>OPTIONAL_PAPER_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="OPTIONAL_PAPER_COUNT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>GRACE</label>
+                                            <input type="number" class="form-control" placeholder="" id="GRACE" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>RESULT_PASS_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="RESULT_PASS_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>SEM CREDIT</label>
+                                            <input type="number" class="form-control" placeholder="" id="c" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>TOTAL CREDIT</label>
+                                            <input type="number" class="form-control" placeholder="" id="TOTALCREDIT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>TOTAL_MAJOR_CR</label>
+                                            <input type="number" class="form-control" placeholder="" id="TOTAL_MAJOR_CR" value="0" min="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ">
+                                <div class="col-md-12 card card-primary p-3">
+                                    <div class="row">
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>THEORY_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="THEORY_MAX" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>THEORY_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="THEORY_MIN" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>PRACTICAL_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="PRACTICAL_MAX" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>PRACTICAL_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="PRACTICAL_MIN" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>GRAND_MAX</label>
+                                            <input type="number" class="form-control" placeholder="" id="GRAND_MAX" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>GRAND_MIN</label>
+                                            <input type="number" class="form-control" placeholder="" id="[GRAND_MIN]" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>FAIL_PAPER_FOR_BACK</label>
+                                            <input type="number" class="form-control" placeholder="" id="FAIL_PAPER_FOR_BACK" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>AGG_MARKS_PAPER_FOR_BACK</label>
+                                            <input type="number" class="form-control" placeholder="" id="AGG_MARKS_PAPER_FOR_BACK" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="py-2"> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                                <input type="checkbox" id="IS_RW">
+                                                <label for="IS_RW">
+                                                IS_RW
+                                            </label>
+                                        </div>
+                                    </div>
+                                        
+                                        <div class="col-sm-2">
+                                            <div class="py-2"> &nbsp;</div>
+                                            <div class="icheck-success d-inline">
+
+                                                <input type="checkbox" id="FINAL_YEAR_SEM" onclick="OnFINAL_YEAR_SEMCheck()">
+                                                <label for="FINAL_YEAR_SEM">
+                                                    FINAL_YEAR_SEM
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 card card-primary p-3" id="FINAL_YEAR_SEM_DIV_DETAILS" style="display:none">
+                                <div class="row">
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>I_DIV_MAX_CGPA_PERCENT</label>
+                                            <input type="number" min="0" class="form-control" placeholder="" id="I_DIV_MAX_CGPA_PERCENT" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>I_DIV_MIN_CGPA_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="I_DIV_MIN_CGPA_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>II_DIV_MAX_CGPA_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="II_DIV_MAX_CGPA_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>II_DIV_MIN_CGPA_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="II_DIV_MIN_CGPA_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>III_DIV_MAX_CGPA_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="III_DIV_MAX_CGPA_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>III_DIV_MIN_CGPA_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="III_DIV_MIN_CGPA_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <div class="card-footer">
+                            <a id="btnc" onclick="SubmitFormO()" class="btn btn-info">Save</a>
+                            <a class="btn btn-info" id="btnwaitc" style="display:none">
+                                <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Sending...
+                            </a>
+                            <a href="~/admin/dashboard/manageordinancemaster" class="btn btn-default float-right">Cancel</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+@* <script src="~/pageui/plugins/jquery/jquery.min.js"></script> *@
+<script src="~/js/AdminJs/OrdinanceMaster.js" asp-append-version="true"></script>
