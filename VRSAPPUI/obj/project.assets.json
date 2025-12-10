@@ -8612,11 +8612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VRSAGRAERP\\VRSAPPUI\\VRSAPPUI.csproj",
+      "projectUniqueName": "D:\\vrs\\vrserp25\\VRSAPPUI\\VRSAPPUI.csproj",
       "projectName": "VRSAPPUI",
-      "projectPath": "D:\\VRSAGRAERP\\VRSAPPUI\\VRSAPPUI.csproj",
+      "projectPath": "D:\\vrs\\vrserp25\\VRSAPPUI\\VRSAPPUI.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\VRSAGRAERP\\VRSAPPUI\\obj\\",
+      "outputPath": "D:\\vrs\\vrserp25\\VRSAPPUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8637,14 +8637,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\VRSAGRAERP\\VRSDATA\\VRSDATA.csproj": {
-              "projectPath": "D:\\VRSAGRAERP\\VRSDATA\\VRSDATA.csproj"
+            "D:\\vrs\\vrserp25\\VRSDATA\\VRSDATA.csproj": {
+              "projectPath": "D:\\vrs\\vrserp25\\VRSDATA\\VRSDATA.csproj"
             },
-            "D:\\VRSAGRAERP\\VRSMODEL\\VRSMODEL.csproj": {
-              "projectPath": "D:\\VRSAGRAERP\\VRSMODEL\\VRSMODEL.csproj"
+            "D:\\vrs\\vrserp25\\VRSMODEL\\VRSMODEL.csproj": {
+              "projectPath": "D:\\vrs\\vrserp25\\VRSMODEL\\VRSMODEL.csproj"
             },
-            "D:\\VRSAGRAERP\\VRSREPO\\VRSREPO.csproj": {
-              "projectPath": "D:\\VRSAGRAERP\\VRSREPO\\VRSREPO.csproj"
+            "D:\\vrs\\vrserp25\\VRSREPO\\VRSREPO.csproj": {
+              "projectPath": "D:\\vrs\\vrserp25\\VRSREPO\\VRSREPO.csproj"
             }
           }
         }

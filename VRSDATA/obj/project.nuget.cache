@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IJ0Ia0tkLY8=",
+  "dgSpecHash": "B2Om8+MWnBo=",
   "success": true,
-  "projectFilePath": "D:\\VRSAGRAERP\\VRSDATA\\VRSDATA.csproj",
+  "projectFilePath": "D:\\vrs\\vrserp25\\VRSDATA\\VRSDATA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.9\\microsoft.entityframeworkcore.9.0.9.nupkg.sha512",

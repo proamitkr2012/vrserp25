@@ -782,11 +782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VRSAGRAERP\\VRSDATA\\VRSDATA.csproj",
+      "projectUniqueName": "D:\\vrs\\vrserp25\\VRSDATA\\VRSDATA.csproj",
       "projectName": "VRSDATA",
-      "projectPath": "D:\\VRSAGRAERP\\VRSDATA\\VRSDATA.csproj",
+      "projectPath": "D:\\vrs\\vrserp25\\VRSDATA\\VRSDATA.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\VRSAGRAERP\\VRSDATA\\obj\\",
+      "outputPath": "D:\\vrs\\vrserp25\\VRSDATA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
