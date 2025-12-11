@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\vrs\\vrserp25\\VRSAPPUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A078405C-090E-445D-989C-8EC4677543C0}|..\\VRSREPO\\VRSREPO.csproj|d:\\vrs\\vrserp25\\vrsrepo\\repository\\adminmasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\views\\dashboard\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\dashboard\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\views\\dashboard\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\dashboard\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A078405C-090E-445D-989C-8EC4677543C0}|..\\VRSREPO\\VRSREPO.csproj|d:\\vrs\\vrserp25\\vrsrepo\\repository\\adminmasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,7 +45,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AdminMasterRepository.cs",
               "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSREPO\\Repository\\AdminMasterRepository.cs",
               "RelativeDocumentMoniker": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs",
@@ -77,20 +77,20 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashboardController.cs",
               "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAIICAAAAAAAAAAAvwJcCAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAJMCAAAAAAAAAADgv7UCAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T10:00:11.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StudentList.cshtml",
               "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\StudentList.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\StudentList.cshtml",
               "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\StudentList.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\StudentList.cshtml",
-              "ViewState": "AgIAAOUBAAAAAAAAAADgv5kBAAC4AAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAADgv/8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-10T09:36:03.835Z",
               "EditorCaption": ""

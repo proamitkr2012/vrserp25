@@ -11,3 +11,16 @@ D:\VRSAGRAERP\VRSDATA\obj\Release\net8.0\VRSDATA.dll
 D:\VRSAGRAERP\VRSDATA\obj\Release\net8.0\refint\VRSDATA.dll
 D:\VRSAGRAERP\VRSDATA\obj\Release\net8.0\VRSDATA.pdb
 D:\VRSAGRAERP\VRSDATA\obj\Release\net8.0\ref\VRSDATA.dll
+D:\vrs\vrserp25\VRSDATA\bin\Release\net8.0\VRSDATA.deps.json
+D:\vrs\vrserp25\VRSDATA\bin\Release\net8.0\VRSDATA.dll
+D:\vrs\vrserp25\VRSDATA\bin\Release\net8.0\VRSDATA.pdb
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.csproj.AssemblyReference.cache
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.AssemblyInfoInputs.cache
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.AssemblyInfo.cs
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.csproj.CoreCompileInputs.cache
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.sourcelink.json
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.dll
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\refint\VRSDATA.dll
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\VRSDATA.pdb
+D:\vrs\vrserp25\VRSDATA\obj\Release\net8.0\ref\VRSDATA.dll
