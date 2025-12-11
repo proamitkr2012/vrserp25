@@ -605,3 +605,4 @@ D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\refint\VRSAPPUI.dll
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.pdb
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.genruntimeconfig.cache
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\ref\VRSAPPUI.dll
+D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

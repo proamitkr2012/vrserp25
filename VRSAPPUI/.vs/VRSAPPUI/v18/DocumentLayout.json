@@ -25,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -40,10 +40,6 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AdminMasterRepository.cs",
@@ -53,8 +49,7 @@
               "RelativeToolTip": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs",
               "ViewState": "AgIAAMUFAAAAAAAAAAAowOEFAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T10:55:05.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T10:55:05.195Z"
             },
             {
               "$type": "Document",
@@ -66,8 +61,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAHUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-10T10:01:48.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T10:01:48.63Z"
             },
             {
               "$type": "Document",
@@ -79,8 +73,7 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAJMCAAAAAAAAAADgv7UCAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T10:00:11.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T10:00:11.641Z"
             },
             {
               "$type": "Document",
@@ -90,7 +83,7 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\StudentList.cshtml",
               "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\StudentList.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\StudentList.cshtml",
-              "ViewState": "AgIAAPMAAAAAAAAAAADgv/8AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAADgvwYBAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-10T09:36:03.835Z",
               "EditorCaption": ""

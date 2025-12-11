@@ -82,7 +82,7 @@
 
                                             <label for="inputPAPER_NAME" class="col-sm-3 col-form-label">COURSE</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control select2" style="width: 100%;" id="COURSE_ID" name="COURSE_ID">
+                                                <select class="form-control select2" style="width: 100%;" id="COURSE_ID" name="COURSE_ID" onchange="sessionchange()">
                                                     <option value="">--Select Course-- </option>
                                                     @if (Model.COURSE_FILTER_LIST.Count() > 0)
                                                     {
