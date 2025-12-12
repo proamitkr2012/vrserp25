@@ -231,7 +231,7 @@
                                                    @*  <td>
                                                         @i
                                                     </td> *@
-                                                    <td>@item.ROLL_NO / @item.ENROLLMENT_NO</td>
+                                                        <td>@item.ROLL_NO <br /> @item.ENROLLMENT_NO</td>
                                                     <td>@item.CourseType</td>
 
                                                     <td>@item.NAME</td>
@@ -265,14 +265,14 @@
                                                             </span>
                                                         }
                                                     </td>
-                                                    <td>
+                                                    <td >
                                                         @if (item.IsLive == true)
                                                         {
                                                             <span>Live</span>
                                                         }
                                                         else
                                                         {
-                                                            <span>Not Live</span>
+                                                            <span>Not_Live</span>
                                                         }
 
                                                     </td>
