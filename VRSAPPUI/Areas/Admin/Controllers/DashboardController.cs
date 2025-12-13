@@ -715,5 +715,43 @@ namespace VRSAPPUI.Areas.Admin.Controllers
             }
             return Json("0");
         }
+
+        public async Task<IActionResult> Sync_Mark_Result_Demo_Erp(string Search = null, int COURSE_ID = 0, string SESSIONNAME = "")
+        {
+            try
+            {
+                MANAGE_STUDENT_DEMO_TO_ERP_DTO data = new MANAGE_STUDENT_DEMO_TO_ERP_DTO();
+                data = await UOF.IAdminMaster.Sync_Mark_Result_Demo_Erp ("", (int)CurrentUser.UserId, Search, COURSE_ID, SESSIONNAME);
+                ViewBag.Search = Search;
+                ViewBag.COURSE_ID = COURSE_ID;
+                ViewBag.SESSIONNAME = SESSIONNAME;
+                return View(data);
+            }
+            catch (Exception e)
+            {
+                Log.Information("ORDINANCE page erp demo!" + e);
+            }
+            return View();
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> MappingDemoToErp([FromForm] ORDINANCE_STUDENT_DTO model)
+        {
+            try
+            {
+
+                FormResponse data = new FormResponse();                
+
+                data = await UOF.IAdminMaster.MappingDemoToErp("", model, CurrentUser.UserId);
+
+                return Json(data);
+            }
+            catch (Exception e)
+            {
+
+            }
+            return Json("0");
+        }
+        
     }
 }

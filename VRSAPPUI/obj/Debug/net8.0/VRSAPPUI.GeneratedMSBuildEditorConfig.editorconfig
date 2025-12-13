@@ -110,6 +110,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXFN0dWRlbnRMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Dashboard/Sync_Mark_Result_Demo_Erp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXFN5bmNfTWFya19SZXN1bHRfRGVtb19FcnAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Shared/_EditCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9FZGl0Q291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

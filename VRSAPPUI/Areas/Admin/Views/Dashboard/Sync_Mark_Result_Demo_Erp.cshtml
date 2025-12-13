@@ -1,0 +1,217 @@
+﻿@using System.Security.Claims
+@model VRSMODEL.DTO.MANAGE_STUDENT_DEMO_TO_ERP_DTO
+@{
+    ViewData["Title"] = "sync_mark_result_demo_erp";
+    ViewData["ActiveMenu"] = "sync_mark_result_demo_erp"; ViewData["ActiveGroup"] = "CourseMenu";
+}
+<style>
+
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border-radius: 6px;
+        margin-top: 6px;
+        padding: 10px;
+        z-index: 10;
+        max-height: 450px;
+        overflow-y: auto;
+        display: none;
+    }
+
+        .dropdown-menu label {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+    .dropdown-item:hover {
+        background: #3498db !important;
+        width: 100%;
+    }
+
+    .dropdown-item {
+        transition: transform 0.15s ease, background 0.2s;
+    }
+
+        .dropdown-item:hover {
+            background: #3498db;
+            transform:  scale(1.03);
+        }
+</style>
+<div class="content-wrapper">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    @*  <h1 class="m-0">Manage Course Master </h1> *@
+                </div>
+                @* <div class="col-sm-6">
+                    <span class=" float-sm-right">
+                        <a href="/admin/dashboard/course_master" class="btn  btn-outline-warning">Back To List</a>
+                    </span>
+                </div> *@
+            </div>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <form id="formIndex" title="" method="post">
+                    <div class="col-md-12">
+                        <div class="card card-info">
+                            <div class="card-header">
+                                <h3 class="card-title">DEMO TO ERP Mapping</h3>
+                                <span class=" float-sm-right">
+                                    <a href="/admin/dashboard/sync_mark_result_demo_erp" class="btn  btn-outline-warning">Back To List</a>
+                                </span>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+
+                                            <label for="inputPAPER_NAME" class="col-sm-3 col-form-label">COURSE</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control select2" style="width: 100%;" id="COURSE_ID" name="COURSE_ID" onchange="sessionchange()">
+                                                    <option value="">--Select Course-- </option>
+                                                    @if (Model.COURSE_FILTER_LIST.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.COURSE_FILTER_LIST)
+                                                        {
+                                                            if (item.COURSE_ID == ViewBag.COURSE_ID)
+                                                            {
+                                                                <option value="@item.COURSE_ID" selected>@item.COURSE_NAME </option>
+                                                            }
+                                                            else
+                                                            {
+                                                                <option value="@item.COURSE_ID">@item.COURSE_NAME </option>
+                                                            }
+                                                        }
+                                                    }
+                                                </select>
+
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row ">
+                                            <label for="inputPEXAMTPYEID" class="col-sm-3 col-form-label">EXAM TYPE</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control " style="width: 100%;" id="EXAMTPYENAME">
+                                                    <option value="">--Select Exam type-- </option>
+                                                    @if (Model.EXAM_LIST.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.EXAM_LIST)
+                                                        {
+                                                            <option value="@item.EXAM_TYPE">@item.EXAM_TYPE </option>
+                                                        }
+                                                    }
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <div class="form-group row ">
+                                            <label for="selectSESSIONNAME" class="col-sm-3 col-form-label">SESSIONS</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control " style="width: 100%;" id="SESSIONNAME" name="SESSIONNAME" onchange="sessionchange()">
+                                                    <option value="">--Select Session-- </option>
+                                                    @if (Model.SESSION_LIST.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.SESSION_LIST)
+                                                        {
+                                                            if (item.SESSIONS == ViewBag.SESSIONNAME)
+                                                            {
+                                                                <option value="@item.SESSIONS" selected>@item.SESSIONS </option>
+                                                            }
+                                                            else
+                                                            {
+                                                                <option value="@item.SESSIONS">@item.SESSIONS </option>
+                                                            }
+                                                        }
+                                                    }
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row ">
+                                            <label for="selectHELD_IN" class="col-sm-3 col-form-label">HELD IN</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control " style="width: 100%;" id="HELD_IN" name="HELD_IN">
+                                                    <option value="">--Select Held in-- </option>
+                                                    @if (Model.HeldinList.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.HeldinList)
+                                                        {
+                                                            <option value="@item.HELD_IN">@item.HELD_IN </option>
+                                                        }
+                                                    }
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label for="inputRoll" class="col-sm-1 col-form-label">ROLL NO</label>
+                                            <div class="col-sm-11 px-5">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="ROLL_NOS" placeholder="1234..,2123,.....,..">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a id="btnc" onclick="SubmitFormDE()" class="btn btn-info">Apply</a>
+                                <a class="btn btn-info" id="btnwaitc" style="display:none">
+                                    <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> wait...
+                                </a>
+                                <a href="~/admin/dashboard/sync_mark_result_demo_erp" class="btn btn-default float-right">Cancel</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+@* <script src="~/pageui/plugins/jquery/jquery.min.js"></script> *@
+<script src="~/js/AdminJs/StudentDemoToERP_Mapping.js" asp-append-version="true"></script>
+<script>
+    function sessionchange() {
+
+        $("#formIndex").submit();
+    }
+</script>
+
+

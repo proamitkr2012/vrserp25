@@ -62,4 +62,14 @@ namespace VRSMODEL.DTO
         public List<STUDENT_RESULT_AMDTO> ResultList { get; set; }
         public List<CSP_MASTER_AMDTO> CSPList { get; set; }
     }
+
+
+    public class MANAGE_STUDENT_DEMO_TO_ERP_DTO
+    {
+        public List<EXAM_TYPE_MASTER_DTO> EXAM_LIST { get; set; }
+        public List<COURSE_FILTER_DTO> COURSE_FILTER_LIST { get; set; }
+        public List<SESSION_MASTER_DTO> SESSION_LIST { get; set; }
+        public List<HeldinDTO> HeldinList { get; set; }
+
+    }
 }

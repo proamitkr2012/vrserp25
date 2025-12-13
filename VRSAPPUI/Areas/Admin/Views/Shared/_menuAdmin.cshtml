@@ -41,7 +41,7 @@
 
                 <li class="nav-header">Menu</li>
                 <li class="nav-item">
-                    <a href="/admin/dashboard" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("dashboard") ? "selectedmenu" : "")">
+                    <a href="/admin/dashboard"  class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("dashboard") ? "selectedmenu" : "")">
                         <i class="nav-icon fa fa-home text-warning"></i>
                         <p>Dashboard</p>
                     </a>
@@ -128,6 +128,12 @@
                                 <a href="/admin/dashboard/studentlist" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("studentlist") ? "selectedmenu" : "")">
                                     <i class="nav-icon far fa-circle text-yellow"></i>
                                     <p class="text">STUDENT RULE</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/admin/dashboard/sync_mark_result_demo_erp" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("sync_mark_result_demo_erp") ? "selectedmenu" : "")">
+                                    <i class="nav-icon fas fa-code-branch text-warning"></i>
+                                    <p class="text">SYNC <span class="px-4">MARK_RESULT_DEMO_ERP</span></p>
                                 </a>
                             </li>
                         </ul>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VRSAPPUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21fc1da11e5d0596d887ddc7ee8de7d5cb3b6e7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a32a83fca31ed48a6aa8c68956d7acea15cb0c6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("VRSAPPUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VRSAPPUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

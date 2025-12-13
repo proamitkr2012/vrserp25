@@ -1603,7 +1603,78 @@ namespace VRSREPO
             }
             return list;
         }
+        public async Task<MANAGE_STUDENT_DEMO_TO_ERP_DTO> Sync_Mark_Result_Demo_Erp(string flag, int UserId = 0, string Search = null, int COURSE_ID = 0, string SESSIONNAME = "")
+        {
+            MANAGE_STUDENT_DEMO_TO_ERP_DTO d = new();
+            await using var con = new SqlConnection(_connectionStringResultDemo);
+            con.Open();
+            try
+            {
+                var paramList = new
+                {
+                    Flag = flag,
+                    Search = Search,
+                    UserId = UserId,
+                    COURSE_ID = COURSE_ID,
+                    SESSIONNAME = SESSIONNAME
+                };
 
+                var multi = await con.QueryMultipleAsync("Get_Sync_Mark_Result_Demo_Erp_DTO_AM", paramList, commandTimeout: 0,
+                  commandType: CommandType.StoredProcedure);
+
+                var lst1 = await multi.ReadAsync<COURSE_FILTER_DTO>();
+                var lst2 = await multi.ReadAsync<SESSION_MASTER_DTO>();
+                var lst4 = await multi.ReadAsync<EXAM_TYPE_MASTER_DTO>();
+                var lst5 = await multi.ReadAsync<HeldinDTO>();
+
+                d.COURSE_FILTER_LIST = lst1.ToList();
+                d.SESSION_LIST = lst2.ToList();
+                d.EXAM_LIST = lst4.ToList();
+                d.HeldinList = lst5.ToList();
+
+            }
+            catch (Exception e)
+            {
+                //
+            }
+            finally
+            {
+                con.Close();
+            }
+            return d;
+        }
+        public async Task<FormResponse> MappingDemoToErp(string Flag, ORDINANCE_STUDENT_DTO model, long AdminID)
+        {
+            FormResponse list = new();
+            await using var con = new SqlConnection(_connectionStringResultDemo);
+            con.Open();
+            try
+            {
+                var paramList = new
+                {
+                    //Flag = Flag,
+                    COURSE_ID = model.COURSE_ID,
+                    SESSION = model.SESSIONNAME,
+                    EXAMTPYENAME = model.EXAMTPYENAME,
+                    ROLL_NO = model.ROLL_NOS,
+                    HELD_IN = model.HELD_IN,
+                    //AdminID = AdminID
+                };
+                var d = await con.QueryAsync<FormResponse>("USP_SYNC_MARKS_RESULT_DEMO_ERP", paramList,
+                    commandType: CommandType.StoredProcedure);
+                list = d.ToList()[0];
+            }
+            catch (Exception ex)
+            {
+                // ignored
+            }
+            finally
+            {
+                con.Close();
+            }
+            return list;
+        }
+        
     }
 
 }

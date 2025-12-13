@@ -614,6 +614,7 @@ wwwroot\js\AdminJs\OrdinanceMapping.js
 wwwroot\js\AdminJs\OrdinanceMaster.js
 wwwroot\js\AdminJs\OrdinanceStudentMapping.js
 wwwroot\js\AdminJs\PaperMaster.js
+wwwroot\js\AdminJs\StudentDemoToERP_Mapping.js
 wwwroot\js\adminnewentry.js
 wwwroot\js\jquery-captcha.js
 wwwroot\js\jquery-captcha.min.js

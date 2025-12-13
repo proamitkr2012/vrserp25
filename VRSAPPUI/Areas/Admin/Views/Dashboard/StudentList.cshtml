@@ -1,7 +1,9 @@
 ﻿@using VRSMODEL
 @model VRSMODEL.DTO.StudentList_Admin
 @{
-    var stud = Model.StudentList;
+    var stud = Model.StudentList; 
+    ViewData["Title"] = "STUDENT";
+    ViewData["ActiveMenu"] = "studentlist"; ViewData["ActiveGroup"] = "CourseMenu";
 }
 
 <style>

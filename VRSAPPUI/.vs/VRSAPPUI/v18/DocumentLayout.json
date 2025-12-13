@@ -1,7 +1,27 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\vrs\\vrserp25\\VRSAPPUI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A078405C-090E-445D-989C-8EC4677543C0}|..\\VRSREPO\\VRSREPO.csproj|d:\\vrs\\vrserp25\\vrsrepo\\repository\\adminmasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\wwwroot\\js\\adminjs\\studentdemotoerp_mapping.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:wwwroot\\js\\adminjs\\studentdemotoerp_mapping.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\views\\shared\\_menuadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\shared\\_menuadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\views\\dashboard\\sync_mark_result_demo_erp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\dashboard\\sync_mark_result_demo_erp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +42,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Controllers\\DashboardController.cs*",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\DashboardController.cs*",
+              "ViewState": "AgIAAM4CAAAAAAAAAAAzwOECAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:47:48.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentDemoToERP_Mapping.js",
+              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\wwwroot\\js\\AdminJs\\StudentDemoToERP_Mapping.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\AdminJs\\StudentDemoToERP_Mapping.js",
+              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\wwwroot\\js\\AdminJs\\StudentDemoToERP_Mapping.js",
+              "RelativeToolTip": "wwwroot\\js\\AdminJs\\StudentDemoToERP_Mapping.js",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwEUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-13T07:31:12.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_menuAdmin.cshtml",
+              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_menuAdmin.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAADwvysAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-13T07:09:04.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sync_Mark_Result_Demo_Erp.cshtml",
+              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\Sync_Mark_Result_Demo_Erp.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Sync_Mark_Result_Demo_Erp.cshtml",
+              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\Sync_Mark_Result_Demo_Erp.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Sync_Mark_Result_Demo_Erp.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAALwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-13T06:53:57.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminMasterRepository.cs",
+              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSREPO\\Repository\\AdminMasterRepository.cs",
+              "RelativeDocumentMoniker": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs",
+              "ToolTip": "D:\\vrs\\vrserp25\\VRSREPO\\Repository\\AdminMasterRepository.cs*",
+              "RelativeToolTip": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs*",
+              "ViewState": "AgIAAGkGAAAAAAAAAAAuwHkGAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T06:42:15.141Z",
+              "EditorCaption": ""
             }
           ]
         }
