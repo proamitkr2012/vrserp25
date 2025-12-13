@@ -305,8 +305,8 @@ D:\VRSAGRAERP\VRSAPPUI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\App.config
 D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\appsettings.Development.json
 D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\appsettings.json
-D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\VRSAPPUI.staticwebassets.endpoints.json
 D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\VRSAPPUI.staticwebassets.runtime.json
+D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\VRSAPPUI.staticwebassets.endpoints.json
 D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\VRSAPPUI.exe
 D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\VRSAPPUI.dll.config
 D:\vrs\vrserp25\VRSAPPUI\bin\Debug\net8.0\VRSAPPUI.deps.json
@@ -605,4 +605,3 @@ D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\refint\VRSAPPUI.dll
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.pdb
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.genruntimeconfig.cache
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\ref\VRSAPPUI.dll
-D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
