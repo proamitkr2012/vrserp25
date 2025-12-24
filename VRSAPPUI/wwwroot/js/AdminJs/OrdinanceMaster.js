@@ -8,6 +8,25 @@
     }
    
 }
+function GRACE_DETAILS_CHECK() {
+    
+    var checkBox = document.getElementById("ALLOW_GRACE");
+    var text = document.getElementById("GRACE_DETAILS");
+    if (checkBox.checked == true) {
+        text.style.display = "block";
+       
+    } else {
+        text.style.display = "none";
+
+        $('#EXAM_TYPE_ID').val('').trigger('change');
+       
+        $('#GRACE').val("0");
+        $('#GRACE_IF_PASSED_AGG').prop('checked', false);
+    }
+
+
+}
+
 function toTitleCase(str) {
     if (!str) return str;
     // normalize to lowercase first so "hELLo" -> "Hello"
@@ -60,23 +79,23 @@ function SubmitFormO() {
     //else {
     //    $('#select2-COURSE_ID-container').closest('.select2-selection--single').removeClass("input-validation-error");
     //}
-    if ($.trim($("#SUBJECT_COUNT").val()) == "") {
-        $('#SUBJECT_COUNT').addClass("input-validation-error");
+    //if ($.trim($("#SUBJECT_COUNT").val()) == "0" || $.trim($("#SUBJECT_COUNT").val()) == "") {
+    //    $('#SUBJECT_COUNT').addClass("input-validation-error");
+
+    //    flag = false;
+    //}
+    //else {
+    //    $('#SUBJECT_COUNT').removeClass("input-validation-error");
+    //}
+    if ($.trim($("#COMPULSORY_PAPER_COUNT").val()) == "0" || $.trim($("#COMPULSORY_PAPER_COUNT").val()) == "") {
+        $('#COMPULSORY_PAPER_COUNT').addClass("input-validation-error");
 
         flag = false;
     }
     else {
-        $('#SUBJECT_COUNT').removeClass("input-validation-error");
+        $('#COMPULSORY_PAPER_COUNT').removeClass("input-validation-error");
     }
-    if ($.trim($("#PAPER_COUNT").val()) == "") {
-        $('#PAPER_COUNT').addClass("input-validation-error");
-
-        flag = false;
-    }
-    else {
-        $('#PAPER_COUNT').removeClass("input-validation-error");
-    }
-    if ($.trim($("#THEORY_MAX").val()) == "") {
+    if ($.trim($("#THEORY_MAX").val()) == "0" || $.trim($("#THEORY_MAX").val()) == "") {
         $('#THEORY_MAX').addClass("input-validation-error");
 
         flag = false;
@@ -84,7 +103,7 @@ function SubmitFormO() {
     else {
         $('#THEORY_MAX').removeClass("input-validation-error");
     }
-    if ($.trim($("#THEORY_MIN").val()) == "") {
+    if ($.trim($("#THEORY_MIN").val()) == "0" || $.trim($("#THEORY_MIN").val()) == "") {
         $('#THEORY_MIN').addClass("input-validation-error");
 
         flag = false;
@@ -105,14 +124,37 @@ function SubmitFormO() {
             formData.append("PAPER_COUNT", $("#PAPER_COUNT").val()),
             formData.append("COMPULSORY_PAPER_COUNT", $("#COMPULSORY_PAPER_COUNT").val()),
             formData.append("OPTIONAL_PAPER_COUNT", $("#OPTIONAL_PAPER_COUNT").val()),
-            formData.append("GRACE", $("#GRACE").val()),
+
+            formData.append("MAJOR_PAPER_COUNT", $("#MAJOR_PAPER_COUNT").val()),
+            formData.append("VOCATIONAL_PAPER_COUNT", $("#VOCATIONAL_PAPER_COUNT").val()),
+            formData.append("QUALIFY_PAPER_COUNT", $("#QUALIFY_PAPER_COUNT").val()),
+            formData.append("RESEARCH_PAPER_COUNT", $("#RESEARCH_PAPER_COUNT").val()),
+            formData.append("PRACTICAL_PAPER_COUNT", $("#PRACTICAL_PAPER_COUNT").val()),
+            
+            formData.append("TOTAL_MAJOR_CR", $("#TOTAL_MAJOR_CR").val()),
+            formData.append("VOCATIONAL_CR", $("#VOCATIONAL_CR").val()),
+            formData.append("RESEARCH_CR", $("#RESEARCH_CR").val()),
+
+            
+            
             formData.append("RESULT_PASS_PERCENT", $("#RESULT_PASS_PERCENT").val()),
+            formData.append("SEMCREDIT", $("#SEMCREDIT").val()),
+            formData.append("TOTALCREDIT", $("#TOTALCREDIT").val()),
+            formData.append("TOTAL_MAJOR_CR", $("#TOTAL_MAJOR_CR").val()),
+
+            formData.append("ALLOW_GRACE", $("#ALLOW_GRACE").prop('checked')),
+            formData.append("GRACE", $("#GRACE").val()),
+            formData.append("GRACE_IF_PASSED_AGG", $("#GRACE_IF_PASSED_AGG").prop('checked')),
+            //formData.append("GRACE_APPLY_EXAM_TYPE", $("#GRACE_APPLY_EXAM_TYPE").val()),
+
             formData.append("THEORY_MAX", $("#THEORY_MAX").val()),
             formData.append("THEORY_MIN", $("#THEORY_MIN").val()),
             formData.append("PRACTICAL_MAX", $("#PRACTICAL_MAX").val()),
             formData.append("PRACTICAL_MIN", $("#PRACTICAL_MIN").val()),
             formData.append("GRAND_MAX", $("#GRAND_MAX").val()),
             formData.append("GRAND_MIN", $("#GRAND_MIN").val()),
+            formData.append("TOTAL_MAX", $("#TOTAL_MAX").val()),
+            formData.append("TOTAL_MIN", $("#TOTAL_MIN").val()),
             formData.append("FINAL_YEAR_SEM", $("#FINAL_YEAR_SEM").prop('checked')),
             formData.append("I_DIV_MAX_CGPA_PERCENT", $("#I_DIV_MAX_CGPA_PERCENT").val()),
             formData.append("I_DIV_MIN_CGPA_PERCENT", $("#I_DIV_MIN_CGPA_PERCENT").val()),
@@ -120,15 +162,23 @@ function SubmitFormO() {
             formData.append("II_DIV_MIN_CGPA_PERCENT", $("#II_DIV_MIN_CGPA_PERCENT").val()),
             formData.append("III_DIV_MAX_CGPA_PERCENT", $("#III_DIV_MAX_CGPA_PERCENT").val()),
             formData.append("III_DIV_MIN_CGPA_PERCENT", $("#III_DIV_MIN_CGPA_PERCENT").val()),
+
+
+            formData.append("I_DIV_MAX_PRAC_PERCENT", $("#I_DIV_MAX_PRAC_PERCENT").val()),
+            formData.append("I_DIV_MIN_PRAC_PERCENT", $("#I_DIV_MIN_PRAC_PERCENT").val()),
+            formData.append("II_DIV_MAX_PRAC_PERCENT", $("#II_DIV_MAX_PRAC_PERCENT").val()),
+            formData.append("II_DIV_MIN_PRAC_PERCENT", $("#II_DIV_MIN_PRAC_PERCENT").val()),
+            formData.append("III_DIV_MAX_PRAC_PERCENT", $("#III_DIV_MAX_PRAC_PERCENT").val()),
+            formData.append("III_DIV_MIN_PRAC_PERCENT", $("#III_DIV_MIN_PRAC_PERCENT").val()),
+
             formData.append("FAIL_PAPER_FOR_BACK", $("#FAIL_PAPER_FOR_BACK").val()),
             formData.append("AGG_MARKS_PAPER_FOR_BACK", $("#AGG_MARKS_PAPER_FOR_BACK").val()),
-            formData.append("SEMCREDIT", $("#SEMCREDIT").val()),
-            formData.append("TOTALCREDIT", $("#TOTALCREDIT").val()),
-            formData.append("TOTAL_MAJOR_CR", $("#TOTAL_MAJOR_CR").val()),
+            
+            formData.append("ADD_PRAC_IN_TOTAL_MARKS", $("#ADD_PRAC_IN_TOTAL_MARKS").prop('checked')),
             
             formData.append("IS_RW", $("#IS_RW").prop('checked')),
             
-            //formData.append("PROC_NAME", $("#PROC_NAME").val().toUpperCase()),
+            formData.append("GRACE_APPLY_EXAM_TYPE", $("#EXAM_TYPE_ID").val()),
           //  alert("ss")
         
             $.ajax({
@@ -156,7 +206,8 @@ function SubmitFormO() {
                         $("#SUBJECT_COUNT").val(0);
                         $("#PAPER_COUNT").val(0);
                         $("#COMPULSORY_PAPER_COUNT").val(0);
-                        $("#OPTIONAL_PAPER_COUNT").val(0);
+                        $("#OPTIONAL_PAPER_COUNT").val(0); 
+                        $("#MAJOR_PAPER_COUNT").val(0); 
                         $("#GRACE").val(0);
                         $("#RESULT_PASS_PERCENT").val(0);
                         $("#THEORY_MAX").val(0);
@@ -175,11 +226,21 @@ function SubmitFormO() {
                         $("#II_DIV_MIN_CGPA_PERCENT").val(0);
                         $("#III_DIV_MAX_CGPA_PERCENT").val(0);
                         $("#III_DIV_MIN_CGPA_PERCENT").val(0);
+
+                        $("#I_DIV_MAX_PRAC_PERCENT").val(0);
+                        $("#I_DIV_MIN_PRAC_PERCENT").val(0);
+                        $("#II_DIV_MAX_PRAC_PERCENT").val(0);
+                        $("#II_DIV_MIN_PRAC_PERCENT").val(0);
+                        $("#III_DIV_MAX_PRAC_PERCENT").val(0);
+                        $("#III_DIV_MIN_PRAC_PERCENT").val(0);
+
                         $("#FAIL_PAPER_FOR_BACK").val(0);
                         $("#AGG_MARKS_PAPER_FOR_BACK").val(0);
                         $("#IS_RW").prop('checked', false);
+                        $("#ADD_PRAC_IN_TOTAL_MARKS").prop('checked', false);
+                        $("#ALLOW_GRACE").prop('checked', false);
                         
-                        //$("#PROC_NAME").val('');
+                        $('#EXAM_TYPE_ID').val('').trigger('change');
                     
                 } else {
                     toastr.error(d.ResponseMessage)

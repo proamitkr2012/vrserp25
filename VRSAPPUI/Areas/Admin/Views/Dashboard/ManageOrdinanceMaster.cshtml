@@ -123,21 +123,27 @@
                         <div class="m-2 ">
                             <div class="col-md-12 card card-primary p-3">
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-2">
 
                                         <div class="form-group">
                                             <label>SUBJECT COUNT</label>
                                             <input type="number" min="0" class="form-control" placeholder="" id="SUBJECT_COUNT" value="0">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-2">
 
                                         <div class="form-group">
                                             <label>PAPER_COUNT</label>
                                             <input type="number" class="form-control" placeholder="" id="PAPER_COUNT" value="0" min="0">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>COMPULSORY_Pr_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="COMPULSORY_PAPER_COUNT" value="0" min="0">
+                                        </div>
+                                    </div> <div class="col-sm-2">
 
                                         <div class="form-group">
                                             <label>OPTIONAL_PAPER_COUNT</label>
@@ -147,11 +153,60 @@
                                     <div class="col-sm-2">
 
                                         <div class="form-group">
-                                            <label>GRACE</label>
-                                            <input type="number" class="form-control" placeholder="" id="GRACE" value="0" min="0">
+                                            <label>MAJOR_PAPER_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="MAJOR_PAPER_COUNT" value="0" min="0">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    @* -------------------------- *@
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>VOCATIONAL_PR_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="VOCATIONAL_PAPER_COUNT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>QUALIFY_PR_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="QUALIFY_PAPER_COUNT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>RESEARCH_PR_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="RESEARCH_PAPER_COUNT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>PRACTICAL_PR_COUNT</label>
+                                            <input type="number" class="form-control" placeholder="" id="PRACTICAL_PAPER_COUNT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>VOCATIONAL_CR</label>
+                                            <input type="number" class="form-control" placeholder="" id="VOCATIONAL_CR" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>RESEARCH_CR</label>
+                                            <input type="number" class="form-control" placeholder="" id="RESEARCH_CR" value="0" min="0">
+                                        </div>
+                                    </div>
+
+
+                                    @* --------------- *@
+
+
+                                   
+                                    <div class="col-sm-2">
 
                                         <div class="form-group">
                                             <label>RESULT_PASS_PERCENT</label>
@@ -162,7 +217,7 @@
 
                                         <div class="form-group">
                                             <label>SEM CREDIT</label>
-                                            <input type="number" class="form-control" placeholder="" id="c" value="0" min="0">
+                                            <input type="number" class="form-control" placeholder="" id="SEMCREDIT" value="0" min="0">
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
@@ -179,11 +234,56 @@
                                             <input type="number" class="form-control" placeholder="" id="TOTAL_MAJOR_CR" value="0" min="0">
                                         </div>
                                     </div>
+                                    <div class="col-sm-2">
+                                        <div class="py-2"> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                            <input type="checkbox" id="ALLOW_GRACE" onclick="GRACE_DETAILS_CHECK()">
+                                            <label for="ALLOW_GRACE">
+                                                ALLOW_GRACE
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 card card-primary p-3" id="GRACE_DETAILS" style="display:none">
+                                <div class="row">
+                                    <div class="col-sm-2">
+
+                                        <div class="form-group">
+                                            <label>GRACE</label>
+                                            <input type="number" class="form-control" placeholder="" id="GRACE" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="py-2"> &nbsp;</div>
+                                        <div class="icheck-success d-inline">
+
+                                            <input type="checkbox" id="GRACE_IF_PASSED_AGG">
+                                            <label for="GRACE_IF_PASSED_AGG">
+                                                GRACE_IF_PASSED_AGG
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label>Exam type</label>
+                                        <select class="form-control select2" style="width: 100%;" id="EXAM_TYPE_ID" name="EXAM_TYPE_ID" multiple>
+                                            @* <option value=""  disabled>--Select Exam type--</option> *@
+                                            @if (Model.EXAM_TYPE_LIST.Count() > 0)
+                                            {
+                                                foreach (var item in Model.EXAM_TYPE_LIST)
+                                                {                                                    
+                                                        <option value="@item.EXAM_TYPE">@item.EXAM_TYPE </option>                                                    
+                                                }
+                                            }
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" ">
                                 <div class="col-md-12 card card-primary p-3">
                                     <div class="row">
+                                        
                                     <div class="col-sm-2">
 
                                         <div class="form-group">
@@ -212,6 +312,20 @@
                                             <input type="number" class="form-control" placeholder="" id="PRACTICAL_MIN" value="0" min="0">
                                         </div>
                                     </div>
+                                        <div class="col-sm-2">
+
+                                            <div class="form-group">
+                                                <label>TOTAL_MAX</label>
+                                                <input type="number" class="form-control" placeholder="" id="TOTAL_MAX" value="0" min="0">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+
+                                            <div class="form-group">
+                                                <label>TOTAL_MIN</label>
+                                                <input type="number" class="form-control" placeholder="" id="TOTAL_MIN" value="0" min="0">
+                                            </div>
+                                        </div>
                                     <div class="col-sm-2">
 
                                         <div class="form-group">
@@ -223,7 +337,7 @@
 
                                         <div class="form-group">
                                             <label>GRAND_MIN</label>
-                                            <input type="number" class="form-control" placeholder="" id="[GRAND_MIN]" value="0" min="0">
+                                            <input type="number" class="form-control" placeholder="" id="GRAND_MIN" value="0" min="0">
                                         </div>
                                     </div>
                                     <div class="col-sm-2">
@@ -240,6 +354,17 @@
                                             <input type="number" class="form-control" placeholder="" id="AGG_MARKS_PAPER_FOR_BACK" value="0" min="0">
                                         </div>
                                     </div>
+                                        <div class="col-sm-12"></div>
+                                        <div class="col-sm-3">
+                                            <div class="py-2"> &nbsp;</div>
+                                            <div class="icheck-success d-inline">
+
+                                                <input type="checkbox" id="ADD_PRAC_IN_TOTAL_MARKS">
+                                                <label for="ADD_PRAC_IN_TOTAL_MARKS">
+                                                    ADD_PRAC_IN_TOTAL_MARKS
+                                                </label>
+                                            </div>
+                                        </div>
                                     <div class="col-sm-1">
                                         <div class="py-2"> &nbsp;</div>
                                         <div class="icheck-success d-inline">
@@ -306,6 +431,49 @@
                                         <div class="form-group">
                                             <label>III_DIV_MIN_CGPA_PERCENT</label>
                                             <input type="number" class="form-control" placeholder="" id="III_DIV_MIN_CGPA_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>I_DIV_MAX_PRAC_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="I_DIV_MAX_PRAC_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>I_DIV_MIN_PRAC_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="I_DIV_MIN_PRAC_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>II_DIV_MAX_PRAC_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="II_DIV_MAX_PRAC_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>II_DIV_MIN_PRAC_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="II_DIV_MIN_PRAC_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>III_DIV_MAX_PRAC_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="III_DIV_MAX_PRAC_PERCENT" value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+
+                                        <div class="form-group">
+                                            <label>III_DIV_MIN_PRAC_PERCENT</label>
+                                            <input type="number" class="form-control" placeholder="" id="III_DIV_MIN_PRAC_PERCENT" value="0" min="0">
                                         </div>
                                     </div>
                                 </div>

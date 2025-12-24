@@ -514,12 +514,33 @@ namespace VRSREPO
                     II_DIV_MIN_CGPA_PERCENT = model.II_DIV_MIN_CGPA_PERCENT,
                     III_DIV_MAX_CGPA_PERCENT = model.III_DIV_MAX_CGPA_PERCENT,
                     III_DIV_MIN_CGPA_PERCENT = model.III_DIV_MIN_CGPA_PERCENT,
+
+                    I_DIV_MAX_PRAC_PERCENT = model.I_DIV_MAX_PRAC_PERCENT,
+                    I_DIV_MIN_PRAC_PERCENT = model.I_DIV_MIN_PRAC_PERCENT,
+                    II_DIV_MAX_PRAC_PERCENT = model.II_DIV_MAX_PRAC_PERCENT,
+                    II_DIV_MIN_PRAC_PERCENT = model.II_DIV_MIN_PRAC_PERCENT,
+                    III_DIV_MAX_PRAC_PERCENT = model.III_DIV_MAX_PRAC_PERCENT,
+                    III_DIV_MIN_PRAC_PERCENT = model.III_DIV_MIN_PRAC_PERCENT,
+
                     FAIL_PAPER_FOR_BACK = model.FAIL_PAPER_FOR_BACK,
                     AGG_MARKS_PAPER_FOR_BACK = model.AGG_MARKS_PAPER_FOR_BACK,
                     //PROC_NAME = model.PROC_NAME,
                     SEMCREDIT = model.SEMCREDIT,
                     TOTALCREDIT = model.TOTALCREDIT,
                     TOTAL_MAJOR_CR = model.TOTAL_MAJOR_CR,
+                    MAJOR_PAPER_COUNT= model.MAJOR_PAPER_COUNT,
+                    VOCATIONAL_PAPER_COUNT = model.VOCATIONAL_PAPER_COUNT,
+                    QUALIFY_PAPER_COUNT = model.QUALIFY_PAPER_COUNT,
+                    RESEARCH_PAPER_COUNT = model.RESEARCH_PAPER_COUNT,
+                    PRACTICAL_PAPER_COUNT = model.PRACTICAL_PAPER_COUNT,
+                    VOCATIONAL_CR = model.VOCATIONAL_CR,
+                    RESEARCH_CR = model.RESEARCH_CR,
+                    ALLOW_GRACE = model.ALLOW_GRACE,
+                    GRACE_IF_PASSED_AGG = model.GRACE_IF_PASSED_AGG,
+                    GRACE_APPLY_EXAM_TYPE = model.GRACE_APPLY_EXAM_TYPE,
+                    TOTAL_MAX = model.TOTAL_MAX,
+                    TOTAL_MIN = model.TOTAL_MIN,
+                    ADD_PRAC_IN_TOTAL_MARKS = model.ADD_PRAC_IN_TOTAL_MARKS,
                     EditFlag = 0
                 };
                 var data = await con.QueryAsync<FormResponse>("INSERT_UPDATE_OrdinanceMaster_AM", paramList,
@@ -643,9 +664,11 @@ namespace VRSREPO
                 var lst1 = await multi.ReadAsync<RESULT_TYPE_DTO>();
                 var lst2 = await multi.ReadAsync<COURSE_FILTER_DTO>();
                 var lst3 = await multi.ReadAsync<SESSION_MASTER_DTO>();
+                var lst4 = await multi.ReadAsync<EXAM_TYPE_MASTER_DTO>();
                 d.RESULT_TYPE_LIST = lst1.ToList();
                 d.COURSE_FILTER_LIST = lst2.ToList();
                 d.SESSION_MASTER_LIST = lst3.ToList();
+                d.EXAM_TYPE_LIST = lst4.ToList();
             }
             catch (Exception e)
             {
