@@ -687,6 +687,9 @@ wwwroot\logo_header - bg.png
 wwwroot\logo_header.png
 wwwroot\logo_header11.png
 wwwroot\logo_header1111.png
+wwwroot\pageui\AGRA_MASTER_L_25_12_25.sql
+wwwroot\pageui\AGRA_RESULT_DEMO_L_25_12_25.sql
+wwwroot\pageui\AGRA_RESULT_ERP_L_25_12_25.sql
 wwwroot\pageui\dist\css\adminlte.min2167.css
 wwwroot\pageui\dist\img\AdminLTELogo.png
 wwwroot\pageui\dist\img\avatar.png

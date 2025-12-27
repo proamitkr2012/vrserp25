@@ -139,6 +139,41 @@
                         </ul>
                     </li>
                 }
+                @if (CurrentUser.Roles.Contains("Admin") || CurrentUser.Roles.Contains("SuperAdmin"))
+                {
+
+
+                    <li class="nav-item @(ViewData["ActiveGroup"] != null && ViewData["ActiveGroup"].Equals("EditMenu") ? "menu-is-opening menu-open" : "")">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-edit"></i>
+                            <p>
+                                CORRECTION
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview" style="@(ViewData["ActiveGroup"] != null && ViewData["ActiveGroup"].Equals("EditMenu") ? "display: block" : "display: none")">
+
+                            <li class="nav-item">
+                                <a href="/admin/dashboard/search_form" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("Search_Form") ? "selectedmenu" : "")">
+                                    <i class="nav-icon fas fa-search text-yellow"></i>
+                                    <p class="text">SEARCH FORM</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/admin/dashboard/correction_form" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("Correction_Form") ? "selectedmenu" : "")">
+                                    <i class="nav-icon far fa-circle text-yellow"></i>
+                                    <p class="text">CORRECTION FORM</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/admin/dashboard/approve_correction" class="nav-link @(ViewData["ActiveMenu"] != null && ViewData["ActiveMenu"].Equals("Approve_Correction") ? "selectedmenu" : "")">
+                                    <i class="nav-icon fas fa-code-branch text-warning"></i>
+                                    <p class="text"> APPROVE CORRECTION</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                }
             </ul>
         </nav>
 

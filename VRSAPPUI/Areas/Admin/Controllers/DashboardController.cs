@@ -752,6 +752,79 @@ namespace VRSAPPUI.Areas.Admin.Controllers
             }
             return Json("0");
         }
-        
+
+        ////////////////////////////////////////CORRECTION///////////////
+
+        public async Task<IActionResult> Search_Form(int Page = 1, string Search = null)
+        {
+            try
+            {
+                COURSE_MASTER_AM_DTO_DASH data = new COURSE_MASTER_AM_DTO_DASH();
+                //data = await UOF.IAdminMaster.GET_COURSE_MASTER_AM("", (int)CurrentUser.UserId, Page, Search);
+                ViewBag.Search = Search;
+                return View(data);
+            }
+            catch (Exception e)
+            {
+                Log.Information("course page!" + e);
+            }
+            return View();
+
+        }
+        public async Task<IActionResult> Correction_Form(int Page = 1, string Search = null)
+        {
+            try
+            {
+                COURSE_MASTER_AM_DTO_DASH data = new COURSE_MASTER_AM_DTO_DASH();
+                //data = await UOF.IAdminMaster.GET_COURSE_MASTER_AM("", (int)CurrentUser.UserId, Page, Search);
+                ViewBag.Search = Search;
+                return View(data);
+            }
+            catch (Exception e)
+            {
+                Log.Information("course page!" + e);
+            }
+            return View();
+
+        }
+        public async Task<IActionResult> Approve_Correction(int Page = 1, string Search = null)
+        {
+            try
+            {
+                COURSE_MASTER_AM_DTO_DASH data = new COURSE_MASTER_AM_DTO_DASH();
+                //data = await UOF.IAdminMaster.GET_COURSE_MASTER_AM("", (int)CurrentUser.UserId, Page, Search);
+                ViewBag.Search = Search;
+                return View(data);
+            }
+            catch (Exception e)
+            {
+                Log.Information("course page!" + e);
+            }
+            return View();
+
+        }
+
+        public async Task<IActionResult> CheckResultDataSearch(string RollNumber = "")
+        {
+            bool IsAdmin = false;
+            if (CurrentUser.Roles.Contains("Admin"))
+            {
+                IsAdmin = true;
+            }
+            List<StudentMasterDTO> adminData = new List<StudentMasterDTO>();
+            //return ViewComponent("PageAdmin", new { RollNumber, IsAdmin });
+            if (!string.IsNullOrEmpty(RollNumber))
+            {
+
+                adminData = await UOF.IAdminMaster.CheckResult("", RollNumber.Trim(), IsAdmin);
+
+                if (adminData.Count() > 0)
+                {
+                    // return View("~/areas/admin/views/components/_pageadmin.cshtml", adminData);
+                    return PartialView("_PageDataSearch", adminData);
+                }
+            }
+            return PartialView("_PageDataSearch", adminData);
+        }
     }
 }

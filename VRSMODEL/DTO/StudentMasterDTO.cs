@@ -10,7 +10,9 @@ namespace VRSMODEL.DTO
         
         public int? SrNo { get; set; }
         public long? ENTRYID { get; set; }
-        public long? MASTER_ID { get; set; }
+        public string? RESULT_ID { get; set; }
+        
+        public string? MASTER_ID { get; set; }
         public string? CCODE { get; set; }
         public string? CNAME { get; set; }
 
