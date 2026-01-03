@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VRSREPO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71d16d062b3e307e45061fac09359dbfb4982436")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b23911f6f7eba051f86cd1ae39aeddacf122b727")]
 [assembly: System.Reflection.AssemblyProductAttribute("VRSREPO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VRSREPO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

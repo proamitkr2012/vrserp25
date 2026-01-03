@@ -1697,6 +1697,44 @@ namespace VRSREPO
             }
             return list;
         }
+
+        public async Task<STUDENT_DATA_DASH_AM> GET_CORRECTION_FORM_VIEW_AM(string flag, int UserId = 0, string res =null, string mas = null)
+        {
+            STUDENT_DATA_DASH_AM d = new();
+            await using var con = new SqlConnection(_connectionStringResultDemo);
+            con.Open();
+            try
+            {
+                var paramList = new
+                {
+                    Flag = flag,
+                    UserId = UserId,
+                    RESULT_ID = res,
+                    MASTER_ID = mas
+                };
+
+                var multi = await con.QueryMultipleAsync("GET_CORRECTION_FORM_VIEW_AM", paramList, commandTimeout: 0,
+                  commandType: CommandType.StoredProcedure);
+
+                var lst1 = await multi.ReadAsync<STUDENT_DATA_AM>();
+                var lst2 = await multi.ReadAsync<STUDENT_DATA_MARKS_AM>();
+                var lst3 = await multi.ReadAsync<STUDENT_DATA_RESULT_AM>();
+
+                d.STDDATA = lst1.ToList()[0];
+                d.STDMARKSLIST = lst2.ToList();
+                d.STDRESULTLIST = lst3.ToList()[0];
+
+            }
+            catch (Exception e)
+            {
+                //
+            }
+            finally
+            {
+                con.Close();
+            }
+            return d;
+        }
         
     }
 

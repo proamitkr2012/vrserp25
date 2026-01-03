@@ -599,10 +599,10 @@ D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\staticwebassets.development.json
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\swae.build.ex.cache
+D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.csproj.Up2Date
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.dll
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\refint\VRSAPPUI.dll
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.pdb
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\VRSAPPUI.genruntimeconfig.cache
 D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\ref\VRSAPPUI.dll
-D:\vrs\vrserp25\VRSAPPUI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

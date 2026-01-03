@@ -4,7 +4,7 @@
     StudentMasterDTO sdata = new StudentMasterDTO();
     if (Model.Count() > 0)
     {
-        sdata = Model.OrderByDescending(x=>x.SEM_NO).OrderByDescending(x=>x.AllowForConsolidate).Take(1).First();
+        sdata = Model.OrderByDescending(x => x.SEM_NO).OrderByDescending(x => x.AllowForConsolidate).Take(1).First();
     }
 }
 
@@ -53,7 +53,7 @@
                             <th width="15%">Father Name</th>
                             <td>@sdata.FNAME</td>
                         </tr>
-                       
+
 
                         <tr>
                             <th width="15%">Date of Birth</th>
@@ -65,7 +65,7 @@
 
                             </td>
                         </tr>
-                        
+
                     </table>
                 }
                 else
@@ -86,47 +86,51 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <table id="" class="table table-head-fixed text-nowrap" width="100%">
-                            <thead >
-                                <tr>
-
-
-                                    <th>Course Name</th>
-                                    <th>Exam Type</th>
-                                    <th>Sem</th>
-                                    <th>HeldIn/ResultDate</th>
-                                    <th>Session</th>
-                                    <th>Result/Final_Result</th>
-                                    <th>Action</th>
-
-                                </tr>
-                            </thead>
-
-                            <tbody>
-
-                                @{
-                                    int i = 1;
-                                }
-
-                                @foreach (var item in Model)
-                                {
-                                    var s = "Marksdetail" + i;
-
+                        <form style="margin:0px" id="formIndex" method="post">
+                            <table id="stdtable" class="table table-head-fixed text-nowrap" width="100%">
+                                <thead>
                                     <tr>
 
-                                        <td>
-                                            @item.CourseName
-                                        </td>
-                                        <td>
-                                            @item.EXAM_TYPE
-                                        </td>
-                                        <td>
-                                            @item.DisplaySemester
-                                        </td>
-                                        <td style="font-size:14px">
-                                            @item.HELD_IN
-                                            <br />
-                                            @if (!string.IsNullOrEmpty(item.ResultDate.ToString()))
+
+                                        <th>Course Name</th>
+                                        <th>Exam Type</th>
+                                        <th>Sem</th>
+                                        <th>HeldIn/ResultDate</th>
+                                        <th>Session</th>
+                                        <th>Result/Final_Result</th>
+                                        <th>Action</th>
+
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    @{
+                                        int i = 1;
+                                    }
+
+                                    @foreach (var item in Model)
+                                    {
+                                        var s = "Marksdetail" + i;
+                                        
+                                        var d =  item.RESULT_ID + "_" + item.MASTER_ID;
+                                        var edata = AESEncription.Base64Encode(d);
+                                        <tr data-edata="@edata">
+
+                                            <td>
+                                                
+                                                @item.CourseName
+                                            </td>
+                                            <td>
+                                                @item.EXAM_TYPE
+                                            </td>
+                                            <td>
+                                                @item.DisplaySemester
+                                            </td>
+                                            <td style="font-size:14px">
+                                                @item.HELD_IN
+                                                <br />
+                                                @if (!string.IsNullOrEmpty(item.ResultDate.ToString()))
                                                 {
                                                     @item.ResultDate.Value.ToString("dd MMM yyyy")
                                                 }
@@ -134,80 +138,59 @@
                                                 {
                                                     <h6 class="text-danger">Date Not filled </h6>
                                                 }
-                                        </td>
-                                        <td>
-                                            @item.SessionName
-                                        </td>
-                                        <td>
-                                            @item.RESULT /
-                                            @if (!string.IsNullOrEmpty(item.FINAL_RESULT))
-                                            {
-                                                <span>
-                                                    @item.FINAL_RESULT
-                                                </span>
-                                            }
-                                            else
-                                            {
-                                                <span>
-                                                    --
-                                                </span>
-                                            }
-                                        </td>
-                                        <td>
-                                            
-                                            
-                                            <a data-resultid="@item.RESULT_ID" data-master_id="@item.MASTER_ID" title="View in correction" class=" btn btn-success btn-sm">	<i class="fa fa-edit" aria-hidden="true"></i></a>
-                                        </td>
+                                            </td>
+                                            <td>
+                                                @item.SessionName
+                                            </td>
+                                            <td>
+                                                @item.RESULT /
+                                                @if (!string.IsNullOrEmpty(item.FINAL_RESULT))
+                                                {
+                                                    <span>
+                                                        @item.FINAL_RESULT
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <span>
+                                                        --
+                                                    </span>
+                                                }
+                                            </td>
+                                            <td>
 
-                                    </tr>
 
-                                    <tr class="section" style="display:none">
-                                        <td colspan="9">
 
-                                            <div id="@s">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    i++;
-                                }
-                            </tbody>
-                        </table>
+                                                <a title="View in correction" class=" btn btn-success btn-sm getcorrection">	<i class="fa fa-edit" aria-hidden="true"></i></a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        i++;
+                                    }
+                                </tbody>
+                            </table>
+
+
+                        </form>
                     </div>
 
                 </div>
             </div>
 
         </div>
+
     }
 }
 
 <script>
-    $(".ViewMoreMarks").click(function (e) {
-        var roll = $(this).data("roll")
-        var sem_no = $(this).data("sem_no")
-        var course_id = $(this).data("course_id")
-        var sessionname = $(this).data("sessionname")
-        var exam_type = $(this).data("exam_type")
-        var divpath = $(this).data("divpath")
-        var held_in = $(this).data("held_in")
-        
+    $('#stdtable').on('click', 'tr', function () {
 
-       
+         var edata = $(this).data('edata');
+         //alert(edata)
+                    var paperediturl = '/admin/dashboard/correction_form?edata=' + edata;
+                 window.open(paperediturl, '_self'); // Opens in a new tab
+         });
 
-        if (roll != "") {
-
-            var divpdis = "/Admin/Dashboard/GetMarksData?roll=" + roll + "&&sem_no=" + sem_no + "&&course_id=" + course_id + "&&sessionname=" + sessionname + "&&exam_type=" + exam_type;
-        
-            $("#"+divpath).load(divpdis, function () {
-
-            });
-        }
-    });
-
-
-    $('.viewmore').click(function () {
-        $(this).parents('tr')
-            .next('.section')
-            .toggle('slow');
-    });
 </script>

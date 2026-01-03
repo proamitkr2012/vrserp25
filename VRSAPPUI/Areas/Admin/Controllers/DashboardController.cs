@@ -18,6 +18,7 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using VRSAPPUI.Controllers;
+using VRSAPPUI.Extensions;
 using VRSDATA.Entities;
 using VRSMODEL;
 using VRSMODEL.DTO;
@@ -771,14 +772,41 @@ namespace VRSAPPUI.Areas.Admin.Controllers
             return View();
 
         }
-        public async Task<IActionResult> Correction_Form(int Page = 1, string Search = null)
+        public async Task<IActionResult> Correction_Form(string edata="")
         {
             try
             {
-                COURSE_MASTER_AM_DTO_DASH data = new COURSE_MASTER_AM_DTO_DASH();
-                //data = await UOF.IAdminMaster.GET_COURSE_MASTER_AM("", (int)CurrentUser.UserId, Page, Search);
-                ViewBag.Search = Search;
-                return View(data);
+                Session.SetObject("edata", edata);
+                return RedirectToAction("Correction_Form_View", "DASHBOARD");
+            }
+            catch (Exception e)
+            {
+                Log.Information("course page!" + e);
+            }
+            return View();
+
+        }
+        [Route("~/correction_form_view")]
+        public async Task<IActionResult> Correction_Form_View()
+        {
+            try
+            {
+                STUDENT_DATA_DASH_AM data = new STUDENT_DATA_DASH_AM();
+                var sdd = Session.GetObject<string>("edata");
+                var datae = AESEncription.Base64Decode(sdd);
+                if (!string.IsNullOrEmpty(datae))
+                {
+                    var s = datae.Split('_');
+                    
+                    var res = s[0];
+                    var mas = s[1];
+
+                    data = await UOF.IAdminMaster.GET_CORRECTION_FORM_VIEW_AM("", (int)CurrentUser.UserId, res, mas);
+                    return View(data);
+                }
+                
+
+               
             }
             catch (Exception e)
             {
