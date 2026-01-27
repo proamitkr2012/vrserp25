@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VRSMODEL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b23911f6f7eba051f86cd1ae39aeddacf122b727")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0e8ab0855f0ce94932b3b4bd9e4957a233c7415")]
 [assembly: System.Reflection.AssemblyProductAttribute("VRSMODEL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VRSMODEL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
