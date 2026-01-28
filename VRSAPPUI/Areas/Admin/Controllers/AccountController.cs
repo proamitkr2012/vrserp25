@@ -28,7 +28,7 @@ namespace VRSAPPUI.Areas.Admin.Controllers
         private IHostingEnvironment hostingEnv;
         SmsClient sms = new SmsClient();
         int pageSize;
-        int pageSizeJobs;
+        int pageSizeJobs; string ipAddressName = "";
 
         private IMailClient mailClient;
         public string _baseUrl;
@@ -39,6 +39,34 @@ namespace VRSAPPUI.Areas.Admin.Controllers
             mailClient = _mailClient;
             httpContextAccessor = _httpContextAccessor;
             UOF = uow;
+        }
+        public string GetClientIp()
+        {
+            string _ipAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+            if (_ipAddress.Contains("::1"))
+                _ipAddress = "127.0.0.1";
+
+            return _ipAddress;
+        }
+        public string GetComputerName()
+        {
+            string _ipAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+
+            if (_ipAddress.Contains("::1"))
+                _ipAddress = "127.0.0.1";
+            string computerName = "Unknown";
+            try
+            {
+                IPHostEntry hostEntry = Dns.GetHostEntry(_ipAddress);
+                computerName = hostEntry.HostName;
+            }
+            catch
+            {
+                // Handle exceptions if needed, e.g., logging
+            }
+
+
+            return computerName;
         }
 
         [Route("~/admin/login")]
@@ -82,9 +110,15 @@ namespace VRSAPPUI.Areas.Admin.Controllers
                         }
 
                         if (!string.IsNullOrEmpty(ReturnUrl))
+                        {
                             return Redirect(ReturnUrl);
+                        }
                         else
+                        {
+                            ipAddressName = GetClientIp() + "_" + GetComputerName();
+                            await UOF.IAdminMaster.LoginLog(adminData.AdminId, adminData.Name, ipAddressName);
                             return Json("success");
+                        }
 
                     }
                     else

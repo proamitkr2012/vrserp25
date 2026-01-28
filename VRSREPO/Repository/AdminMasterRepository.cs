@@ -1666,7 +1666,7 @@ namespace VRSREPO
             }
             return d;
         }
-        public async Task<FormResponse> MappingDemoToErp(string Flag, ORDINANCE_STUDENT_DTO model, long AdminID)
+        public async Task<FormResponse> MappingDemoToErp(string Flag, ORDINANCE_STUDENT_DTO model, long AdminID,string ipAddressName)
         {
             FormResponse list = new();
             await using var con = new SqlConnection(_connectionStringResultDemo);
@@ -1677,15 +1677,34 @@ namespace VRSREPO
                 {
                     //Flag = Flag,
                     COURSE_ID = model.COURSE_ID,
-                    SESSION = model.SESSIONNAME,
+                    SESSIONNAME = model.SESSIONNAME,
                     EXAMTPYENAME = model.EXAMTPYENAME,
                     ROLL_NO = model.ROLL_NOS,
                     HELD_IN = model.HELD_IN,
-                    //AdminID = AdminID
+
+                    IS_STUDENT_MASTER = model.IS_STUDENT_MASTER,
+                    IS_STUDENT_RESULT = model.IS_STUDENT_RESULT,
+                    IS_STUDENT_MARKS = model.IS_STUDENT_MARKS,
+                    IS_CONSOLIDATE_RESULT = model.IS_CONSOLIDATE_RESULT,
+                    ipAddressName = ipAddressName
                 };
-                var d = await con.QueryAsync<FormResponse>("USP_SYNC_MARKS_RESULT_DEMO_ERP", paramList,
-                    commandType: CommandType.StoredProcedure);
-                list = d.ToList()[0];
+             
+                var multi = await con.QueryMultipleAsync("USP_SYNC_MARKS_RESULT_DEMO_ERP", paramList, commandTimeout: 0,
+                  commandType: CommandType.StoredProcedure);
+                //list = multi.ToList()[0];
+
+                if (model.IS_CONSOLIDATE_RESULT == true)
+                {
+                    var lst1 = await multi.ReadAsync<FormResponse>();
+                    var lst2 = await multi.ReadAsync<FormResponse>();
+                    var lst3 = await multi.ReadAsync<FormResponse>();
+                    list = lst3.ToList()[0];
+                }
+                else {
+                    var lst1 = await multi.ReadAsync<FormResponse>();
+                    list = lst1.ToList()[0];
+                }
+
             }
             catch (Exception ex)
             {
@@ -1735,7 +1754,33 @@ namespace VRSREPO
             }
             return d;
         }
-        
+        public async Task<FormResponse> LoginLog(int AdminId, string Name, string ipAddressName)
+        {
+            FormResponse list = new();
+            await using var con = new SqlConnection(_connectionStringResult);
+            con.Open();
+            try
+            {
+                var paramList = new
+                {
+                    AdminId = AdminId,
+                    UserName = Name,
+                    IpAddr = ipAddressName
+                };
+                var data = await con.QueryAsync<FormResponse>("LoginLog_AM", paramList,
+                    commandType: CommandType.StoredProcedure);
+                list = data.ToList()[0];
+            }
+            catch (Exception e)
+            {
+                //
+            }
+            finally
+            {
+                con.Close();
+            }
+            return list;
+        }
     }
 
 }

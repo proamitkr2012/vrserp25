@@ -37,7 +37,7 @@ namespace VRSAPPUI.Areas.Admin.Controllers
         private IWebHostEnvironment environment;
         public string ImgCloudPath = "";
         private IMailClient _mailClient;
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> _logger; string ipAddressName = "";
         public DashboardController(IHttpContextAccessor _httpContextAccessor, IConfiguration _config,
              IWebHostEnvironment _environment, IUnitOfWork uow, IMailClient mailClient,ILogger<HomeController> logger) : base(_httpContextAccessor, _config, uow)
         {
@@ -48,6 +48,34 @@ namespace VRSAPPUI.Areas.Admin.Controllers
             pageSize = (result == true) ? PS : 15;
             _mailClient = mailClient;
             _logger = logger;
+        }
+        public string GetClientIp()
+        {
+            string _ipAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+            if (_ipAddress.Contains("::1"))
+                _ipAddress = "127.0.0.1";
+
+            return _ipAddress;
+        }
+        public string GetComputerName()
+        {
+            string _ipAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+
+            if (_ipAddress.Contains("::1"))
+                _ipAddress = "127.0.0.1";
+            string computerName = "Unknown";
+            try
+            {
+                IPHostEntry hostEntry = Dns.GetHostEntry(_ipAddress);
+                computerName = hostEntry.HostName;
+            }
+            catch
+            {
+                // Handle exceptions if needed, e.g., logging
+            }
+
+
+            return computerName;
         }
         [Route("~/admin/dashboard")]
         [HttpGet]
@@ -722,7 +750,7 @@ namespace VRSAPPUI.Areas.Admin.Controllers
             try
             {
                 MANAGE_STUDENT_DEMO_TO_ERP_DTO data = new MANAGE_STUDENT_DEMO_TO_ERP_DTO();
-                data = await UOF.IAdminMaster.Sync_Mark_Result_Demo_Erp ("", (int)CurrentUser.UserId, Search, COURSE_ID, SESSIONNAME);
+                data = await UOF.IAdminMaster.Sync_Mark_Result_Demo_Erp("", (int)CurrentUser.UserId, Search, COURSE_ID, SESSIONNAME);
                 ViewBag.Search = Search;
                 ViewBag.COURSE_ID = COURSE_ID;
                 ViewBag.SESSIONNAME = SESSIONNAME;
@@ -741,9 +769,10 @@ namespace VRSAPPUI.Areas.Admin.Controllers
             try
             {
 
-                FormResponse data = new FormResponse();                
+                FormResponse data = new FormResponse();
+                ipAddressName = GetClientIp() + "_" + GetComputerName();
 
-                data = await UOF.IAdminMaster.MappingDemoToErp("", model, CurrentUser.UserId);
+                data = await UOF.IAdminMaster.MappingDemoToErp("", model, CurrentUser.UserId, ipAddressName);
 
                 return Json(data);
             }

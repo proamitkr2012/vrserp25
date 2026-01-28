@@ -58,7 +58,12 @@ namespace VRSMODEL.DTO
         public string EXAMTPYENAME { get; set; }
         public string ROLL_NOS { get; set; }
         public string HELD_IN { get; set; }
-        
+
+        public bool IS_STUDENT_MASTER { get; set; }
+        public bool IS_STUDENT_RESULT { get; set; }
+        public bool IS_STUDENT_MARKS { get; set; }
+        public bool IS_CONSOLIDATE_RESULT { get; set; }
+
 
     }
 
