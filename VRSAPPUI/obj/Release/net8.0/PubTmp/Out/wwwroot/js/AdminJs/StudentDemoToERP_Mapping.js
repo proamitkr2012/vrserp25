@@ -62,7 +62,13 @@ function SubmitFormDE() {
             formData.append("SESSIONNAME", $("#SESSIONNAME").val()),
             formData.append("EXAMTPYENAME", $("#EXAMTPYENAME").val()),
             formData.append("ROLL_NOS", $("#ROLL_NOS").val()),
-            formData.append("HELD_IN", $("#HELD_IN").val()),
+                formData.append("HELD_IN", $("#HELD_IN").val()),
+
+                formData.append("IS_STUDENT_MASTER", $("#IS_STUDENT_MASTER").prop('checked')),
+                formData.append("IS_STUDENT_RESULT", $("#IS_STUDENT_RESULT").prop('checked')),
+                formData.append("IS_STUDENT_MARKS", $("#IS_STUDENT_MARKS").prop('checked')),
+                formData.append("IS_CONSOLIDATE_RESULT", $("#IS_CONSOLIDATE_RESULT").prop('checked')),
+
           //  alert("ss")
         
             $.ajax({
@@ -78,21 +84,21 @@ function SubmitFormDE() {
                     $('#btnc').hide();
 
                 },
-                success: function (d) {
+                success: function (data) {
+                   // alert(data.ResponseCode)
+                    if (data.ResponseCode == 1) {
 
-                    if (d.ResponseCode == 1) {
-                        //alert(JSON.stringify(d))
-                        toastr.success(d.ResponseMessage)
+                        toastr.success(data.ResponseMessage + "_" + data.ResponseMessageCode)
                        
-                        $("#COURSE_ID").val('').trigger('change');
-                        $("#SESSIONNAME").val('');
-                        $("#EXAMTPYENAME").val('');
+                        //$("#COURSE_ID").val('').trigger('change');
+                        //$("#SESSIONNAME").val('');
+                        //$("#EXAMTPYENAME").val('');
                         $("#HELD_IN").val('');
                         
-                        $("#ROLL_NOS").val('');
+                        //$("#ROLL_NOS").val('');
                     
                 } else {
-                    toastr.error(d.ResponseMessage)
+                        toastr.error(data.ResponseMessage)
                 }
             
 

@@ -46,6 +46,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tcG9uZW50c1xfUGFydGlhbENvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Dashboard/Approve_Correction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEFwcHJvdmVfQ29ycmVjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Dashboard/Correction_Form_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXENvcnJlY3Rpb25fRm9ybV9WaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Dashboard/CourseMasterRule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXENvdXJzZU1hc3RlclJ1bGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -106,6 +114,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXFBBUEVSX01BU1RFUi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Dashboard/Search_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXFNlYXJjaF9Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Dashboard/StudentList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXFN0dWRlbnRMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -140,6 +152,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Shared/_PageData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdlRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Shared/_PageDataSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdlRGF0YVNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/vrs/vrserp25/VRSAPPUI/Areas/Admin/Views/Shared/_PublicLayout.cshtml]
