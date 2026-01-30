@@ -16,7 +16,8 @@ namespace VRSMODEL.DTO
         public string? SessionName { get; set; }
         public string? RollN { get; set; }
         public int? IsLiveStatus { get; set; }
-        
+        public int? IS_PUBLISHED { get; set; }
+
 
         public bool? IsPG { get; set; }
         public List<CourseMasterDTO_AM> CourseTypeList { get; set; }

@@ -1555,7 +1555,7 @@ namespace VRSREPO
             return list;
         }
 
-        public async Task<StudentList_Admin> StudentList_AM(string Flag, string SessionName, string CourseType, bool IsPG, int CourseId, string ExamTypeName, string RollN, int IsLiveStatus, bool IsAdmin,int Page = 1)
+        public async Task<StudentList_Admin> StudentList_AM(string Flag, string SessionName, string CourseType, bool IsPG, int CourseId, string ExamTypeName, string RollN, int IsLiveStatus, bool IsAdmin,int Page = 1,int IS_PUBLISHED=0)
         {
 
             StudentList_Admin list = new();
@@ -1573,6 +1573,7 @@ namespace VRSREPO
                     ExamTypeName = ExamTypeName,
                     RollNumber = RollN,
                     IsLiveStatus = IsLiveStatus,
+                    IS_PUBLISHED= IS_PUBLISHED,
                     IsAdmin = IsAdmin,
                     PageNumber= Page
                 };
@@ -1691,7 +1692,7 @@ namespace VRSREPO
                     ipAddressName = ipAddressName
                 };
              
-                var multi = await con.QueryMultipleAsync("USP_SYNC_MARKS_RESULT_DEMO_ERP", paramList, commandTimeout: 0,
+                var multi = await con.QueryMultipleAsync("USP_SYNC_MARKS_RESULT_DEMO_ERP_AM", paramList, commandTimeout: 0,
                   commandType: CommandType.StoredProcedure);
                 //list = multi.ToList()[0];
 

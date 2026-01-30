@@ -680,7 +680,7 @@ namespace VRSAPPUI.Areas.Admin.Controllers
         //    return View();
         //}
         //[HttpPost]
-        public async Task<IActionResult> StudentList(string SessionName = "", string CourseType = "", bool IsPG = false, int CourseId = 0, string ExamTypeName = "", string CommandNameSrh = null, string RollN = "", int IsLiveStatus = 2, int Page = 1)
+        public async Task<IActionResult> StudentList(string SessionName = "", string CourseType = "", bool IsPG = false, int CourseId = 0, string ExamTypeName = "", string CommandNameSrh = null, string RollN = "", int IsLiveStatus = 2, int Page = 1,int IS_PUBLISHED=3)
         {
             try
             {
@@ -698,7 +698,7 @@ namespace VRSAPPUI.Areas.Admin.Controllers
                 if (CommandNameSrh == "Search")
                 {
                     StudentList_Admin data1 = new StudentList_Admin();
-                    data1= await UOF.IAdminMaster.StudentList_AM("", SessionName, CourseType, IsPG, CourseId, ExamTypeName, RollN, IsLiveStatus, IsAdmin, Page);
+                    data1= await UOF.IAdminMaster.StudentList_AM("", SessionName, CourseType, IsPG, CourseId, ExamTypeName, RollN, IsLiveStatus, IsAdmin, Page, IS_PUBLISHED);
                     data.StudentList = data1.StudentList;
                     data.PagingList = data1.PagingList;
                 }
@@ -709,6 +709,7 @@ namespace VRSAPPUI.Areas.Admin.Controllers
                 data.RollN = RollN;
                 data.IsPG = IsPG;
                 data.IsLiveStatus = IsLiveStatus;
+                data.IS_PUBLISHED = IS_PUBLISHED;
                 return View(data);
             }
             catch (Exception e)

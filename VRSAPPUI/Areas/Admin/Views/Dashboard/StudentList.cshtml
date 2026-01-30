@@ -83,7 +83,7 @@
                                                 }
                                             </select>
                                         </div>
-                                        <div class="col-1 mb-2">
+                                        <div class="col-2 mb-2">
 
                                             <select class="form-select form-control" style="" id="IsPG" name="IsPG" onchange="filter2()">
                                                 @if (Model.IsPG == true)
@@ -137,7 +137,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-3 mb-2">
+                                        <div class="col-8 mb-2">
 
                                             <input type="text" id="RollN" name="RollN" placeholder="Roll No" value="@Model.RollN" class="form-control text-left" />
                                         </div>
@@ -162,6 +162,40 @@
                                                     <option value="2">--All--</option>
                                                     <option value="1">Live</option>
                                                     <option value="0" selected>Not Live</option>
+                                                }
+
+                                            </select>
+                                        </div>
+                                        <div class="col-2 mb-2">
+
+                                            <select class="form-select form-control" style="" id="IS_PUBLISHED" name="IS_PUBLISHED">
+                                                @if (Model.IS_PUBLISHED == 3)
+                                                {
+                                                    <option value="3" selected>--All--</option>
+                                                    <option value="2">Published</option>
+                                                    <option value="1">Not Published</option>
+                                                    <option value="0">Pending</option>
+                                                }
+                                                else if (Model.IS_PUBLISHED == 2)
+                                                { 
+                                                    <option value="3" >--All--</option>
+                                                    <option value="2" selected >Published</option>
+                                                    <option value="1">Not Published</option>
+                                                    <option value="0">Pending</option>
+                                                }
+                                                else if (Model.IS_PUBLISHED == 1)
+                                                {
+                                                    <option value="3" >--All--</option>
+                                                    <option value="2">Published</option>
+                                                    <option value="1" selected >Not Published</option>
+                                                    <option value="0">Pending</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="3" >--All--</option>
+                                                    <option value="2">Published</option>
+                                                    <option value="1">Not Published</option>
+                                                    <option value="0" selected>Pending</option>
                                                 }
 
                                             </select>
@@ -205,7 +239,8 @@
                                         <th>SEM_NO</th>
                                         <th>HeldIn / ResultDate</th>
                                         <th>Result / Final_Result</th>
-                                        <th>Status</th>
+                                            <th>Status</th>
+                                            <th>Publish Status</th>
                                     </tr>
                                 </thead>
 
@@ -278,6 +313,10 @@
                                                         }
 
                                                     </td>
+                                                        <td>
+                                                            @item.IS_PUBLISHED 
+
+                                                        </td>
                                                 </tr>
                                                 
                                             }

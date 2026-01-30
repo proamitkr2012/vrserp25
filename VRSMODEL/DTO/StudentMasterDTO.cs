@@ -55,6 +55,8 @@ namespace VRSMODEL.DTO
         public string? FINAL_RESULT { get; set; }
         public string? CourseType { get; set; }
         public bool? IsLive { get; set; }
+        public int? IS_PUBLISHED { get; set; }
+        public DateTime? PUBLISH_DATE { get; set; }
         public int? GroupID { get; set; }
         public string? GroupName { get; set; }
         public bool? IS_BE_LITERAL { get; set; }
