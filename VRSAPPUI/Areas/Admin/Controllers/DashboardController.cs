@@ -532,7 +532,7 @@ namespace VRSAPPUI.Areas.Admin.Controllers
                 var s = await UOF.IAdminMaster.GetSessionList("SessionList");
                 if (s.Count() == 0) {
                     
-                    SessionDTO ses = new SessionDTO { SessionName = "2024-25" };
+                    SessionDTO ses = new SessionDTO { SessionName = "2025-26" };
                     s.Add(ses);
                 }
                 ViewBag.SessionList = s;

@@ -3,22 +3,12 @@
   "WorkspaceRootPath": "D:\\vrs\\vrserp25\\VRSAPPUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\components\\resultviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:components\\resultviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\areas\\admin\\views\\dashboard\\coursemasterrule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:areas\\admin\\views\\dashboard\\coursemasterrule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB296F64-8E33-456F-BA6D-DCDFFE3AD9AF}|..\\VRSMODEL\\VRSMODEL.csproj|d:\\vrs\\vrserp25\\vrsmodel\\dto\\result\\student_result_amdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A078405C-090E-445D-989C-8EC4677543C0}|..\\VRSREPO\\VRSREPO.csproj|d:\\vrs\\vrserp25\\vrsrepo\\repository\\adminmasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\views\\components\\_result_nep_pg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:views\\components\\_result_nep_pg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\views\\components\\_result_nep_g.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:views\\components\\_result_nep_g.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|d:\\vrs\\vrserp25\\vrsappui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7412F9E-EF8B-4BDF-AA2F-A3DABAA87FF6}|VRSAPPUI.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "STUDENT_RESULT_AMDTO.cs",
-              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSMODEL\\DTO\\Result\\STUDENT_RESULT_AMDTO.cs",
-              "RelativeDocumentMoniker": "..\\VRSMODEL\\DTO\\Result\\STUDENT_RESULT_AMDTO.cs",
-              "ToolTip": "D:\\vrs\\vrserp25\\VRSMODEL\\DTO\\Result\\STUDENT_RESULT_AMDTO.cs",
-              "RelativeToolTip": "..\\VRSMODEL\\DTO\\Result\\STUDENT_RESULT_AMDTO.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAMwO4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T09:58:52.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Result_Nep_PG.cshtml",
-              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Views\\Components\\_Result_Nep_PG.cshtml",
-              "RelativeDocumentMoniker": "Views\\Components\\_Result_Nep_PG.cshtml",
-              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Views\\Components\\_Result_Nep_PG.cshtml",
-              "RelativeToolTip": "Views\\Components\\_Result_Nep_PG.cshtml",
-              "ViewState": "AgIAADUBAAAAAAAAAAAiwEMBAAD7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-29T07:33:11.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Result_Nep_G.cshtml",
-              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Views\\Components\\_Result_Nep_G.cshtml",
-              "RelativeDocumentMoniker": "Views\\Components\\_Result_Nep_G.cshtml",
-              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Views\\Components\\_Result_Nep_G.cshtml",
-              "RelativeToolTip": "Views\\Components\\_Result_Nep_G.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-29T07:33:08.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminMasterRepository.cs",
-              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSREPO\\Repository\\AdminMasterRepository.cs",
-              "RelativeDocumentMoniker": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs",
-              "ToolTip": "D:\\vrs\\vrserp25\\VRSREPO\\Repository\\AdminMasterRepository.cs",
-              "RelativeToolTip": "..\\VRSREPO\\Repository\\AdminMasterRepository.cs",
-              "ViewState": "AgIAAJMFAAAAAAAAAAAWwK8FAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T07:31:00.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResultViewComponent.cs",
-              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Components\\ResultViewComponent.cs",
-              "RelativeDocumentMoniker": "Components\\ResultViewComponent.cs",
-              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Components\\ResultViewComponent.cs",
-              "RelativeToolTip": "Components\\ResultViewComponent.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAWwCcAAAAUAAAAAAAAAA==",
+              "Title": "CourseMasterRule.cshtml",
+              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\CourseMasterRule.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\CourseMasterRule.cshtml",
+              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Areas\\Admin\\Views\\Dashboard\\CourseMasterRule.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\CourseMasterRule.cshtml",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAJ0AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-30T10:36:51.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\vrs\\vrserp25\\VRSAPPUI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\vrs\\vrserp25\\VRSAPPUI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwDEAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T07:31:00.866Z",
+              "WhenOpened": "2026-01-30T10:34:49.584Z",
               "EditorCaption": ""
             }
           ]

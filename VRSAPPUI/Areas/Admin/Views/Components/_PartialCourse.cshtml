@@ -116,6 +116,12 @@
                             IsActive
                         </label>
                     </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input checkboxsize" type="checkbox" value="IsTestingActive" id="IsTestingActive" checked>
+                        <label class="form-check-label p-1" for="IsTestingActive">
+                            IsTestingActive
+                        </label>
+                    </div>
                 </div>
 
                 <div class="text-center">
@@ -240,6 +246,7 @@
             formData.append("IsPG", $('#A_IsPG').prop('checked'));
             formData.append("IsNew", $('#IsNew').prop('checked'));
             formData.append("IsActive", $('#IsActive').prop('checked'));
+            formData.append("IsTestingActive", $('#IsTestingActive').prop('checked'));
            
             formData.append("CtypeID", $('#CtypeID').val());
             

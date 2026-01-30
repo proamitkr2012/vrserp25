@@ -1,0 +1,1076 @@
+2026-01-30 15:45:28.644 +05:30 [INF] Now listening on: https://localhost:7071
+2026-01-30 15:45:28.677 +05:30 [INF] Now listening on: http://localhost:5290
+2026-01-30 15:45:28.748 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-30 15:45:28.749 +05:30 [INF] Hosting environment: Development
+2026-01-30 15:45:28.749 +05:30 [INF] Content root path: D:\vrs\vrserp25\VRSAPPUI
+2026-01-30 15:45:31.454 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 15:45:31.868 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 15:45:31.935 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 15:45:34.536 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 15:45:34.755 +05:30 [INF] Executed ViewResult - view Index executed in 225.8598ms.
+2026-01-30 15:45:34.759 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 2817.486ms
+2026-01-30 15:45:34.760 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 15:45:34.763 +05:30 [INF] HTTP GET / responded 200 in 2895.8753 ms
+2026-01-30 15:45:34.776 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 3343.1947ms
+2026-01-30 15:45:34.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:45:34.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:45:34.812 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 9.6625ms
+2026-01-30 15:45:34.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 15:45:34.905 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.2677 ms
+2026-01-30 15:45:34.906 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 12.0094ms
+2026-01-30 15:45:34.907 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 15:45:34.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 169.3316ms
+2026-01-30 15:45:35.150 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - null null
+2026-01-30 15:45:35.155 +05:30 [INF] HTTP GET /Themes/vendors/scripts/bootstrap-select.min.js.map responded 404 in 0.1019 ms
+2026-01-30 15:45:35.157 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - 404 0 null 6.807ms
+2026-01-30 15:45:35.157 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map, Response status code: 404
+2026-01-30 15:45:35.173 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - null null
+2026-01-30 15:45:35.173 +05:30 [INF] HTTP GET /Themes/vendors/scripts/bootstrap-select.min.js.map responded 404 in 0.0126 ms
+2026-01-30 15:45:35.174 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - 404 0 null 1.1486ms
+2026-01-30 15:45:35.174 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map, Response status code: 404
+2026-01-30 15:46:15.016 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/login - null null
+2026-01-30 15:46:15.028 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 15:46:15.038 +05:30 [INF] Route matched with {area = "Admin", action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.AccountController (VRSAPPUI).
+2026-01-30 15:46:15.070 +05:30 [INF] Executing ViewResult, running view Login.
+2026-01-30 15:46:15.246 +05:30 [INF] Executed ViewResult - view Login executed in 176.8464ms.
+2026-01-30 15:46:15.247 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI) in 208.728ms
+2026-01-30 15:46:15.247 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 15:46:15.247 +05:30 [INF] HTTP GET /admin/login responded 200 in 219.1331 ms
+2026-01-30 15:46:15.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/login - 200 null text/html; charset=utf-8 231.8128ms
+2026-01-30 15:46:15.265 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:46:15.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:46:15.270 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 5.6299ms
+2026-01-30 15:46:15.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.6067ms
+2026-01-30 15:46:15.377 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - null null
+2026-01-30 15:46:15.377 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map responded 404 in 0.0111 ms
+2026-01-30 15:46:15.377 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - 404 0 null 0.8389ms
+2026-01-30 15:46:15.378 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map, Response status code: 404
+2026-01-30 15:46:15.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - null null
+2026-01-30 15:46:15.386 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map responded 404 in 0.0147 ms
+2026-01-30 15:46:15.386 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - 404 0 null 1.5005ms
+2026-01-30 15:46:15.386 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map, Response status code: 404
+2026-01-30 15:46:17.489 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/login - application/json; charset=UTF-8 37
+2026-01-30 15:46:17.496 +05:30 [INF] CORS policy execution successful.
+2026-01-30 15:46:17.505 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 15:46:17.511 +05:30 [INF] Route matched with {area = "Admin", action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VRSMODEL.DTO.LoginDTO, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.AccountController (VRSAPPUI).
+2026-01-30 15:46:18.410 +05:30 [WRN] No store type was specified for the decimal property 'Sequence' on entity type 'NewMasters'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-01-30 15:46:20.281 +05:30 [INF] Executed DbCommand (165ms) [Parameters=[@__admin_AdminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[RoleName]
+FROM [Roles] AS [r]
+INNER JOIN [AdminMasterRoles] AS [a] ON [r].[RoleId] = [a].[RoleId]
+WHERE [a].[AdminId] = @__admin_AdminId_0
+2026-01-30 15:46:20.446 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2026-01-30 15:46:20.504 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
+2026-01-30 15:46:20.514 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI) in 3003.2344ms
+2026-01-30 15:46:20.515 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 15:46:20.515 +05:30 [INF] HTTP POST /admin/login responded 200 in 3009.8574 ms
+2026-01-30 15:46:20.522 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/login - 200 null application/json; charset=utf-8 3032.5554ms
+2026-01-30 15:46:20.528 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard - null null
+2026-01-30 15:46:20.534 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2026-01-30 15:46:20.539 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:46:20.571 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 15:46:20.618 +05:30 [INF] Executed ViewResult - view Index executed in 47.1103ms.
+2026-01-30 15:46:20.619 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI) in 79.9322ms
+2026-01-30 15:46:20.619 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2026-01-30 15:46:20.619 +05:30 [INF] HTTP GET /admin/dashboard responded 200 in 85.6764 ms
+2026-01-30 15:46:20.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard - 200 null text/html; charset=utf-8 92.1764ms
+2026-01-30 15:46:20.678 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:46:20.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.3209ms
+2026-01-30 15:46:20.696 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:46:20.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.7493ms
+2026-01-30 15:46:20.757 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - null null
+2026-01-30 15:46:20.757 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - null null
+2026-01-30 15:46:20.757 +05:30 [INF] HTTP GET /pageui/plugins/moment/moment.min.js.map responded 404 in 0.0186 ms
+2026-01-30 15:46:20.757 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - 404 0 null 0.8984ms
+2026-01-30 15:46:20.758 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map responded 404 in 0.0168 ms
+2026-01-30 15:46:20.758 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map, Response status code: 404
+2026-01-30 15:46:20.758 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - 404 0 null 0.8314ms
+2026-01-30 15:46:20.759 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map, Response status code: 404
+2026-01-30 15:46:20.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - null null
+2026-01-30 15:46:20.766 +05:30 [INF] HTTP GET /pageui/plugins/moment/moment.min.js.map responded 404 in 0.0248 ms
+2026-01-30 15:46:20.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - 404 0 null 2.3757ms
+2026-01-30 15:46:20.766 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map, Response status code: 404
+2026-01-30 15:46:20.770 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - null null
+2026-01-30 15:46:20.771 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - null null
+2026-01-30 15:46:20.771 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map responded 404 in 0.0137 ms
+2026-01-30 15:46:20.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - 404 0 null 1.3211ms
+2026-01-30 15:46:20.771 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map, Response status code: 404
+2026-01-30 15:46:20.771 +05:30 [INF] HTTP GET /pageui/plugins/toastr/toastr.js.map responded 404 in 0.0120 ms
+2026-01-30 15:46:20.772 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - 404 0 null 0.7419ms
+2026-01-30 15:46:20.772 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map, Response status code: 404
+2026-01-30 15:46:20.779 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - null null
+2026-01-30 15:46:20.780 +05:30 [INF] HTTP GET /pageui/plugins/toastr/toastr.js.map responded 404 in 0.0202 ms
+2026-01-30 15:46:20.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - 404 0 null 1.9843ms
+2026-01-30 15:46:20.781 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map, Response status code: 404
+2026-01-30 15:46:25.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 15:46:25.553 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:46:25.560 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:46:25.669 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:46:25.934 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 266.8495ms.
+2026-01-30 15:46:25.934 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 373.8131ms
+2026-01-30 15:46:25.935 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:46:25.935 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 381.2610 ms
+2026-01-30 15:46:25.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 404.2014ms
+2026-01-30 15:46:26.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:46:26.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:46:26.067 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0945ms
+2026-01-30 15:46:26.086 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.587ms
+2026-01-30 15:46:34.114 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=2 - null null
+2026-01-30 15:46:34.129 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 15:46:34.132 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:46:34.252 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 15:46:34.267 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 17.8976ms.
+2026-01-30 15:46:34.268 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 135.7096ms
+2026-01-30 15:46:34.268 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 15:46:34.268 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 139.0690 ms
+2026-01-30 15:46:34.268 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 15:46:34.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=2 - 200 null text/html; charset=utf-8 154.4015ms
+2026-01-30 15:55:21.963 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/course_master - null null
+2026-01-30 15:55:21.978 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.COURSE_MASTER (VRSAPPUI)'
+2026-01-30 15:55:21.984 +05:30 [INF] Route matched with {area = "Admin", action = "COURSE_MASTER", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] COURSE_MASTER(Int32, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:55:22.194 +05:30 [INF] Executing ViewResult, running view COURSE_MASTER.
+2026-01-30 15:55:22.230 +05:30 [INF] Executed ViewResult - view COURSE_MASTER executed in 36.3369ms.
+2026-01-30 15:55:22.231 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.COURSE_MASTER (VRSAPPUI) in 246.5476ms
+2026-01-30 15:55:22.231 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.COURSE_MASTER (VRSAPPUI)'
+2026-01-30 15:55:22.231 +05:30 [INF] HTTP GET /admin/dashboard/course_master responded 200 in 252.8660 ms
+2026-01-30 15:55:22.231 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/course_master - 200 null text/html; charset=utf-8 268.6058ms
+2026-01-30 15:55:22.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:55:22.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:55:22.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0743ms
+2026-01-30 15:55:22.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8872ms
+2026-01-30 15:55:24.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/managecoursemaster - null null
+2026-01-30 15:55:24.765 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.ManageCourseMaster (VRSAPPUI)'
+2026-01-30 15:55:24.771 +05:30 [INF] Route matched with {area = "Admin", action = "ManageCourseMaster", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ManageCourseMaster() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:55:24.928 +05:30 [INF] Executing ViewResult, running view ManageCourseMaster.
+2026-01-30 15:55:24.998 +05:30 [INF] Executed ViewResult - view ManageCourseMaster executed in 71.1317ms.
+2026-01-30 15:55:24.998 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.ManageCourseMaster (VRSAPPUI) in 227.4542ms
+2026-01-30 15:55:24.998 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.ManageCourseMaster (VRSAPPUI)'
+2026-01-30 15:55:24.998 +05:30 [INF] HTTP GET /admin/dashboard/managecoursemaster responded 200 in 233.1742 ms
+2026-01-30 15:55:24.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/managecoursemaster - 200 null text/html; charset=utf-8 237.0036ms
+2026-01-30 15:55:25.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/js/AdminJs/CourseMaster.js?v=cASG19o3JMLKR0GdW2sdUOf5wt7PdEXVMPhRqklmkig - null null
+2026-01-30 15:55:25.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:55:25.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:55:25.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.8563ms
+2026-01-30 15:55:25.037 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.4266ms
+2026-01-30 15:55:25.038 +05:30 [INF] The file /js/AdminJs/CourseMaster.js was not modified
+2026-01-30 15:55:25.039 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/js/AdminJs/CourseMaster.js?v=cASG19o3JMLKR0GdW2sdUOf5wt7PdEXVMPhRqklmkig - 304 null text/javascript 31.356ms
+2026-01-30 15:55:46.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 15:55:46.014 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:55:46.014 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:55:46.185 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:55:46.276 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 91.2647ms.
+2026-01-30 15:55:46.276 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 261.9061ms
+2026-01-30 15:55:46.276 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:55:46.276 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 262.2960 ms
+2026-01-30 15:55:46.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 265.6166ms
+2026-01-30 15:55:46.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:55:46.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:55:46.348 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.4474ms
+2026-01-30 15:55:46.368 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.3941ms
+2026-01-30 15:56:34.843 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 15:56:34.847 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:56:34.853 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:58:09.350 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - application/x-www-form-urlencoded 274
+2026-01-30 15:58:09.360 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - application/x-www-form-urlencoded 274
+2026-01-30 15:58:09.385 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:58:09.396 +05:30 [INF] CORS policy execution successful.
+2026-01-30 15:58:09.396 +05:30 [INF] CORS policy execution successful.
+2026-01-30 15:58:09.396 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:09.397 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:09.400 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule(Boolean, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:58:09.400 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule(Boolean, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:58:09.458 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 80.4103ms.
+2026-01-30 15:58:09.458 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 94604.8364ms
+2026-01-30 15:58:09.458 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:09.458 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 94611.2370 ms
+2026-01-30 15:58:09.458 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 94615.0492ms
+2026-01-30 15:58:09.591 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:58:09.681 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 90.3592ms.
+2026-01-30 15:58:09.681 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 280.9722ms
+2026-01-30 15:58:09.681 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:09.681 +05:30 [INF] HTTP POST /admin/dashboard/coursemasterrule responded 200 in 284.6155 ms
+2026-01-30 15:58:09.681 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 331.2442ms
+2026-01-30 15:58:10.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 15:58:10.341 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:10.345 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:58:16.781 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:58:16.797 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:58:16.853 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 74.1248ms.
+2026-01-30 15:58:16.854 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 6508.7704ms
+2026-01-30 15:58:16.854 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:16.855 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 6513.6804 ms
+2026-01-30 15:58:16.855 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 6519.6381ms
+2026-01-30 15:58:16.858 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 60.9756ms.
+2026-01-30 15:58:16.858 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 7458.1211ms
+2026-01-30 15:58:16.858 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:16.859 +05:30 [INF] HTTP POST /admin/dashboard/coursemasterrule responded 200 in 7462.3111 ms
+2026-01-30 15:58:16.859 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 7499.3771ms
+2026-01-30 15:58:16.867 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:58:16.867 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:58:16.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.03ms
+2026-01-30 15:58:16.894 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.6487ms
+2026-01-30 15:58:23.769 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - application/x-www-form-urlencoded 274
+2026-01-30 15:58:23.783 +05:30 [INF] CORS policy execution successful.
+2026-01-30 15:58:23.784 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:23.788 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule(Boolean, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:58:24.452 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:58:24.517 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 64.5772ms.
+2026-01-30 15:58:24.517 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 728.4274ms
+2026-01-30 15:58:24.517 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:24.517 +05:30 [INF] HTTP POST /admin/dashboard/coursemasterrule responded 200 in 733.7351 ms
+2026-01-30 15:58:24.517 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 749.3357ms
+2026-01-30 15:58:24.529 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:58:24.542 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:58:24.562 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 33.0453ms
+2026-01-30 15:58:24.593 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.5231ms
+2026-01-30 15:58:31.051 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - application/x-www-form-urlencoded 262
+2026-01-30 15:58:31.054 +05:30 [INF] CORS policy execution successful.
+2026-01-30 15:58:31.054 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:31.054 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule(Boolean, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 15:58:31.104 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 15:58:31.168 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 64.0611ms.
+2026-01-30 15:58:31.168 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 114.2315ms
+2026-01-30 15:58:31.168 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 15:58:31.168 +05:30 [INF] HTTP POST /admin/dashboard/coursemasterrule responded 200 in 114.4544 ms
+2026-01-30 15:58:31.169 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 118.3752ms
+2026-01-30 15:58:31.178 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 15:58:31.180 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 15:58:31.180 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.4148ms
+2026-01-30 15:58:31.202 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.8313ms
+2026-01-30 16:00:11.538 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - application/x-www-form-urlencoded 262
+2026-01-30 16:00:11.550 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:00:11.550 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:00:11.556 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule(Boolean, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:00:11.619 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:00:11.694 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 77.0449ms.
+2026-01-30 16:00:11.695 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 139.1995ms
+2026-01-30 16:00:11.696 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:00:11.696 +05:30 [INF] HTTP POST /admin/dashboard/coursemasterrule responded 200 in 145.0954 ms
+2026-01-30 16:00:11.696 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 158.6003ms
+2026-01-30 16:00:11.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:00:11.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:00:11.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.5697ms
+2026-01-30 16:00:11.737 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.6929ms
+2026-01-30 16:00:36.450 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - application/x-www-form-urlencoded 262
+2026-01-30 16:00:36.453 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:00:36.453 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:00:36.458 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule(Boolean, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:00:36.515 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:00:36.597 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 83.664ms.
+2026-01-30 16:00:36.599 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 139.115ms
+2026-01-30 16:00:36.599 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:00:36.599 +05:30 [INF] HTTP POST /admin/dashboard/coursemasterrule responded 200 in 145.8433 ms
+2026-01-30 16:00:36.599 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 149.6985ms
+2026-01-30 16:00:36.680 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:00:36.680 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:00:36.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7667ms
+2026-01-30 16:00:36.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.4664ms
+2026-01-30 16:01:35.820 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - application/x-www-form-urlencoded 262
+2026-01-30 16:01:35.825 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:01:35.825 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:01:35.831 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule(Boolean, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:01:35.896 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:01:35.974 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 81.596ms.
+2026-01-30 16:01:35.975 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 143.767ms
+2026-01-30 16:01:35.975 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:01:35.975 +05:30 [INF] HTTP POST /admin/dashboard/coursemasterrule responded 200 in 150.0691 ms
+2026-01-30 16:01:35.976 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 156.1879ms
+2026-01-30 16:01:35.993 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:01:35.995 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:01:35.996 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.3265ms
+2026-01-30 16:01:36.014 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.8653ms
+2026-01-30 16:03:30.083 +05:30 [INF] Now listening on: https://localhost:7071
+2026-01-30 16:03:30.112 +05:30 [INF] Now listening on: http://localhost:5290
+2026-01-30 16:03:30.169 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-30 16:03:30.170 +05:30 [INF] Hosting environment: Development
+2026-01-30 16:03:30.170 +05:30 [INF] Content root path: D:\vrs\vrserp25\VRSAPPUI
+2026-01-30 16:03:31.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:03:31.850 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:31.876 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:03:32.673 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:03:32.840 +05:30 [INF] Executed ViewResult - view Index executed in 164.1097ms.
+2026-01-30 16:03:32.846 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 968.1393ms
+2026-01-30 16:03:32.847 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:32.851 +05:30 [INF] HTTP GET / responded 200 in 1001.6264 ms
+2026-01-30 16:03:32.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 1233.393ms
+2026-01-30 16:03:32.983 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:03:32.994 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.2416 ms
+2026-01-30 16:03:32.995 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 12.0467ms
+2026-01-30 16:03:32.997 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:03:33.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:03:33.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:03:33.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 25.9061ms
+2026-01-30 16:03:33.093 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.7289ms
+2026-01-30 16:03:33.152 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - null null
+2026-01-30 16:03:33.156 +05:30 [INF] HTTP GET /Themes/vendors/scripts/bootstrap-select.min.js.map responded 404 in 0.0555 ms
+2026-01-30 16:03:33.157 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - 404 0 null 5.2491ms
+2026-01-30 16:03:33.157 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map, Response status code: 404
+2026-01-30 16:03:33.168 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - null null
+2026-01-30 16:03:33.169 +05:30 [INF] HTTP GET /Themes/vendors/scripts/bootstrap-select.min.js.map responded 404 in 0.0166 ms
+2026-01-30 16:03:33.169 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map - 404 0 null 1.8688ms
+2026-01-30 16:03:33.169 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/Themes/vendors/scripts/bootstrap-select.min.js.map, Response status code: 404
+2026-01-30 16:03:42.156 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/ - application/x-www-form-urlencoded 263
+2026-01-30 16:03:42.167 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:03:42.168 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:42.178 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Boolean, Int32, System.String, System.String, System.String) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:03:42.299 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:03:42.311 +05:30 [INF] Executed ViewResult - view Index executed in 12.4795ms.
+2026-01-30 16:03:42.311 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 132.5336ms
+2026-01-30 16:03:42.311 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:42.311 +05:30 [INF] HTTP POST / responded 200 in 143.5455 ms
+2026-01-30 16:03:42.312 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/ - 200 null text/html; charset=utf-8 156.0697ms
+2026-01-30 16:03:42.319 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:03:42.319 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:03:42.322 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.5254ms
+2026-01-30 16:03:42.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:03:42.346 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0152 ms
+2026-01-30 16:03:42.346 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 1.6797ms
+2026-01-30 16:03:42.346 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:03:42.363 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.6297ms
+2026-01-30 16:03:43.979 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/ - application/x-www-form-urlencoded 274
+2026-01-30 16:03:43.983 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:03:43.983 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:43.983 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Boolean, Int32, System.String, System.String, System.String) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:03:44.032 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:03:44.039 +05:30 [INF] Executed ViewResult - view Index executed in 7.0338ms.
+2026-01-30 16:03:44.040 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 56.0542ms
+2026-01-30 16:03:44.040 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:44.040 +05:30 [INF] HTTP POST / responded 200 in 56.6547 ms
+2026-01-30 16:03:44.040 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/ - 200 null text/html; charset=utf-8 61.5792ms
+2026-01-30 16:03:44.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:03:44.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:03:44.051 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.4675ms
+2026-01-30 16:03:44.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:03:44.071 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0145 ms
+2026-01-30 16:03:44.071 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 2.666ms
+2026-01-30 16:03:44.072 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:03:44.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.5296ms
+2026-01-30 16:03:50.170 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:03:50.174 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:50.175 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:03:50.207 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:03:50.212 +05:30 [INF] Executed ViewResult - view Index executed in 4.8098ms.
+2026-01-30 16:03:50.213 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 37.9425ms
+2026-01-30 16:03:50.213 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:50.213 +05:30 [INF] HTTP GET / responded 200 in 38.2940 ms
+2026-01-30 16:03:50.213 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 43.322ms
+2026-01-30 16:03:50.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:03:50.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:03:50.224 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.3151ms
+2026-01-30 16:03:50.250 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:03:50.252 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.1812 ms
+2026-01-30 16:03:50.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 3.082ms
+2026-01-30 16:03:50.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.2642ms
+2026-01-30 16:03:50.253 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:03:56.134 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/ - application/x-www-form-urlencoded 263
+2026-01-30 16:03:56.137 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:03:56.137 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:56.137 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Boolean, Int32, System.String, System.String, System.String) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:03:56.167 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:03:56.175 +05:30 [INF] Executed ViewResult - view Index executed in 7.7069ms.
+2026-01-30 16:03:56.177 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 38.0726ms
+2026-01-30 16:03:56.177 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:03:56.177 +05:30 [INF] HTTP POST / responded 200 in 39.6729 ms
+2026-01-30 16:03:56.181 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/ - 200 null text/html; charset=utf-8 47.2477ms
+2026-01-30 16:03:56.188 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:03:56.188 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:03:56.190 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0501ms
+2026-01-30 16:03:56.204 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:03:56.206 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0231 ms
+2026-01-30 16:03:56.206 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 2.1104ms
+2026-01-30 16:03:56.207 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:03:56.213 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.1883ms
+2026-01-30 16:05:35.333 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:05:35.348 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:05:35.348 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:05:35.402 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:05:35.417 +05:30 [INF] Executed ViewResult - view Index executed in 15.1957ms.
+2026-01-30 16:05:35.417 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 68.3991ms
+2026-01-30 16:05:35.417 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:05:35.417 +05:30 [INF] HTTP GET / responded 200 in 68.7334 ms
+2026-01-30 16:05:35.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 83.8753ms
+2026-01-30 16:05:35.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:05:35.440 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0111 ms
+2026-01-30 16:05:35.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 1.3698ms
+2026-01-30 16:05:35.440 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:05:35.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:05:35.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:05:35.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0135ms
+2026-01-30 16:05:35.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8874ms
+2026-01-30 16:05:39.779 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/ - application/x-www-form-urlencoded 263
+2026-01-30 16:05:39.782 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:05:39.782 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:05:39.782 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Boolean, Int32, System.String, System.String, System.String) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:05:39.815 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:05:39.821 +05:30 [INF] Executed ViewResult - view Index executed in 6.6355ms.
+2026-01-30 16:05:39.821 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 39.4276ms
+2026-01-30 16:05:39.822 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:05:39.822 +05:30 [INF] HTTP POST / responded 200 in 39.6606 ms
+2026-01-30 16:05:39.822 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/ - 200 null text/html; charset=utf-8 43.2481ms
+2026-01-30 16:05:39.829 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:05:39.829 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:05:39.831 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.2222ms
+2026-01-30 16:05:39.851 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:05:39.851 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.57ms
+2026-01-30 16:05:39.852 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0155 ms
+2026-01-30 16:05:39.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 2.0631ms
+2026-01-30 16:05:39.852 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:05:42.114 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/ - application/x-www-form-urlencoded 274
+2026-01-30 16:05:42.116 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:05:42.117 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:05:42.117 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Boolean, Int32, System.String, System.String, System.String) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:05:42.144 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:05:42.150 +05:30 [INF] Executed ViewResult - view Index executed in 5.378ms.
+2026-01-30 16:05:42.150 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 33.182ms
+2026-01-30 16:05:42.150 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:05:42.150 +05:30 [INF] HTTP POST / responded 200 in 33.4261 ms
+2026-01-30 16:05:42.150 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/ - 200 null text/html; charset=utf-8 36.1925ms
+2026-01-30 16:05:42.158 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:05:42.158 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:05:42.159 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.8759ms
+2026-01-30 16:05:42.175 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0798ms
+2026-01-30 16:05:42.176 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:05:42.177 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0140 ms
+2026-01-30 16:05:42.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 1.4044ms
+2026-01-30 16:05:42.177 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:05:44.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/login - null null
+2026-01-30 16:05:44.967 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 16:05:44.971 +05:30 [INF] Route matched with {area = "Admin", action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.AccountController (VRSAPPUI).
+2026-01-30 16:05:44.981 +05:30 [INF] Executing ViewResult, running view Login.
+2026-01-30 16:05:45.016 +05:30 [INF] Executed ViewResult - view Login executed in 36.8203ms.
+2026-01-30 16:05:45.018 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI) in 46.7652ms
+2026-01-30 16:05:45.018 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 16:05:45.018 +05:30 [INF] HTTP GET /admin/login responded 200 in 51.2792 ms
+2026-01-30 16:05:45.019 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/login - 200 null text/html; charset=utf-8 54.5877ms
+2026-01-30 16:05:45.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:05:45.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:05:45.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.3304ms
+2026-01-30 16:05:45.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.8173ms
+2026-01-30 16:05:45.122 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - null null
+2026-01-30 16:05:45.125 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map responded 404 in 0.0202 ms
+2026-01-30 16:05:45.125 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - 404 0 null 3.2585ms
+2026-01-30 16:05:45.126 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map, Response status code: 404
+2026-01-30 16:05:45.131 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - null null
+2026-01-30 16:05:45.131 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map responded 404 in 0.0456 ms
+2026-01-30 16:05:45.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map - 404 0 null 1.5018ms
+2026-01-30 16:05:45.132 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap/js/bootstrap.bundle.min.js.map, Response status code: 404
+2026-01-30 16:05:46.490 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/login - application/json; charset=UTF-8 37
+2026-01-30 16:05:46.492 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:05:46.493 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 16:05:46.499 +05:30 [INF] Route matched with {area = "Admin", action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VRSMODEL.DTO.LoginDTO, System.String) on controller VRSAPPUI.Areas.Admin.Controllers.AccountController (VRSAPPUI).
+2026-01-30 16:05:47.221 +05:30 [WRN] No store type was specified for the decimal property 'Sequence' on entity type 'NewMasters'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-01-30 16:05:48.098 +05:30 [INF] Executed DbCommand (77ms) [Parameters=[@__admin_AdminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[RoleName]
+FROM [Roles] AS [r]
+INNER JOIN [AdminMasterRoles] AS [a] ON [r].[RoleId] = [a].[RoleId]
+WHERE [a].[AdminId] = @__admin_AdminId_0
+2026-01-30 16:05:48.203 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2026-01-30 16:05:48.248 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
+2026-01-30 16:05:48.249 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI) in 1749.5408ms
+2026-01-30 16:05:48.249 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.AccountController.Login (VRSAPPUI)'
+2026-01-30 16:05:48.249 +05:30 [INF] HTTP POST /admin/login responded 200 in 1756.8275 ms
+2026-01-30 16:05:48.256 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/login - 200 null application/json; charset=utf-8 1766.6601ms
+2026-01-30 16:05:48.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard - null null
+2026-01-30 16:05:48.264 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2026-01-30 16:05:48.269 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:05:48.305 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:05:48.353 +05:30 [INF] Executed ViewResult - view Index executed in 48.4891ms.
+2026-01-30 16:05:48.354 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI) in 84.6189ms
+2026-01-30 16:05:48.354 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2026-01-30 16:05:48.354 +05:30 [INF] HTTP GET /admin/dashboard responded 200 in 89.9524 ms
+2026-01-30 16:05:48.355 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard - 200 null text/html; charset=utf-8 95.5235ms
+2026-01-30 16:05:48.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:05:48.386 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.2397ms
+2026-01-30 16:05:48.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:05:48.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.0749ms
+2026-01-30 16:05:48.418 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - null null
+2026-01-30 16:05:48.418 +05:30 [INF] HTTP GET /pageui/plugins/moment/moment.min.js.map responded 404 in 0.0152 ms
+2026-01-30 16:05:48.419 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - 404 0 null 1.1091ms
+2026-01-30 16:05:48.419 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map, Response status code: 404
+2026-01-30 16:05:48.432 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - null null
+2026-01-30 16:05:48.435 +05:30 [INF] HTTP GET /pageui/plugins/moment/moment.min.js.map responded 404 in 0.0221 ms
+2026-01-30 16:05:48.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map - 404 0 null 3.6068ms
+2026-01-30 16:05:48.436 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/moment/moment.min.js.map, Response status code: 404
+2026-01-30 16:05:48.438 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - null null
+2026-01-30 16:05:48.439 +05:30 [INF] HTTP GET /pageui/plugins/toastr/toastr.js.map responded 404 in 0.0132 ms
+2026-01-30 16:05:48.439 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - 404 0 null 0.655ms
+2026-01-30 16:05:48.439 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map, Response status code: 404
+2026-01-30 16:05:48.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - null null
+2026-01-30 16:05:48.447 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - null null
+2026-01-30 16:05:48.447 +05:30 [INF] HTTP GET /pageui/plugins/toastr/toastr.js.map responded 404 in 0.0176 ms
+2026-01-30 16:05:48.448 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map - 404 0 null 1.5629ms
+2026-01-30 16:05:48.448 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map responded 404 in 0.0117 ms
+2026-01-30 16:05:48.448 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/toastr/toastr.js.map, Response status code: 404
+2026-01-30 16:05:48.448 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - 404 0 null 0.9513ms
+2026-01-30 16:05:48.448 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map, Response status code: 404
+2026-01-30 16:05:48.454 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - null null
+2026-01-30 16:05:48.454 +05:30 [INF] HTTP GET /pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map responded 404 in 0.0115 ms
+2026-01-30 16:05:48.455 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map - 404 0 null 1.2988ms
+2026-01-30 16:05:48.455 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/pageui/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map, Response status code: 404
+2026-01-30 16:05:55.848 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:05:55.852 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:05:55.856 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:05:55.925 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:05:56.090 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 166.3427ms.
+2026-01-30 16:05:56.090 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 233.9259ms
+2026-01-30 16:05:56.090 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:05:56.090 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 238.0473 ms
+2026-01-30 16:05:56.091 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 243.1183ms
+2026-01-30 16:05:56.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:05:56.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:05:56.112 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 10.5299ms
+2026-01-30 16:05:56.148 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.8471ms
+2026-01-30 16:06:20.556 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/AddCourse - multipart/form-data; boundary=----WebKitFormBoundaryJKqjJ7dFYqcTEGLo 1686
+2026-01-30 16:06:20.572 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:06:20.572 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.AddCourse (VRSAPPUI)'
+2026-01-30 16:06:20.584 +05:30 [INF] Route matched with {area = "Admin", action = "AddCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCourse(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:06:20.676 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:06:20.684 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.AddCourse (VRSAPPUI) in 100.4222ms
+2026-01-30 16:06:20.685 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.AddCourse (VRSAPPUI)'
+2026-01-30 16:06:20.685 +05:30 [INF] HTTP POST /Admin/Dashboard/AddCourse responded 200 in 112.3243 ms
+2026-01-30 16:06:20.685 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/AddCourse - 200 null application/json; charset=utf-8 128.3773ms
+2026-01-30 16:06:22.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:06:22.708 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:06:22.708 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:06:22.776 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:06:22.862 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 86.3075ms.
+2026-01-30 16:06:22.862 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 153.8708ms
+2026-01-30 16:06:22.862 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:06:22.862 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 154.1225 ms
+2026-01-30 16:06:22.862 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 157.3066ms
+2026-01-30 16:06:22.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:06:22.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:06:22.933 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.9542ms
+2026-01-30 16:06:22.948 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.7923ms
+2026-01-30 16:07:55.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:07:55.846 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:07:55.846 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:07:55.901 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:07:55.991 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 90.0115ms.
+2026-01-30 16:07:55.993 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 146.6518ms
+2026-01-30 16:07:55.993 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:07:55.993 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 147.1261 ms
+2026-01-30 16:07:55.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 158.7028ms
+2026-01-30 16:07:56.077 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:07:56.077 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:07:56.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0144ms
+2026-01-30 16:07:56.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0405ms
+2026-01-30 16:07:59.646 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:07:59.650 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:07:59.656 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:07:59.712 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:07:59.815 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 105.1458ms.
+2026-01-30 16:07:59.815 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 159.1833ms
+2026-01-30 16:07:59.815 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:07:59.815 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 165.6324 ms
+2026-01-30 16:07:59.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 169.8685ms
+2026-01-30 16:07:59.826 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:07:59.828 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:07:59.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.9046ms
+2026-01-30 16:07:59.851 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.9187ms
+2026-01-30 16:08:04.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:08:04.070 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:04.076 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:08:04.189 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:08:04.214 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 25.958ms.
+2026-01-30 16:08:04.214 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 137.5052ms
+2026-01-30 16:08:04.214 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:04.214 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 144.0459 ms
+2026-01-30 16:08:04.214 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:08:04.214 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 163.4213ms
+2026-01-30 16:08:15.210 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:08:15.213 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:08:15.218 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:08:15.248 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:08:15.265 +05:30 [INF] Executed ViewResult - view Index executed in 17.8006ms.
+2026-01-30 16:08:15.265 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 47.2717ms
+2026-01-30 16:08:15.265 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:08:15.267 +05:30 [INF] HTTP GET / responded 200 in 52.3709 ms
+2026-01-30 16:08:15.267 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 57.7529ms
+2026-01-30 16:08:15.304 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:08:15.311 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 7.1604ms
+2026-01-30 16:08:15.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:08:15.329 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9724ms
+2026-01-30 16:08:15.373 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:08:15.374 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0136 ms
+2026-01-30 16:08:15.374 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 1.3568ms
+2026-01-30 16:08:15.374 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:08:23.278 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=2 - null null
+2026-01-30 16:08:23.281 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:23.282 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:08:23.369 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:08:23.372 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 2.7713ms.
+2026-01-30 16:08:23.372 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 90.4048ms
+2026-01-30 16:08:23.372 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:23.372 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 90.6154 ms
+2026-01-30 16:08:23.372 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:08:23.372 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=2 - 200 null text/html; charset=utf-8 94.2806ms
+2026-01-30 16:08:26.410 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:08:26.413 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:26.413 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:08:26.506 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:08:26.509 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 3.4301ms.
+2026-01-30 16:08:26.509 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 95.844ms
+2026-01-30 16:08:26.509 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:26.509 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 96.0678 ms
+2026-01-30 16:08:26.509 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:08:26.509 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 99.2067ms
+2026-01-30 16:08:29.075 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundaryZLEwi5sMaXAog5aK 1782
+2026-01-30 16:08:29.075 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:08:29.076 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:08:29.082 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:08:29.141 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:08:29.143 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 60.9039ms
+2026-01-30 16:08:29.143 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:08:29.143 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 67.6466 ms
+2026-01-30 16:08:29.143 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 69.2566ms
+2026-01-30 16:08:31.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:08:31.166 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:08:31.166 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:08:31.225 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:08:31.301 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 75.2424ms.
+2026-01-30 16:08:31.301 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 134.5461ms
+2026-01-30 16:08:31.301 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:08:31.301 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 134.9564 ms
+2026-01-30 16:08:31.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 139.2146ms
+2026-01-30 16:08:31.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:08:31.315 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:08:31.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 4.3288ms
+2026-01-30 16:08:31.345 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.1002ms
+2026-01-30 16:08:34.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:08:34.405 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:08:34.405 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:08:34.455 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:08:34.534 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 79.1392ms.
+2026-01-30 16:08:34.534 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 129.3831ms
+2026-01-30 16:08:34.534 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:08:34.536 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 130.7905 ms
+2026-01-30 16:08:34.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:08:34.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:08:34.541 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 137.3223ms
+2026-01-30 16:08:34.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 7.9439ms
+2026-01-30 16:08:34.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.8302ms
+2026-01-30 16:08:36.962 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:08:36.966 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:36.966 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:08:37.051 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:08:37.053 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 1.9181ms.
+2026-01-30 16:08:37.053 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 86.7922ms
+2026-01-30 16:08:37.053 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:08:37.053 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 87.0818 ms
+2026-01-30 16:08:37.053 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:08:37.053 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 91.1175ms
+2026-01-30 16:10:12.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:10:12.402 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:10:12.402 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:10:12.496 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:10:12.498 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 2.0333ms.
+2026-01-30 16:10:12.498 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 96.1228ms
+2026-01-30 16:10:12.498 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:10:12.498 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 96.3060 ms
+2026-01-30 16:10:12.499 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:10:12.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 111.8042ms
+2026-01-30 16:10:13.898 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundaryhkMezmhZp0AL4oTV 1781
+2026-01-30 16:10:13.898 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:10:13.898 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:10:13.898 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:12:45.046 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:12:45.047 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 151148.2232ms
+2026-01-30 16:12:45.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:12:45.047 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:12:45.048 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 151149.3857 ms
+2026-01-30 16:12:45.048 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 151150.2014ms
+2026-01-30 16:12:45.071 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:12:45.073 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:12:45.127 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:12:45.203 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 77.843ms.
+2026-01-30 16:12:45.203 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 129.9624ms
+2026-01-30 16:12:45.203 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:12:45.203 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 132.7868 ms
+2026-01-30 16:12:45.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 157.2835ms
+2026-01-30 16:12:45.215 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:12:45.215 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:12:45.217 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.1171ms
+2026-01-30 16:12:45.239 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.9976ms
+2026-01-30 16:12:45.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:12:45.977 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:12:45.982 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:12:45.984 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:12:45.989 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:12:45.995 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:12:46.038 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:12:46.127 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 89.0278ms.
+2026-01-30 16:12:46.127 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 144.8998ms
+2026-01-30 16:12:46.127 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:12:46.127 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 149.8191 ms
+2026-01-30 16:12:46.127 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 154.0337ms
+2026-01-30 16:12:46.136 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:12:46.137 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:12:46.138 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.8662ms
+2026-01-30 16:12:46.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.9341ms
+2026-01-30 16:12:46.162 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:12:46.173 +05:30 [INF] Executed ViewResult - view Index executed in 12.0786ms.
+2026-01-30 16:12:46.173 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 177.5469ms
+2026-01-30 16:12:46.173 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:12:46.173 +05:30 [INF] HTTP GET / responded 200 in 183.9802 ms
+2026-01-30 16:12:46.173 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 189.3486ms
+2026-01-30 16:12:46.196 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:12:46.197 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.7395ms
+2026-01-30 16:12:46.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:12:46.217 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.3592ms
+2026-01-30 16:12:46.238 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:12:46.240 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0159 ms
+2026-01-30 16:12:46.240 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 3.0127ms
+2026-01-30 16:12:46.240 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:12:48.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:12:48.940 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:12:48.944 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:12:49.716 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:12:49.729 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 13.6647ms.
+2026-01-30 16:12:49.729 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 785.4686ms
+2026-01-30 16:12:49.729 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:12:49.729 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 788.7051 ms
+2026-01-30 16:12:49.729 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:12:49.729 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 807.7944ms
+2026-01-30 16:12:53.080 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundarynuNbpc1sR8uyamMs 1781
+2026-01-30 16:12:53.081 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:12:53.081 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:12:53.089 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:12:54.577 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:12:54.578 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 1489.3045ms
+2026-01-30 16:12:54.578 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:12:54.578 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 1497.4751 ms
+2026-01-30 16:12:54.579 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 1498.7718ms
+2026-01-30 16:12:56.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:12:56.604 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:12:56.605 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:12:56.655 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:12:56.744 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 88.4959ms.
+2026-01-30 16:12:56.744 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 139.2023ms
+2026-01-30 16:12:56.744 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:12:56.744 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 139.5957 ms
+2026-01-30 16:12:56.744 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 143.064ms
+2026-01-30 16:12:56.754 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:12:56.755 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:12:56.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.3732ms
+2026-01-30 16:12:56.778 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.4127ms
+2026-01-30 16:12:57.992 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:12:57.995 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:12:57.995 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:12:58.089 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:12:58.091 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 1.6664ms.
+2026-01-30 16:12:58.091 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 95.9821ms
+2026-01-30 16:12:58.091 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:12:58.091 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 96.1499 ms
+2026-01-30 16:12:58.091 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:12:58.091 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 99.3513ms
+2026-01-30 16:13:07.309 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundary3TdT3pE9NBLwyze2 1782
+2026-01-30 16:13:07.309 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:13:07.310 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:13:07.310 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:13:14.467 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:13:14.467 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 7157.5201ms
+2026-01-30 16:13:14.467 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:13:14.468 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 7157.8159 ms
+2026-01-30 16:13:14.468 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 7159.0893ms
+2026-01-30 16:13:16.488 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:13:16.491 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:13:16.491 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:13:16.551 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:13:16.613 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 62.566ms.
+2026-01-30 16:13:16.613 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 122.7111ms
+2026-01-30 16:13:16.613 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:13:16.613 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 122.8763 ms
+2026-01-30 16:13:16.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 125.3544ms
+2026-01-30 16:13:16.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:13:16.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:13:16.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.1278ms
+2026-01-30 16:13:16.648 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.2532ms
+2026-01-30 16:13:20.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:13:20.711 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:13:20.711 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:13:20.792 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:13:20.794 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 1.7604ms.
+2026-01-30 16:13:20.794 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 82.9571ms
+2026-01-30 16:13:20.794 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:13:20.794 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 83.1730 ms
+2026-01-30 16:13:20.794 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:13:20.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 87.747ms
+2026-01-30 16:13:50.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:13:50.589 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:13:50.589 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:13:50.639 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:13:50.701 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 61.9131ms.
+2026-01-30 16:13:50.701 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 111.6941ms
+2026-01-30 16:13:50.701 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:13:50.701 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 111.9417 ms
+2026-01-30 16:13:50.701 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 121.8539ms
+2026-01-30 16:13:50.714 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:13:50.714 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:13:50.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 6.5878ms
+2026-01-30 16:13:50.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.835ms
+2026-01-30 16:13:52.919 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:13:52.923 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:13:52.923 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:13:53.006 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:13:53.008 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 1.7305ms.
+2026-01-30 16:13:53.008 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 85.2862ms
+2026-01-30 16:13:53.008 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:13:53.008 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 85.5578 ms
+2026-01-30 16:13:53.008 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:13:53.008 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 89.1261ms
+2026-01-30 16:13:56.541 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundaryNuwg29hLQrrVYlOb 1782
+2026-01-30 16:13:56.542 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:13:56.542 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:13:56.543 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:15:02.623 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:15:02.624 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 66081.5363ms
+2026-01-30 16:15:02.624 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:15:02.624 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 66081.8222 ms
+2026-01-30 16:15:02.628 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 66086.2971ms
+2026-01-30 16:15:03.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:15:03.632 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:15:03.640 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:15:03.640 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:15:03.645 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:15:03.646 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:15:03.680 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:15:03.692 +05:30 [INF] Executed ViewResult - view Index executed in 14.5536ms.
+2026-01-30 16:15:03.693 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 47.3246ms
+2026-01-30 16:15:03.693 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:15:03.693 +05:30 [INF] HTTP GET / responded 200 in 53.6634 ms
+2026-01-30 16:15:03.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 61.2805ms
+2026-01-30 16:15:03.707 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:15:03.737 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:15:03.740 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0219 ms
+2026-01-30 16:15:03.740 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 3.5137ms
+2026-01-30 16:15:03.740 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:15:03.791 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 84.7957ms.
+2026-01-30 16:15:03.791 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 145.2221ms
+2026-01-30 16:15:03.791 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:15:03.791 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 151.2967 ms
+2026-01-30 16:15:03.792 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 186.4466ms
+2026-01-30 16:15:03.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:15:03.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:15:03.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.8509ms
+2026-01-30 16:15:03.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:15:03.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:15:03.945 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.3398ms
+2026-01-30 16:15:03.962 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.5282ms
+2026-01-30 16:15:03.974 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.0419ms
+2026-01-30 16:15:09.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:15:09.527 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:15:09.532 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:15:09.612 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:15:09.622 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 10.2106ms.
+2026-01-30 16:15:09.622 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 89.8979ms
+2026-01-30 16:15:09.622 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:15:09.622 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 94.5122 ms
+2026-01-30 16:15:09.622 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:15:09.622 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 110.2888ms
+2026-01-30 16:15:11.668 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundaryBBduwSeWPUMHHsZM 1781
+2026-01-30 16:15:11.668 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:15:11.669 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:15:11.676 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:15:22.520 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:15:22.521 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 10845.2427ms
+2026-01-30 16:15:22.521 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:15:22.521 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 10852.4374 ms
+2026-01-30 16:15:22.521 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 10853.565ms
+2026-01-30 16:15:24.543 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:15:24.545 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:15:24.545 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:15:24.851 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:15:25.066 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 215.0555ms.
+2026-01-30 16:15:25.066 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 520.5841ms
+2026-01-30 16:15:25.066 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:15:25.066 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 520.7928 ms
+2026-01-30 16:15:25.067 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 523.9543ms
+2026-01-30 16:15:25.083 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:15:25.083 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:15:25.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.503ms
+2026-01-30 16:15:25.112 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.8737ms
+2026-01-30 16:15:34.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:15:34.884 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:15:34.884 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:15:34.916 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:15:34.920 +05:30 [INF] Executed ViewResult - view Index executed in 4.6101ms.
+2026-01-30 16:15:34.920 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 36.51ms
+2026-01-30 16:15:34.920 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:15:34.920 +05:30 [INF] HTTP GET / responded 200 in 36.7120 ms
+2026-01-30 16:15:34.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 39.9335ms
+2026-01-30 16:15:34.928 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:15:34.928 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:15:34.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.5965ms
+2026-01-30 16:15:34.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.8415ms
+2026-01-30 16:15:34.953 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:15:34.954 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0160 ms
+2026-01-30 16:15:34.954 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 1.4709ms
+2026-01-30 16:15:34.954 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:17:16.086 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:17:16.104 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:17:16.106 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:17:16.180 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:17:16.185 +05:30 [INF] Executed ViewResult - view Index executed in 5.0346ms.
+2026-01-30 16:17:16.186 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 79.3028ms
+2026-01-30 16:17:16.186 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:17:16.186 +05:30 [INF] HTTP GET / responded 200 in 82.8098 ms
+2026-01-30 16:17:16.187 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 101.1048ms
+2026-01-30 16:17:16.214 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:17:16.215 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0117 ms
+2026-01-30 16:17:16.215 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 1.2948ms
+2026-01-30 16:17:16.216 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:17:16.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:17:16.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:17:16.261 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.1494ms
+2026-01-30 16:17:16.279 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.5026ms
+2026-01-30 16:17:19.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:17:19.124 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:17:19.124 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:19.205 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:17:19.208 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 2.1991ms.
+2026-01-30 16:17:19.208 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 83.5463ms
+2026-01-30 16:17:19.208 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:17:19.208 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 83.7548 ms
+2026-01-30 16:17:19.208 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:17:19.208 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 86.9995ms
+2026-01-30 16:17:22.867 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundarycGtA3tLT459PTy2p 1782
+2026-01-30 16:17:22.867 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:17:22.867 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:17:22.867 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:22.916 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:17:22.916 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 48.6155ms
+2026-01-30 16:17:22.916 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:17:22.916 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 48.8954 ms
+2026-01-30 16:17:22.916 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 50.0341ms
+2026-01-30 16:17:24.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:17:24.956 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:17:24.959 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:24.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:17:24.965 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:17:24.965 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:17:24.994 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:17:24.999 +05:30 [INF] Executed ViewResult - view Index executed in 5.0979ms.
+2026-01-30 16:17:24.999 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 33.4318ms
+2026-01-30 16:17:24.999 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:17:24.999 +05:30 [INF] HTTP GET / responded 200 in 33.6545 ms
+2026-01-30 16:17:24.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 38.507ms
+2026-01-30 16:17:25.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:17:25.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:17:25.014 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:17:25.014 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.7116ms
+2026-01-30 16:17:25.033 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:17:25.033 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.0113ms
+2026-01-30 16:17:25.034 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0113 ms
+2026-01-30 16:17:25.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 1.1028ms
+2026-01-30 16:17:25.034 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:17:25.083 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 69.1951ms.
+2026-01-30 16:17:25.083 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 124.1117ms
+2026-01-30 16:17:25.083 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:17:25.083 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 127.0807 ms
+2026-01-30 16:17:25.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 131.7926ms
+2026-01-30 16:17:25.093 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:17:25.093 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:17:25.096 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.1051ms
+2026-01-30 16:17:25.112 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.7505ms
+2026-01-30 16:17:27.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - null null
+2026-01-30 16:17:27.272 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:17:27.272 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourse", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourse(Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:27.358 +05:30 [INF] Executing PartialViewResult, running view _EditCourse.
+2026-01-30 16:17:27.360 +05:30 [INF] Executed PartialViewResult - view _EditCourse executed in 1.7605ms.
+2026-01-30 16:17:27.360 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI) in 87.6166ms
+2026-01-30 16:17:27.360 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourse (VRSAPPUI)'
+2026-01-30 16:17:27.360 +05:30 [INF] HTTP GET /Admin/Dashboard/EditCourse responded 200 in 87.7885 ms
+2026-01-30 16:17:27.360 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 16:17:27.360 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/EditCourse?EntryID=3 - 200 null text/html; charset=utf-8 91.4386ms
+2026-01-30 16:17:29.289 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - multipart/form-data; boundary=----WebKitFormBoundaryBoE7zLypeY0Jd1nv 1781
+2026-01-30 16:17:29.290 +05:30 [INF] CORS policy execution successful.
+2026-01-30 16:17:29.290 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:17:29.290 +05:30 [INF] Route matched with {area = "Admin", action = "EditCourseUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditCourseUpdate(VRSMODEL.DTO.CourseMasterDTO_AM) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:29.331 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 16:17:29.332 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI) in 41.6624ms
+2026-01-30 16:17:29.332 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.EditCourseUpdate (VRSAPPUI)'
+2026-01-30 16:17:29.332 +05:30 [INF] HTTP POST /Admin/Dashboard/EditCourseUpdate responded 200 in 41.9807 ms
+2026-01-30 16:17:29.332 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/EditCourseUpdate - 200 null application/json; charset=utf-8 43.0916ms
+2026-01-30 16:17:31.359 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:17:31.361 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:17:31.361 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:31.429 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:17:31.496 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 67.3205ms.
+2026-01-30 16:17:31.496 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 135.3142ms
+2026-01-30 16:17:31.496 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:17:31.496 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 135.5098 ms
+2026-01-30 16:17:31.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 138.0928ms
+2026-01-30 16:17:31.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:17:31.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:17:31.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.6493ms
+2026-01-30 16:17:31.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.0745ms
+2026-01-30 16:17:39.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/ - null null
+2026-01-30 16:17:39.709 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:17:39.709 +05:30 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 16:17:39.735 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:17:39.742 +05:30 [INF] Executed ViewResult - view Index executed in 6.8869ms.
+2026-01-30 16:17:39.742 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI) in 32.4672ms
+2026-01-30 16:17:39.742 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Index (VRSAPPUI)'
+2026-01-30 16:17:39.742 +05:30 [INF] HTTP GET / responded 200 in 32.6868 ms
+2026-01-30 16:17:39.742 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/ - 200 null text/html; charset=utf-8 36.8871ms
+2026-01-30 16:17:39.752 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:17:39.754 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:17:39.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.082ms
+2026-01-30 16:17:39.773 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/images/home-bg.webp - null null
+2026-01-30 16:17:39.775 +05:30 [INF] HTTP GET /images/home-bg.webp responded 404 in 0.0199 ms
+2026-01-30 16:17:39.777 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/images/home-bg.webp - 404 0 null 2.8556ms
+2026-01-30 16:17:39.777 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7071/images/home-bg.webp, Response status code: 404
+2026-01-30 16:17:39.787 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.5717ms
+2026-01-30 16:17:43.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:17:43.469 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:17:43.469 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:43.527 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:17:43.599 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 71.4737ms.
+2026-01-30 16:17:43.599 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 130.124ms
+2026-01-30 16:17:43.599 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:17:43.599 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 130.3193 ms
+2026-01-30 16:17:43.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 133.0209ms
+2026-01-30 16:17:43.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:17:43.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:17:43.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.5672ms
+2026-01-30 16:17:43.664 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.9107ms
+2026-01-30 16:17:49.880 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard - null null
+2026-01-30 16:17:49.883 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2026-01-30 16:17:49.889 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:17:49.891 +05:30 [INF] Executing ViewResult, running view Index.
+2026-01-30 16:17:49.898 +05:30 [INF] Executed ViewResult - view Index executed in 7.7637ms.
+2026-01-30 16:17:49.898 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI) in 8.4423ms
+2026-01-30 16:17:49.898 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.Index (VRSAPPUI)'
+2026-01-30 16:17:49.898 +05:30 [INF] HTTP GET /admin/dashboard responded 200 in 15.3171 ms
+2026-01-30 16:17:49.898 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard - 200 null text/html; charset=utf-8 18.8751ms
+2026-01-30 16:17:50.174 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:17:50.178 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:17:50.178 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 4.8322ms
+2026-01-30 16:17:50.199 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.6925ms
+2026-01-30 16:19:16.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/studentlist - null null
+2026-01-30 16:19:16.359 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 16:19:16.368 +05:30 [INF] Route matched with {area = "Admin", action = "StudentList", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentList(System.String, System.String, Boolean, Int32, System.String, System.String, System.String, Int32, Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:19:16.552 +05:30 [INF] Executing ViewResult, running view StudentList.
+2026-01-30 16:19:16.636 +05:30 [INF] Executed ViewResult - view StudentList executed in 85.9318ms.
+2026-01-30 16:19:16.637 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI) in 268.2139ms
+2026-01-30 16:19:16.637 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 16:19:16.637 +05:30 [INF] HTTP GET /admin/dashboard/studentlist responded 200 in 277.3065 ms
+2026-01-30 16:19:16.637 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/studentlist - 200 null text/html; charset=utf-8 291.0787ms
+2026-01-30 16:19:16.648 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:19:16.648 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:19:16.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 5.0755ms
+2026-01-30 16:19:16.670 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.9866ms
+2026-01-30 16:19:19.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - null null
+2026-01-30 16:19:19.218 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:19:19.219 +05:30 [INF] Route matched with {area = "Admin", action = "CourseMasterRule", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CourseMasterRule() on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 16:19:19.271 +05:30 [INF] Executing ViewResult, running view CourseMasterRule.
+2026-01-30 16:19:19.341 +05:30 [INF] Executed ViewResult - view CourseMasterRule executed in 69.5842ms.
+2026-01-30 16:19:19.341 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI) in 122.1716ms
+2026-01-30 16:19:19.341 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CourseMasterRule (VRSAPPUI)'
+2026-01-30 16:19:19.341 +05:30 [INF] HTTP GET /admin/dashboard/coursemasterrule responded 200 in 122.3573 ms
+2026-01-30 16:19:19.341 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/admin/dashboard/coursemasterrule - 200 null text/html; charset=utf-8 125.0918ms
+2026-01-30 16:19:19.356 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 16:19:19.358 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 16:19:19.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 5.7088ms
+2026-01-30 16:19:19.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.7206ms

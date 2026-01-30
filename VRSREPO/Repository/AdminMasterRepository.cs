@@ -1245,7 +1245,8 @@ namespace VRSREPO
                     ImageURL = model.ImageURL,
                     IsNew = model.IsNew,
                     Rules = model.Rules,
-                    CtypeID = model.CtypeID
+                    CtypeID = model.CtypeID,
+                    IsTestingActive = model.IsTestingActive
                 };
                 var d = await con.QueryAsync<FormResponse>("AddCourse_AM", paramList,
                     commandType: CommandType.StoredProcedure);
@@ -1288,7 +1289,8 @@ namespace VRSREPO
                     ImageURL = model.ImageURL,
                     IsNew = model.IsNew,
                     Rules = model.Rules,
-                    CtypeID = model.CtypeID
+                    CtypeID = model.CtypeID,
+                    IsTestingActive = model.IsTestingActive
                 };
                 var d = await con.QueryAsync<FormResponse>("EditCourse_AM", paramList,
                     commandType: CommandType.StoredProcedure);

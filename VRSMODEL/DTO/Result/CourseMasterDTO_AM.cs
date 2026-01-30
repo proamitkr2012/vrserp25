@@ -38,6 +38,7 @@ namespace VRSMODEL.DTO
         public string? LivedCount { get; set; }
         public bool IsCount { get; set; } = false;
          public bool? AllowForConsolidate { get; set; }
+         public bool? IsTestingActive { get; set; }
         public List<COURSEANDTYPEMAPDTO_AM> CtypeMapList { get; set; }
         //public Enumerable<SelectListItem> CtMaster { get; set; }
         

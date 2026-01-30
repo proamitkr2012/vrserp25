@@ -104,6 +104,7 @@
                         var checkedUG = Model.IsPG == false ? "checked" : "";
                         var checkedIsNew = Model.IsNew == true ? "checked" : "";
                         var checkedIsActive = Model.IsActive == true ? "checked" : "";
+                        var checkedIsTestingActive = Model.IsTestingActive == true ? "checked" : "";
                     }
                     <div class="form-check form-check-inline">
                         <input class="form-check-input checkboxsize" type="radio"  name="IsPG" id="E_IsUG" @checkedUG>
@@ -129,6 +130,12 @@
                             IsActive
                         </label>
                     </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input checkboxsize" type="checkbox" id="CIsTestingActive" @checkedIsTestingActive>
+                        <label class="form-check-label p-1" for="IsTestingActive">
+                            IsTestingActive
+                        </label>
+                    </div>
                 </div>
 
                 <div class="text-center">
@@ -150,6 +157,7 @@
         $("#formIndex").submit();
     }
     function EditCourse() {
+
         flag = true;
        
         if ($("#E_CourseID").val() == "" || $("#E_CourseID").val() == "0") {
@@ -252,6 +260,7 @@
             formData.append("IsPG", $('#E_IsPG').prop('checked'));
             formData.append("IsNew", $('#CIsNew').prop('checked'));
             formData.append("IsActive", $('#CIsActive').prop('checked'));
+            formData.append("IsTestingActive", $('#CIsTestingActive').prop('checked'));
           
             formData.append("CtypeID", $('#UCtypeID').val());
 

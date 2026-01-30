@@ -80,7 +80,7 @@
 
                                         <th>TemplateName</th>
                                         <th>IsPG</th>
-                                        <th>IsActive/Seq/IsNew</th>
+                                        <th>IsActive/Seq/IsNew/isTest</th>
                                         @if (ViewBag.IsCount == true)
                                         {
                                             <th>Total/NotLived</th>
@@ -152,6 +152,11 @@
                                                         {
                                                             <span>Old</span>
                                                         }
+                                                        /
+                                                            @if (item.IsTestingActive == true)
+                                                            {
+                                                                <span>Testing</span>
+                                                            }
                                                     </td>
                                                     @if (ViewBag.IsCount == true)
                                                     {
