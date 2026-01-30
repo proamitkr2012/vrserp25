@@ -3835,3 +3835,218 @@ WHERE [a].[AdminId] = @__admin_AdminId_0
 2026-01-30 18:12:22.816 +05:30 [INF] HTTP GET /Admin/Dashboard/CheckResultData responded 200 in 46.4012 ms
 2026-01-30 18:12:22.816 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
 2026-01-30 18:12:22.817 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500028590007 - 200 null text/html; charset=utf-8 49.371ms
+2026-01-30 18:12:55.071 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - application/x-www-form-urlencoded 375
+2026-01-30 18:12:55.074 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:12:55.075 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:12:55.075 +05:30 [INF] Route matched with {area = "Admin", action = "StudentList", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentList(System.String, System.String, Boolean, Int32, System.String, System.String, System.String, Int32, Int32, Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:12:55.242 +05:30 [INF] Executing ViewResult, running view StudentList.
+2026-01-30 18:12:55.276 +05:30 [INF] Executed ViewResult - view StudentList executed in 34.8052ms.
+2026-01-30 18:12:55.277 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI) in 201.6832ms
+2026-01-30 18:12:55.277 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:12:55.277 +05:30 [INF] HTTP POST /admin/dashboard/studentlist responded 200 in 202.0532 ms
+2026-01-30 18:12:55.277 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - 200 null text/html; charset=utf-8 205.9493ms
+2026-01-30 18:12:55.352 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 18:12:55.352 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 18:12:55.354 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.5178ms
+2026-01-30 18:12:55.370 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9257ms
+2026-01-30 18:13:08.972 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/StudentStatusUpdate - multipart/form-data; boundary=----WebKitFormBoundary2FLRB1BAXJUy26D3 343
+2026-01-30 18:13:08.974 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:08.974 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI)'
+2026-01-30 18:13:08.975 +05:30 [INF] Route matched with {area = "Admin", action = "StudentStatusUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentStatusUpdate(System.String, System.String, System.Nullable`1[System.DateTime]) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:09.171 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 18:13:09.171 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI) in 196.4195ms
+2026-01-30 18:13:09.171 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI)'
+2026-01-30 18:13:09.171 +05:30 [INF] HTTP POST /Admin/Dashboard/StudentStatusUpdate responded 200 in 196.7127 ms
+2026-01-30 18:13:09.171 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/StudentStatusUpdate - 200 null application/json; charset=utf-8 199.2062ms
+2026-01-30 18:13:09.180 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - application/x-www-form-urlencoded 375
+2026-01-30 18:13:09.183 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:09.183 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:09.183 +05:30 [INF] Route matched with {area = "Admin", action = "StudentList", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentList(System.String, System.String, Boolean, Int32, System.String, System.String, System.String, Int32, Int32, Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:09.876 +05:30 [INF] Executing ViewResult, running view StudentList.
+2026-01-30 18:13:09.899 +05:30 [INF] Executed ViewResult - view StudentList executed in 22.3487ms.
+2026-01-30 18:13:09.899 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI) in 715.7374ms
+2026-01-30 18:13:09.899 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:09.899 +05:30 [INF] HTTP POST /admin/dashboard/studentlist responded 200 in 716.1680 ms
+2026-01-30 18:13:09.900 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - 200 null text/html; charset=utf-8 719.6986ms
+2026-01-30 18:13:09.989 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 18:13:09.990 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 18:13:09.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.1759ms
+2026-01-30 18:13:10.009 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.9454ms
+2026-01-30 18:13:15.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - null null
+2026-01-30 18:13:15.709 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:13:15.709 +05:30 [INF] Route matched with {area = "Admin", action = "CheckResultData", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckResultData(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:15.749 +05:30 [INF] Executing PartialViewResult, running view _PageData.
+2026-01-30 18:13:15.749 +05:30 [INF] Executed PartialViewResult - view _PageData executed in 0.3285ms.
+2026-01-30 18:13:15.749 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI) in 40.4262ms
+2026-01-30 18:13:15.749 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:13:15.749 +05:30 [INF] HTTP GET /Admin/Dashboard/CheckResultData responded 200 in 40.6627 ms
+2026-01-30 18:13:15.750 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 18:13:15.750 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - 200 null text/html; charset=utf-8 44.662ms
+2026-01-30 18:13:21.818 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/searchordinancestudent - multipart/form-data; boundary=----WebKitFormBoundaryjMqsyGZjiBfklR23 672
+2026-01-30 18:13:21.819 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:21.819 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.SearchOrdinanceStudent (VRSAPPUI)'
+2026-01-30 18:13:21.819 +05:30 [INF] Route matched with {area = "Admin", action = "SearchOrdinanceStudent", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchOrdinanceStudent(VRSMODEL.DTO.ORDINANCE_STUDENT_DTO) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:21.974 +05:30 [INF] Executing JsonResult, writing value of type 'VRSMODEL.DTO.Result.FormResponse'.
+2026-01-30 18:13:21.975 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.SearchOrdinanceStudent (VRSAPPUI) in 155.3075ms
+2026-01-30 18:13:21.975 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.SearchOrdinanceStudent (VRSAPPUI)'
+2026-01-30 18:13:21.975 +05:30 [INF] HTTP POST /admin/dashboard/searchordinancestudent responded 200 in 155.7197 ms
+2026-01-30 18:13:21.975 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/searchordinancestudent - 200 null application/json; charset=utf-8 157.0613ms
+2026-01-30 18:13:34.853 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/StudentStatusUpdate - multipart/form-data; boundary=----WebKitFormBoundaryM5OghEls1uNrzBox 354
+2026-01-30 18:13:34.854 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:34.854 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI)'
+2026-01-30 18:13:34.854 +05:30 [INF] Route matched with {area = "Admin", action = "StudentStatusUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentStatusUpdate(System.String, System.String, System.Nullable`1[System.DateTime]) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:35.031 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 18:13:35.032 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI) in 177.2563ms
+2026-01-30 18:13:35.032 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI)'
+2026-01-30 18:13:35.032 +05:30 [INF] HTTP POST /Admin/Dashboard/StudentStatusUpdate responded 200 in 177.5077 ms
+2026-01-30 18:13:35.032 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/StudentStatusUpdate - 200 null application/json; charset=utf-8 179.1906ms
+2026-01-30 18:13:35.040 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - application/x-www-form-urlencoded 375
+2026-01-30 18:13:35.044 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:35.044 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:35.044 +05:30 [INF] Route matched with {area = "Admin", action = "StudentList", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentList(System.String, System.String, Boolean, Int32, System.String, System.String, System.String, Int32, Int32, Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:35.210 +05:30 [INF] Executing ViewResult, running view StudentList.
+2026-01-30 18:13:35.232 +05:30 [INF] Executed ViewResult - view StudentList executed in 22.0835ms.
+2026-01-30 18:13:35.232 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI) in 188.2412ms
+2026-01-30 18:13:35.232 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:35.232 +05:30 [INF] HTTP POST /admin/dashboard/studentlist responded 200 in 188.4661 ms
+2026-01-30 18:13:35.232 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - 200 null text/html; charset=utf-8 192.9562ms
+2026-01-30 18:13:35.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 18:13:35.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 18:13:35.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.0463ms
+2026-01-30 18:13:35.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.3171ms
+2026-01-30 18:13:45.568 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - application/x-www-form-urlencoded 375
+2026-01-30 18:13:45.571 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:45.572 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:45.572 +05:30 [INF] Route matched with {area = "Admin", action = "StudentList", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentList(System.String, System.String, Boolean, Int32, System.String, System.String, System.String, Int32, Int32, Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:45.756 +05:30 [INF] Executing ViewResult, running view StudentList.
+2026-01-30 18:13:45.765 +05:30 [INF] Executed ViewResult - view StudentList executed in 9.4705ms.
+2026-01-30 18:13:45.766 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI) in 193.8305ms
+2026-01-30 18:13:45.767 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:45.767 +05:30 [INF] HTTP POST /admin/dashboard/studentlist responded 200 in 194.9750 ms
+2026-01-30 18:13:45.767 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - 200 null text/html; charset=utf-8 198.4593ms
+2026-01-30 18:13:45.779 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 18:13:45.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 18:13:45.782 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 1.9887ms
+2026-01-30 18:13:45.805 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.5536ms
+2026-01-30 18:13:57.266 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Admin/Dashboard/StudentStatusUpdate - multipart/form-data; boundary=----WebKitFormBoundary23Ty6rlqKBZ6BuQX 343
+2026-01-30 18:13:57.266 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:57.267 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI)'
+2026-01-30 18:13:57.267 +05:30 [INF] Route matched with {area = "Admin", action = "StudentStatusUpdate", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentStatusUpdate(System.String, System.String, System.Nullable`1[System.DateTime]) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:57.643 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 18:13:57.643 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI) in 376.3017ms
+2026-01-30 18:13:57.643 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentStatusUpdate (VRSAPPUI)'
+2026-01-30 18:13:57.643 +05:30 [INF] HTTP POST /Admin/Dashboard/StudentStatusUpdate responded 200 in 376.5278 ms
+2026-01-30 18:13:57.643 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Admin/Dashboard/StudentStatusUpdate - 200 null application/json; charset=utf-8 377.1732ms
+2026-01-30 18:13:57.654 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - application/x-www-form-urlencoded 375
+2026-01-30 18:13:57.666 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:13:57.666 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:57.666 +05:30 [INF] Route matched with {area = "Admin", action = "StudentList", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentList(System.String, System.String, Boolean, Int32, System.String, System.String, System.String, Int32, Int32, Int32) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:13:57.764 +05:30 [INF] Executing ViewResult, running view StudentList.
+2026-01-30 18:13:57.769 +05:30 [INF] Executed ViewResult - view StudentList executed in 4.6643ms.
+2026-01-30 18:13:57.769 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI) in 102.6625ms
+2026-01-30 18:13:57.769 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.StudentList (VRSAPPUI)'
+2026-01-30 18:13:57.769 +05:30 [INF] HTTP POST /admin/dashboard/studentlist responded 200 in 102.7791 ms
+2026-01-30 18:13:57.769 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/studentlist - 200 null text/html; charset=utf-8 114.6918ms
+2026-01-30 18:13:57.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 18:13:57.779 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 18:13:57.784 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 6.1722ms
+2026-01-30 18:13:57.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.0505ms
+2026-01-30 18:14:00.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - null null
+2026-01-30 18:14:00.765 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:00.766 +05:30 [INF] Route matched with {area = "Admin", action = "CheckResultData", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckResultData(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:14:00.798 +05:30 [INF] Executing PartialViewResult, running view _PageData.
+2026-01-30 18:14:00.798 +05:30 [INF] Executed PartialViewResult - view _PageData executed in 0.2733ms.
+2026-01-30 18:14:00.798 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI) in 32.8526ms
+2026-01-30 18:14:00.798 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:00.799 +05:30 [INF] HTTP GET /Admin/Dashboard/CheckResultData responded 200 in 33.0834 ms
+2026-01-30 18:14:00.799 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 18:14:00.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - 200 null text/html; charset=utf-8 37.0029ms
+2026-01-30 18:14:01.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - null null
+2026-01-30 18:14:01.204 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:01.204 +05:30 [INF] Route matched with {area = "Admin", action = "CheckResultData", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckResultData(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:14:01.239 +05:30 [INF] Executing PartialViewResult, running view _PageData.
+2026-01-30 18:14:01.239 +05:30 [INF] Executed PartialViewResult - view _PageData executed in 0.3087ms.
+2026-01-30 18:14:01.239 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI) in 35.2798ms
+2026-01-30 18:14:01.239 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:01.239 +05:30 [INF] HTTP GET /Admin/Dashboard/CheckResultData responded 200 in 35.5098 ms
+2026-01-30 18:14:01.239 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 18:14:01.239 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - 200 null text/html; charset=utf-8 39.0921ms
+2026-01-30 18:14:01.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - null null
+2026-01-30 18:14:01.405 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:01.405 +05:30 [INF] Route matched with {area = "Admin", action = "CheckResultData", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckResultData(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:14:01.442 +05:30 [INF] Executing PartialViewResult, running view _PageData.
+2026-01-30 18:14:01.442 +05:30 [INF] Executed PartialViewResult - view _PageData executed in 0.1947ms.
+2026-01-30 18:14:01.442 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI) in 37.4939ms
+2026-01-30 18:14:01.442 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:01.442 +05:30 [INF] HTTP GET /Admin/Dashboard/CheckResultData responded 200 in 37.7001 ms
+2026-01-30 18:14:01.442 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 18:14:01.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - 200 null text/html; charset=utf-8 41.3496ms
+2026-01-30 18:14:01.590 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - null null
+2026-01-30 18:14:01.593 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:01.593 +05:30 [INF] Route matched with {area = "Admin", action = "CheckResultData", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckResultData(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:14:01.740 +05:30 [INF] Executing PartialViewResult, running view _PageData.
+2026-01-30 18:14:01.740 +05:30 [INF] Executed PartialViewResult - view _PageData executed in 0.2559ms.
+2026-01-30 18:14:01.740 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI) in 147.0935ms
+2026-01-30 18:14:01.741 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:01.741 +05:30 [INF] HTTP GET /Admin/Dashboard/CheckResultData responded 200 in 147.8508 ms
+2026-01-30 18:14:01.741 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 18:14:01.741 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - 200 null text/html; charset=utf-8 151.6794ms
+2026-01-30 18:14:06.482 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/searchordinancestudent - multipart/form-data; boundary=----WebKitFormBoundaryEqdvi19GBf8keWB7 672
+2026-01-30 18:14:06.482 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:14:06.482 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.SearchOrdinanceStudent (VRSAPPUI)'
+2026-01-30 18:14:06.482 +05:30 [INF] Route matched with {area = "Admin", action = "SearchOrdinanceStudent", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchOrdinanceStudent(VRSMODEL.DTO.ORDINANCE_STUDENT_DTO) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:14:06.532 +05:30 [INF] Executing JsonResult, writing value of type 'VRSMODEL.DTO.Result.FormResponse'.
+2026-01-30 18:14:06.532 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.SearchOrdinanceStudent (VRSAPPUI) in 50.1398ms
+2026-01-30 18:14:06.532 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.SearchOrdinanceStudent (VRSAPPUI)'
+2026-01-30 18:14:06.532 +05:30 [INF] HTTP POST /admin/dashboard/searchordinancestudent responded 200 in 50.2640 ms
+2026-01-30 18:14:06.533 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/searchordinancestudent - 200 null application/json; charset=utf-8 51.2024ms
+2026-01-30 18:14:09.919 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/admin/dashboard/mappingdemotoerp - multipart/form-data; boundary=----WebKitFormBoundaryZ48zXfOUYhGe5lPL 999
+2026-01-30 18:14:09.920 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:14:09.920 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.MappingDemoToErp (VRSAPPUI)'
+2026-01-30 18:14:09.920 +05:30 [INF] Route matched with {area = "Admin", action = "MappingDemoToErp", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MappingDemoToErp(VRSMODEL.DTO.ORDINANCE_STUDENT_DTO) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:14:10.368 +05:30 [INF] Executing JsonResult, writing value of type 'VRSMODEL.DTO.Result.FormResponse'.
+2026-01-30 18:14:10.368 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.MappingDemoToErp (VRSAPPUI) in 447.4456ms
+2026-01-30 18:14:10.368 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.MappingDemoToErp (VRSAPPUI)'
+2026-01-30 18:14:10.368 +05:30 [INF] HTTP POST /admin/dashboard/mappingdemotoerp responded 200 in 447.6902 ms
+2026-01-30 18:14:10.368 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/admin/dashboard/mappingdemotoerp - 200 null application/json; charset=utf-8 448.9179ms
+2026-01-30 18:14:16.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - null null
+2026-01-30 18:14:16.863 +05:30 [INF] Executing endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:16.863 +05:30 [INF] Route matched with {area = "Admin", action = "CheckResultData", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckResultData(System.String) on controller VRSAPPUI.Areas.Admin.Controllers.DashboardController (VRSAPPUI).
+2026-01-30 18:14:17.014 +05:30 [INF] Executing PartialViewResult, running view _PageData.
+2026-01-30 18:14:17.016 +05:30 [INF] Executed PartialViewResult - view _PageData executed in 2.4658ms.
+2026-01-30 18:14:17.017 +05:30 [INF] Executed action VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI) in 154.1009ms
+2026-01-30 18:14:17.017 +05:30 [INF] Executed endpoint 'VRSAPPUI.Areas.Admin.Controllers.DashboardController.CheckResultData (VRSAPPUI)'
+2026-01-30 18:14:17.017 +05:30 [INF] HTTP GET /Admin/Dashboard/CheckResultData responded 200 in 154.6189 ms
+2026-01-30 18:14:17.017 +05:30 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-01-30 18:14:17.017 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/Admin/Dashboard/CheckResultData?RollNumber=2500278590019 - 200 null text/html; charset=utf-8 158.596ms
+2026-01-30 18:14:20.418 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/resultpreview/TS5Db20uIC0gSUlJIFNFTUVTVEVSJDI1MDAyNzg1OTAwMTkkQWZmaWxpYXRlZCBDb2xsZWdlJFJFR1VMQVIkMjAyNS0yNiREZWMtMjAyNSQx - null null
+2026-01-30 18:14:20.433 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.ResultPreview (VRSAPPUI)'
+2026-01-30 18:14:20.438 +05:30 [INF] Route matched with {action = "ResultPreview", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResultPreview(System.String) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 18:14:20.454 +05:30 [INF] Executing RedirectResult, redirecting to /result/MjUwMDI3ODU5MDAxOQ%3D%3D.
+2026-01-30 18:14:20.455 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.ResultPreview (VRSAPPUI) in 16.139ms
+2026-01-30 18:14:20.455 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.ResultPreview (VRSAPPUI)'
+2026-01-30 18:14:20.455 +05:30 [INF] HTTP GET /resultpreview/TS5Db20uIC0gSUlJIFNFTUVTVEVSJDI1MDAyNzg1OTAwMTkkQWZmaWxpYXRlZCBDb2xsZWdlJFJFR1VMQVIkMjAyNS0yNiREZWMtMjAyNSQx responded 302 in 22.1638 ms
+2026-01-30 18:14:20.456 +05:30 [INF] Session started; Key:2beab715-6026-4b09-f0a3-60ecc32269aa, Id:444e1599-4382-be08-c71d-a0a99bffdbd0
+2026-01-30 18:14:20.458 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/resultpreview/TS5Db20uIC0gSUlJIFNFTUVTVEVSJDI1MDAyNzg1OTAwMTkkQWZmaWxpYXRlZCBDb2xsZWdlJFJFR1VMQVIkMjAyNS0yNiREZWMtMjAyNSQx - 302 null null 40.5712ms
+2026-01-30 18:14:20.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/result/MjUwMDI3ODU5MDAxOQ== - null null
+2026-01-30 18:14:20.465 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.Result (VRSAPPUI)'
+2026-01-30 18:14:20.469 +05:30 [INF] Route matched with {action = "Result", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Result(System.String) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 18:14:20.474 +05:30 [INF] Executing ViewResult, running view Result.
+2026-01-30 18:14:21.034 +05:30 [INF] Executed ViewResult - view Result executed in 560.647ms.
+2026-01-30 18:14:21.034 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.Result (VRSAPPUI) in 564.958ms
+2026-01-30 18:14:21.034 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.Result (VRSAPPUI)'
+2026-01-30 18:14:21.034 +05:30 [INF] HTTP GET /result/MjUwMDI3ODU5MDAxOQ== responded 200 in 568.5001 ms
+2026-01-30 18:14:21.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/result/MjUwMDI3ODU5MDAxOQ== - 200 null text/html; charset=utf-8 571.374ms
+2026-01-30 18:14:21.056 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 18:14:21.064 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 7.9941ms
+2026-01-30 18:14:21.064 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7071/_vs/browserLink - null null
+2026-01-30 18:14:21.086 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7071/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.1068ms
+2026-01-30 18:14:21.229 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7071/Home/VisitCountSet - application/json; charset=UTF-8 125
+2026-01-30 18:14:21.230 +05:30 [INF] CORS policy execution successful.
+2026-01-30 18:14:21.231 +05:30 [INF] Executing endpoint 'VRSAPPUI.Controllers.HomeController.VisitCountSet (VRSAPPUI)'
+2026-01-30 18:14:21.237 +05:30 [INF] Route matched with {action = "VisitCountSet", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VisitCountSet(VRSMODEL.DTO.StudentMasterDTO) on controller VRSAPPUI.Controllers.HomeController (VRSAPPUI).
+2026-01-30 18:14:21.486 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
+2026-01-30 18:14:21.486 +05:30 [INF] Executed action VRSAPPUI.Controllers.HomeController.VisitCountSet (VRSAPPUI) in 249.0761ms
+2026-01-30 18:14:21.486 +05:30 [INF] Executed endpoint 'VRSAPPUI.Controllers.HomeController.VisitCountSet (VRSAPPUI)'
+2026-01-30 18:14:21.486 +05:30 [INF] HTTP POST /Home/VisitCountSet responded 200 in 255.2313 ms
+2026-01-30 18:14:21.486 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7071/Home/VisitCountSet - 200 null application/json; charset=utf-8 257.0031ms
